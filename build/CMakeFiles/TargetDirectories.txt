@@ -1,9 +1,0 @@
-/home/jie/miner_detector/build/CMakeFiles/uprobe.dir
-/home/jie/miner_detector/build/CMakeFiles/bootstrap.dir
-/home/jie/miner_detector/build/CMakeFiles/libbpf.dir
-/home/jie/miner_detector/build/CMakeFiles/libbpf-build.dir
-/home/jie/miner_detector/build/CMakeFiles/fentry.dir
-/home/jie/miner_detector/build/CMakeFiles/minimal.dir
-/home/jie/miner_detector/build/CMakeFiles/rebuild_cache.dir
-/home/jie/miner_detector/build/CMakeFiles/kprobe.dir
-/home/jie/miner_detector/build/CMakeFiles/edit_cache.dir
