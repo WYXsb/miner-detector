@@ -1,0 +1,11 @@
+# Target labels
+ libbpf
+# Source files and their labels
+/home/jie/miner_detector/build/CMakeFiles/libbpf-build
+/home/jie/miner_detector/build/CMakeFiles/libbpf-build.rule
+/home/jie/miner_detector/build/libbpf/src/libbpf-stamp/libbpf-build.rule
+/home/jie/miner_detector/build/libbpf/src/libbpf-stamp/libbpf-configure.rule
+/home/jie/miner_detector/build/libbpf/src/libbpf-stamp/libbpf-update.rule
+/home/jie/miner_detector/build/libbpf/src/libbpf-stamp/libbpf-patch.rule
+/home/jie/miner_detector/build/libbpf/src/libbpf-stamp/libbpf-download.rule
+/home/jie/miner_detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir.rule
