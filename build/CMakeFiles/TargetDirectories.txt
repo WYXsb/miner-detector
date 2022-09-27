@@ -1,0 +1,11 @@
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf-build.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/bpftool.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/bpftool-build.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/bashreadline.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/bootstrap.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/fentry.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/hello.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/kprobe.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/edit_cache.dir
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/rebuild_cache.dir

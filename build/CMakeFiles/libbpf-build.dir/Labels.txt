@@ -1,0 +1,11 @@
+# Target labels
+ libbpf
+# Source files and their labels
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf-build
+/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf-build.rule
+/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build.rule
+/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure.rule
+/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch.rule
+/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update.rule
+/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download.rule
+/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir.rule

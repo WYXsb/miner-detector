@@ -3,6 +3,8 @@
 cmake_minimum_required(VERSION 3.16)
 project(miner_detector)
 
+set(LIBBPF_BOOTSTRAP_PATH /home/wyx/libbpf-bootstrap)
+
 # Tell cmake where to find BpfObject module
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../tools/cmake)
 
@@ -20,6 +22,18 @@ ExternalProject_Add(libbpf
     LIBDIR=
     UAPIDIR=
     install
+  BUILD_IN_SOURCE TRUE
+  INSTALL_COMMAND ""
+  STEP_TARGETS build
+)
+
+ExternalProject_Add(bpftool
+  PREFIX bpftool
+  # SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../bpftool/src
+  SOURCE_DIR ${LIBBPF_BOOTSTRAP_PATH}/bpftool/src
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND make
+    OUTPUT=${CMAKE_CURRENT_BINARY_DIR}/bpftool/
   BUILD_IN_SOURCE TRUE
   INSTALL_COMMAND ""
   STEP_TARGETS build

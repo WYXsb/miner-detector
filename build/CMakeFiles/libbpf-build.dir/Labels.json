@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf-build"
+		},
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf-build.rule"
+		},
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build.rule"
+		},
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure.rule"
+		},
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch.rule"
+		},
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update.rule"
+		},
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download.rule"
+		},
+		{
+			"file" : "/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libbpf"
+		],
+		"name" : "libbpf-build"
+	}
+}
