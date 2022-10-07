@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kprobe.dir/depend.make
@@ -70,26 +70,26 @@ include CMakeFiles/kprobe.dir/progress.make
 include CMakeFiles/kprobe.dir/flags.make
 
 kprobe.skel.h: kprobe.bpf.o
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: kprobe"
-	bash -c "/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/SoftwareEnginering_B/miner-detector/build/kprobe.bpf.o > /home/wyx/SoftwareEnginering_B/miner-detector/build/kprobe.skel.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: kprobe"
+	bash -c "/home/wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/miner-detector/build/kprobe.bpf.o > /home/wyx/miner-detector/build/kprobe.skel.h"
 
-kprobe.bpf.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/kprobe.bpf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: kprobe"
-	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../vmlinux -isystem /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/kprobe.bpf.c -o /home/wyx/SoftwareEnginering_B/miner-detector/build/kprobe.bpf.o
+kprobe.bpf.o: /home/wyx/miner-detector/src/c/kprobe.bpf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: kprobe"
+	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/miner-detector/src/c/../../vmlinux -isystem /home/wyx/miner-detector/build/libbpf -c /home/wyx/miner-detector/src/c/kprobe.bpf.c -o /home/wyx/miner-detector/build/kprobe.bpf.o
 
 CMakeFiles/kprobe.dir/kprobe.c.o: CMakeFiles/kprobe.dir/flags.make
-CMakeFiles/kprobe.dir/kprobe.c.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/kprobe.c
+CMakeFiles/kprobe.dir/kprobe.c.o: /home/wyx/miner-detector/src/c/kprobe.c
 CMakeFiles/kprobe.dir/kprobe.c.o: CMakeFiles/kprobe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/kprobe.dir/kprobe.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/kprobe.dir/kprobe.c.o -MF CMakeFiles/kprobe.dir/kprobe.c.o.d -o CMakeFiles/kprobe.dir/kprobe.c.o -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/kprobe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/kprobe.dir/kprobe.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/kprobe.dir/kprobe.c.o -MF CMakeFiles/kprobe.dir/kprobe.c.o.d -o CMakeFiles/kprobe.dir/kprobe.c.o -c /home/wyx/miner-detector/src/c/kprobe.c
 
 CMakeFiles/kprobe.dir/kprobe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kprobe.dir/kprobe.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/SoftwareEnginering_B/miner-detector/src/c/kprobe.c > CMakeFiles/kprobe.dir/kprobe.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/kprobe.c > CMakeFiles/kprobe.dir/kprobe.c.i
 
 CMakeFiles/kprobe.dir/kprobe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kprobe.dir/kprobe.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/SoftwareEnginering_B/miner-detector/src/c/kprobe.c -o CMakeFiles/kprobe.dir/kprobe.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/kprobe.c -o CMakeFiles/kprobe.dir/kprobe.c.s
 
 # Object files for target kprobe
 kprobe_OBJECTS = \
@@ -100,9 +100,10 @@ kprobe_EXTERNAL_OBJECTS =
 
 kprobe: CMakeFiles/kprobe.dir/kprobe.c.o
 kprobe: CMakeFiles/kprobe.dir/build.make
+kprobe: bpftools/libbpftool.a
 kprobe: libbpf/libbpf.a
 kprobe: CMakeFiles/kprobe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable kprobe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable kprobe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kprobe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +116,6 @@ CMakeFiles/kprobe.dir/clean:
 
 CMakeFiles/kprobe.dir/depend: kprobe.bpf.o
 CMakeFiles/kprobe.dir/depend: kprobe.skel.h
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/kprobe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/kprobe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/kprobe.dir/depend
 

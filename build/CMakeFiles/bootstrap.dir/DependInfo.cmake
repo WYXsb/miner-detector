@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/wyx/SoftwareEnginering_B/miner-detector/src/c/bootstrap.c" "CMakeFiles/bootstrap.dir/bootstrap.c.o" "gcc" "CMakeFiles/bootstrap.dir/bootstrap.c.o.d"
+  "/home/wyx/miner-detector/src/c/bootstrap.c" "CMakeFiles/bootstrap.dir/bootstrap.c.o" "gcc" "CMakeFiles/bootstrap.dir/bootstrap.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/wyx/miner-detector/build/bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

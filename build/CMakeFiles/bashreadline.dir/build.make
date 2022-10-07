@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bashreadline.dir/depend.make
@@ -70,26 +70,26 @@ include CMakeFiles/bashreadline.dir/progress.make
 include CMakeFiles/bashreadline.dir/flags.make
 
 bashreadline.skel.h: bashreadline.bpf.o
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: bashreadline"
-	bash -c "/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/SoftwareEnginering_B/miner-detector/build/bashreadline.bpf.o > /home/wyx/SoftwareEnginering_B/miner-detector/build/bashreadline.skel.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: bashreadline"
+	bash -c "/home/wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/miner-detector/build/bashreadline.bpf.o > /home/wyx/miner-detector/build/bashreadline.skel.h"
 
-bashreadline.bpf.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bashreadline.bpf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: bashreadline"
-	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../vmlinux -isystem /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bashreadline.bpf.c -o /home/wyx/SoftwareEnginering_B/miner-detector/build/bashreadline.bpf.o
+bashreadline.bpf.o: /home/wyx/miner-detector/src/c/bashreadline.bpf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: bashreadline"
+	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/miner-detector/src/c/../../vmlinux -isystem /home/wyx/miner-detector/build/libbpf -c /home/wyx/miner-detector/src/c/bashreadline.bpf.c -o /home/wyx/miner-detector/build/bashreadline.bpf.o
 
 CMakeFiles/bashreadline.dir/bashreadline.c.o: CMakeFiles/bashreadline.dir/flags.make
-CMakeFiles/bashreadline.dir/bashreadline.c.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bashreadline.c
+CMakeFiles/bashreadline.dir/bashreadline.c.o: /home/wyx/miner-detector/src/c/bashreadline.c
 CMakeFiles/bashreadline.dir/bashreadline.c.o: CMakeFiles/bashreadline.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bashreadline.dir/bashreadline.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bashreadline.dir/bashreadline.c.o -MF CMakeFiles/bashreadline.dir/bashreadline.c.o.d -o CMakeFiles/bashreadline.dir/bashreadline.c.o -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bashreadline.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bashreadline.dir/bashreadline.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bashreadline.dir/bashreadline.c.o -MF CMakeFiles/bashreadline.dir/bashreadline.c.o.d -o CMakeFiles/bashreadline.dir/bashreadline.c.o -c /home/wyx/miner-detector/src/c/bashreadline.c
 
 CMakeFiles/bashreadline.dir/bashreadline.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bashreadline.dir/bashreadline.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bashreadline.c > CMakeFiles/bashreadline.dir/bashreadline.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/bashreadline.c > CMakeFiles/bashreadline.dir/bashreadline.c.i
 
 CMakeFiles/bashreadline.dir/bashreadline.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bashreadline.dir/bashreadline.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bashreadline.c -o CMakeFiles/bashreadline.dir/bashreadline.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/bashreadline.c -o CMakeFiles/bashreadline.dir/bashreadline.c.s
 
 # Object files for target bashreadline
 bashreadline_OBJECTS = \
@@ -100,9 +100,10 @@ bashreadline_EXTERNAL_OBJECTS =
 
 bashreadline: CMakeFiles/bashreadline.dir/bashreadline.c.o
 bashreadline: CMakeFiles/bashreadline.dir/build.make
+bashreadline: bpftools/libbpftool.a
 bashreadline: libbpf/libbpf.a
 bashreadline: CMakeFiles/bashreadline.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bashreadline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bashreadline"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bashreadline.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +116,6 @@ CMakeFiles/bashreadline.dir/clean:
 
 CMakeFiles/bashreadline.dir/depend: bashreadline.bpf.o
 CMakeFiles/bashreadline.dir/depend: bashreadline.skel.h
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/bashreadline.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/bashreadline.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bashreadline.dir/depend
 

@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/fentry.dir/fentry.c.o -o fentry  libbpf/libbpf.a -lelf -lz 
+/usr/bin/cc CMakeFiles/fentry.dir/fentry.c.o -o fentry  bpftools/libbpftool.a libbpf/libbpf.a -lelf -lz 

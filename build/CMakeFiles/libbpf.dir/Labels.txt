@@ -1,13 +1,13 @@
 # Target labels
  libbpf
 # Source files and their labels
-/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf
-/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf-complete.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-install.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch.rule
-/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update.rule
+/home/wyx/miner-detector/build/CMakeFiles/libbpf
+/home/wyx/miner-detector/build/CMakeFiles/libbpf.rule
+/home/wyx/miner-detector/build/CMakeFiles/libbpf-complete.rule
+/home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build.rule
+/home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure.rule
+/home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download.rule
+/home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-install.rule
+/home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir.rule
+/home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch.rule
+/home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update.rule

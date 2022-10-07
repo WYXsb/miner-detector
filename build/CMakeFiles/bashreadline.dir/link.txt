@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/bashreadline.dir/bashreadline.c.o -o bashreadline  libbpf/libbpf.a -lelf -lz 
+/usr/bin/cc CMakeFiles/bashreadline.dir/bashreadline.c.o -o bashreadline  bpftools/libbpftool.a libbpf/libbpf.a -lelf -lz 

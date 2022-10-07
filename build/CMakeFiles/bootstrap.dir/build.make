@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bootstrap.dir/depend.make
@@ -70,26 +70,26 @@ include CMakeFiles/bootstrap.dir/progress.make
 include CMakeFiles/bootstrap.dir/flags.make
 
 bootstrap.skel.h: bootstrap.bpf.o
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: bootstrap"
-	bash -c "/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/SoftwareEnginering_B/miner-detector/build/bootstrap.bpf.o > /home/wyx/SoftwareEnginering_B/miner-detector/build/bootstrap.skel.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: bootstrap"
+	bash -c "/home/wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/miner-detector/build/bootstrap.bpf.o > /home/wyx/miner-detector/build/bootstrap.skel.h"
 
-bootstrap.bpf.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bootstrap.bpf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: bootstrap"
-	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../vmlinux -isystem /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bootstrap.bpf.c -o /home/wyx/SoftwareEnginering_B/miner-detector/build/bootstrap.bpf.o
+bootstrap.bpf.o: /home/wyx/miner-detector/src/c/bootstrap.bpf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: bootstrap"
+	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/miner-detector/src/c/../../vmlinux -isystem /home/wyx/miner-detector/build/libbpf -c /home/wyx/miner-detector/src/c/bootstrap.bpf.c -o /home/wyx/miner-detector/build/bootstrap.bpf.o
 
 CMakeFiles/bootstrap.dir/bootstrap.c.o: CMakeFiles/bootstrap.dir/flags.make
-CMakeFiles/bootstrap.dir/bootstrap.c.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bootstrap.c
+CMakeFiles/bootstrap.dir/bootstrap.c.o: /home/wyx/miner-detector/src/c/bootstrap.c
 CMakeFiles/bootstrap.dir/bootstrap.c.o: CMakeFiles/bootstrap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bootstrap.dir/bootstrap.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bootstrap.dir/bootstrap.c.o -MF CMakeFiles/bootstrap.dir/bootstrap.c.o.d -o CMakeFiles/bootstrap.dir/bootstrap.c.o -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bootstrap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bootstrap.dir/bootstrap.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bootstrap.dir/bootstrap.c.o -MF CMakeFiles/bootstrap.dir/bootstrap.c.o.d -o CMakeFiles/bootstrap.dir/bootstrap.c.o -c /home/wyx/miner-detector/src/c/bootstrap.c
 
 CMakeFiles/bootstrap.dir/bootstrap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bootstrap.dir/bootstrap.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bootstrap.c > CMakeFiles/bootstrap.dir/bootstrap.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/bootstrap.c > CMakeFiles/bootstrap.dir/bootstrap.c.i
 
 CMakeFiles/bootstrap.dir/bootstrap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bootstrap.dir/bootstrap.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/SoftwareEnginering_B/miner-detector/src/c/bootstrap.c -o CMakeFiles/bootstrap.dir/bootstrap.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/bootstrap.c -o CMakeFiles/bootstrap.dir/bootstrap.c.s
 
 # Object files for target bootstrap
 bootstrap_OBJECTS = \
@@ -100,9 +100,10 @@ bootstrap_EXTERNAL_OBJECTS =
 
 bootstrap: CMakeFiles/bootstrap.dir/bootstrap.c.o
 bootstrap: CMakeFiles/bootstrap.dir/build.make
+bootstrap: bpftools/libbpftool.a
 bootstrap: libbpf/libbpf.a
 bootstrap: CMakeFiles/bootstrap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bootstrap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bootstrap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bootstrap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +116,6 @@ CMakeFiles/bootstrap.dir/clean:
 
 CMakeFiles/bootstrap.dir/depend: bootstrap.bpf.o
 CMakeFiles/bootstrap.dir/depend: bootstrap.skel.h
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/bootstrap.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/bootstrap.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bootstrap.dir/depend
 

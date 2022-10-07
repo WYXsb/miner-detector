@@ -27,17 +27,7 @@ ExternalProject_Add(libbpf
   STEP_TARGETS build
 )
 
-ExternalProject_Add(bpftool
-  PREFIX bpftool
-  # SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../bpftool/src
-  SOURCE_DIR ${LIBBPF_BOOTSTRAP_PATH}/bpftool/src
-  CONFIGURE_COMMAND ""
-  BUILD_COMMAND make
-    OUTPUT=${CMAKE_CURRENT_BINARY_DIR}/bpftool/
-  BUILD_IN_SOURCE TRUE
-  INSTALL_COMMAND ""
-  STEP_TARGETS build
-)
+
 
 # Set BpfObject input parameters -- note this is usually not necessary unless
 # you're in a highly vendored environment (like libbpf-bootstrap)
@@ -47,6 +37,10 @@ set(LIBBPF_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/libbpf)
 set(LIBBPF_LIBRARIES ${CMAKE_CURRENT_BINARY_DIR}/libbpf/libbpf.a)
 find_package(BpfObject REQUIRED)
 
+
+
+add_subdirectory(bpftools)
+include_directories(bpftools)
 # Create an executable for each application
 file(GLOB apps *.bpf.c)
 foreach(app ${apps})
@@ -57,5 +51,5 @@ foreach(app ${apps})
   add_dependencies(${app_stem}_skel libbpf-build)
 
   add_executable(${app_stem} ${app_stem}.c)
-  target_link_libraries(${app_stem} ${app_stem}_skel)
+  target_link_libraries(${app_stem} ${app_stem}_skel bpftool)
 endforeach()

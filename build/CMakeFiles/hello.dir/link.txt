@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/hello.dir/hello.c.o -o hello  libbpf/libbpf.a -lelf -lz 
+/usr/bin/cc CMakeFiles/hello.dir/hello.c.o -o hello  bpftools/libbpftool.a libbpf/libbpf.a -lelf -lz 

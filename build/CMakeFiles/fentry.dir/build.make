@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fentry.dir/depend.make
@@ -70,26 +70,26 @@ include CMakeFiles/fentry.dir/progress.make
 include CMakeFiles/fentry.dir/flags.make
 
 fentry.skel.h: fentry.bpf.o
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: fentry"
-	bash -c "/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/SoftwareEnginering_B/miner-detector/build/fentry.bpf.o > /home/wyx/SoftwareEnginering_B/miner-detector/build/fentry.skel.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: fentry"
+	bash -c "/home/wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/miner-detector/build/fentry.bpf.o > /home/wyx/miner-detector/build/fentry.skel.h"
 
-fentry.bpf.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/fentry.bpf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: fentry"
-	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../vmlinux -isystem /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/fentry.bpf.c -o /home/wyx/SoftwareEnginering_B/miner-detector/build/fentry.bpf.o
+fentry.bpf.o: /home/wyx/miner-detector/src/c/fentry.bpf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: fentry"
+	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/miner-detector/src/c/../../vmlinux -isystem /home/wyx/miner-detector/build/libbpf -c /home/wyx/miner-detector/src/c/fentry.bpf.c -o /home/wyx/miner-detector/build/fentry.bpf.o
 
 CMakeFiles/fentry.dir/fentry.c.o: CMakeFiles/fentry.dir/flags.make
-CMakeFiles/fentry.dir/fentry.c.o: /home/wyx/SoftwareEnginering_B/miner-detector/src/c/fentry.c
+CMakeFiles/fentry.dir/fentry.c.o: /home/wyx/miner-detector/src/c/fentry.c
 CMakeFiles/fentry.dir/fentry.c.o: CMakeFiles/fentry.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fentry.dir/fentry.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fentry.dir/fentry.c.o -MF CMakeFiles/fentry.dir/fentry.c.o.d -o CMakeFiles/fentry.dir/fentry.c.o -c /home/wyx/SoftwareEnginering_B/miner-detector/src/c/fentry.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fentry.dir/fentry.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fentry.dir/fentry.c.o -MF CMakeFiles/fentry.dir/fentry.c.o.d -o CMakeFiles/fentry.dir/fentry.c.o -c /home/wyx/miner-detector/src/c/fentry.c
 
 CMakeFiles/fentry.dir/fentry.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fentry.dir/fentry.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/SoftwareEnginering_B/miner-detector/src/c/fentry.c > CMakeFiles/fentry.dir/fentry.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/fentry.c > CMakeFiles/fentry.dir/fentry.c.i
 
 CMakeFiles/fentry.dir/fentry.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fentry.dir/fentry.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/SoftwareEnginering_B/miner-detector/src/c/fentry.c -o CMakeFiles/fentry.dir/fentry.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/fentry.c -o CMakeFiles/fentry.dir/fentry.c.s
 
 # Object files for target fentry
 fentry_OBJECTS = \
@@ -100,9 +100,10 @@ fentry_EXTERNAL_OBJECTS =
 
 fentry: CMakeFiles/fentry.dir/fentry.c.o
 fentry: CMakeFiles/fentry.dir/build.make
+fentry: bpftools/libbpftool.a
 fentry: libbpf/libbpf.a
 fentry: CMakeFiles/fentry.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable fentry"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable fentry"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fentry.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +116,6 @@ CMakeFiles/fentry.dir/clean:
 
 CMakeFiles/fentry.dir/depend: fentry.bpf.o
 CMakeFiles/fentry.dir/depend: fentry.skel.h
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/fentry.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/fentry.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fentry.dir/depend
 

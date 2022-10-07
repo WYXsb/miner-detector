@@ -54,39 +54,53 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/libbpf.dir/all
-all: CMakeFiles/bpftool.dir/all
 all: CMakeFiles/bashreadline.dir/all
 all: CMakeFiles/bootstrap.dir/all
 all: CMakeFiles/fentry.dir/all
 all: CMakeFiles/hello.dir/all
 all: CMakeFiles/kprobe.dir/all
+all: bpftools/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: bpftools/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/libbpf.dir/clean
 clean: CMakeFiles/libbpf-build.dir/clean
-clean: CMakeFiles/bpftool.dir/clean
-clean: CMakeFiles/bpftool-build.dir/clean
 clean: CMakeFiles/bashreadline.dir/clean
 clean: CMakeFiles/bootstrap.dir/clean
 clean: CMakeFiles/fentry.dir/clean
 clean: CMakeFiles/hello.dir/clean
 clean: CMakeFiles/kprobe.dir/clean
+clean: bpftools/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory bpftools
+
+# Recursive "all" directory target.
+bpftools/all: bpftools/CMakeFiles/bpftool.dir/all
+.PHONY : bpftools/all
+
+# Recursive "preinstall" directory target.
+bpftools/preinstall:
+.PHONY : bpftools/preinstall
+
+# Recursive "clean" directory target.
+bpftools/clean: bpftools/CMakeFiles/bpftool.dir/clean
+.PHONY : bpftools/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/libbpf.dir
@@ -95,14 +109,14 @@ clean: CMakeFiles/kprobe.dir/clean
 CMakeFiles/libbpf.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf.dir/build.make CMakeFiles/libbpf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf.dir/build.make CMakeFiles/libbpf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42 "Built target libbpf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target libbpf"
 .PHONY : CMakeFiles/libbpf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libbpf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/libbpf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : CMakeFiles/libbpf.dir/rule
 
 # Convenience name for target.
@@ -121,14 +135,14 @@ CMakeFiles/libbpf.dir/clean:
 CMakeFiles/libbpf-build.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf-build.dir/build.make CMakeFiles/libbpf-build.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf-build.dir/build.make CMakeFiles/libbpf-build.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=43,44,45,46,47,48 "Built target libbpf-build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=33,34,35,36,37,38 "Built target libbpf-build"
 .PHONY : CMakeFiles/libbpf-build.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libbpf-build.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/libbpf-build.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : CMakeFiles/libbpf-build.dir/rule
 
 # Convenience name for target.
@@ -141,72 +155,21 @@ CMakeFiles/libbpf-build.dir/clean:
 .PHONY : CMakeFiles/libbpf-build.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/bpftool.dir
-
-# All Build rule for target.
-CMakeFiles/bpftool.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool.dir/build.make CMakeFiles/bpftool.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool.dir/build.make CMakeFiles/bpftool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target bpftool"
-.PHONY : CMakeFiles/bpftool.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/bpftool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bpftool.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
-.PHONY : CMakeFiles/bpftool.dir/rule
-
-# Convenience name for target.
-bpftool: CMakeFiles/bpftool.dir/rule
-.PHONY : bpftool
-
-# clean rule for target.
-CMakeFiles/bpftool.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool.dir/build.make CMakeFiles/bpftool.dir/clean
-.PHONY : CMakeFiles/bpftool.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/bpftool-build.dir
-
-# All Build rule for target.
-CMakeFiles/bpftool-build.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool-build.dir/build.make CMakeFiles/bpftool-build.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool-build.dir/build.make CMakeFiles/bpftool-build.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=17,18,19,20,21,22 "Built target bpftool-build"
-.PHONY : CMakeFiles/bpftool-build.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/bpftool-build.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bpftool-build.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
-.PHONY : CMakeFiles/bpftool-build.dir/rule
-
-# Convenience name for target.
-bpftool-build: CMakeFiles/bpftool-build.dir/rule
-.PHONY : bpftool-build
-
-# clean rule for target.
-CMakeFiles/bpftool-build.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool-build.dir/build.make CMakeFiles/bpftool-build.dir/clean
-.PHONY : CMakeFiles/bpftool-build.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/bashreadline.dir
 
 # All Build rule for target.
 CMakeFiles/bashreadline.dir/all: CMakeFiles/libbpf-build.dir/all
+CMakeFiles/bashreadline.dir/all: bpftools/CMakeFiles/bpftool.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashreadline.dir/build.make CMakeFiles/bashreadline.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashreadline.dir/build.make CMakeFiles/bashreadline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=1,2,3,4 "Built target bashreadline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=1,2,3,4 "Built target bashreadline"
 .PHONY : CMakeFiles/bashreadline.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bashreadline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bashreadline.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : CMakeFiles/bashreadline.dir/rule
 
 # Convenience name for target.
@@ -223,16 +186,17 @@ CMakeFiles/bashreadline.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/bootstrap.dir/all: CMakeFiles/libbpf-build.dir/all
+CMakeFiles/bootstrap.dir/all: bpftools/CMakeFiles/bpftool.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=5,6,7,8 "Built target bootstrap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=5,6,7,8 "Built target bootstrap"
 .PHONY : CMakeFiles/bootstrap.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bootstrap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bootstrap.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : CMakeFiles/bootstrap.dir/rule
 
 # Convenience name for target.
@@ -249,16 +213,17 @@ CMakeFiles/bootstrap.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/fentry.dir/all: CMakeFiles/libbpf-build.dir/all
+CMakeFiles/fentry.dir/all: bpftools/CMakeFiles/bpftool.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fentry.dir/build.make CMakeFiles/fentry.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fentry.dir/build.make CMakeFiles/fentry.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=23,24,25,26 "Built target fentry"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=13,14,15,16 "Built target fentry"
 .PHONY : CMakeFiles/fentry.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/fentry.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fentry.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : CMakeFiles/fentry.dir/rule
 
 # Convenience name for target.
@@ -275,16 +240,17 @@ CMakeFiles/fentry.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/hello.dir/all: CMakeFiles/libbpf-build.dir/all
+CMakeFiles/hello.dir/all: bpftools/CMakeFiles/bpftool.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=27,28,29,30 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=17,18,19,20 "Built target hello"
 .PHONY : CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : CMakeFiles/hello.dir/rule
 
 # Convenience name for target.
@@ -301,16 +267,17 @@ CMakeFiles/hello.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/kprobe.dir/all: CMakeFiles/libbpf-build.dir/all
+CMakeFiles/kprobe.dir/all: bpftools/CMakeFiles/bpftool.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=31,32,33,34 "Built target kprobe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=21,22,23,24 "Built target kprobe"
 .PHONY : CMakeFiles/kprobe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kprobe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/kprobe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : CMakeFiles/kprobe.dir/rule
 
 # Convenience name for target.
@@ -321,6 +288,32 @@ kprobe: CMakeFiles/kprobe.dir/rule
 CMakeFiles/kprobe.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/clean
 .PHONY : CMakeFiles/kprobe.dir/clean
+
+#=============================================================================
+# Target rules for target bpftools/CMakeFiles/bpftool.dir
+
+# All Build rule for target.
+bpftools/CMakeFiles/bpftool.dir/all:
+	$(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/depend
+	$(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=9,10,11,12 "Built target bpftool"
+.PHONY : bpftools/CMakeFiles/bpftool.dir/all
+
+# Build rule for subdir invocation for target.
+bpftools/CMakeFiles/bpftool.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/CMakeFiles/bpftool.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
+.PHONY : bpftools/CMakeFiles/bpftool.dir/rule
+
+# Convenience name for target.
+bpftool: bpftools/CMakeFiles/bpftool.dir/rule
+.PHONY : bpftool
+
+# clean rule for target.
+bpftools/CMakeFiles/bpftool.dir/clean:
+	$(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/clean
+.PHONY : bpftools/CMakeFiles/bpftool.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

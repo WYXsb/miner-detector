@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 
 # Utility rule file for libbpf-build.
 
@@ -69,41 +69,41 @@ include CMakeFiles/libbpf-build.dir/progress.make
 CMakeFiles/libbpf-build: libbpf/src/libbpf-stamp/libbpf-build
 
 libbpf/src/libbpf-stamp/libbpf-build: libbpf/src/libbpf-stamp/libbpf-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Performing build step for 'libbpf'"
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/libbpf/src && make BUILD_STATIC_ONLY=1 OBJDIR=/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/libbpf DESTDIR=/home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf INCLUDEDIR= LIBDIR= UAPIDIR= install
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/libbpf/src && /usr/bin/cmake -E touch /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Performing build step for 'libbpf'"
+	cd /home/wyx/miner-detector/libbpf/src && make BUILD_STATIC_ONLY=1 OBJDIR=/home/wyx/miner-detector/build/libbpf/libbpf DESTDIR=/home/wyx/miner-detector/build/libbpf INCLUDEDIR= LIBDIR= UAPIDIR= install
+	cd /home/wyx/miner-detector/libbpf/src && /usr/bin/cmake -E touch /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build
 
 libbpf/src/libbpf-stamp/libbpf-configure: libbpf/tmp/libbpf-cfgcmd.txt
 libbpf/src/libbpf-stamp/libbpf-configure: libbpf/src/libbpf-stamp/libbpf-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No configure step for 'libbpf'"
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/libbpf/src && /usr/bin/cmake -E echo_append
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/libbpf/src && /usr/bin/cmake -E touch /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No configure step for 'libbpf'"
+	cd /home/wyx/miner-detector/libbpf/src && /usr/bin/cmake -E echo_append
+	cd /home/wyx/miner-detector/libbpf/src && /usr/bin/cmake -E touch /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure
 
 libbpf/src/libbpf-stamp/libbpf-patch: libbpf/src/libbpf-stamp/libbpf-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No patch step for 'libbpf'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No patch step for 'libbpf'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch
+	/usr/bin/cmake -E touch /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch
 
 libbpf/src/libbpf-stamp/libbpf-update: libbpf/src/libbpf-stamp/libbpf-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No update step for 'libbpf'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No update step for 'libbpf'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update
+	/usr/bin/cmake -E touch /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update
 
 libbpf/src/libbpf-stamp/libbpf-download: libbpf/src/libbpf-stamp/libbpf-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No download step for 'libbpf'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No download step for 'libbpf'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download
+	/usr/bin/cmake -E touch /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download
 
 libbpf/src/libbpf-stamp/libbpf-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libbpf'"
-	/usr/bin/cmake -E make_directory /home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../libbpf/src
-	/usr/bin/cmake -E make_directory /home/wyx/SoftwareEnginering_B/miner-detector/src/c/../../libbpf/src
-	/usr/bin/cmake -E make_directory /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf
-	/usr/bin/cmake -E make_directory /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/tmp
-	/usr/bin/cmake -E make_directory /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp
-	/usr/bin/cmake -E make_directory /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src
-	/usr/bin/cmake -E make_directory /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp
-	/usr/bin/cmake -E touch /home/wyx/SoftwareEnginering_B/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'libbpf'"
+	/usr/bin/cmake -E make_directory /home/wyx/miner-detector/src/c/../../libbpf/src
+	/usr/bin/cmake -E make_directory /home/wyx/miner-detector/src/c/../../libbpf/src
+	/usr/bin/cmake -E make_directory /home/wyx/miner-detector/build/libbpf
+	/usr/bin/cmake -E make_directory /home/wyx/miner-detector/build/libbpf/tmp
+	/usr/bin/cmake -E make_directory /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp
+	/usr/bin/cmake -E make_directory /home/wyx/miner-detector/build/libbpf/src
+	/usr/bin/cmake -E make_directory /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp
+	/usr/bin/cmake -E touch /home/wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir
 
 libbpf-build: CMakeFiles/libbpf-build
 libbpf-build: libbpf/src/libbpf-stamp/libbpf-build
@@ -124,6 +124,6 @@ CMakeFiles/libbpf-build.dir/clean:
 .PHONY : CMakeFiles/libbpf-build.dir/clean
 
 CMakeFiles/libbpf-build.dir/depend:
-	cd /home/wyx/SoftwareEnginering_B/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/src/c /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles/libbpf-build.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/libbpf-build.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libbpf-build.dir/depend
 

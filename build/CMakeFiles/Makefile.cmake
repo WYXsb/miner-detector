@@ -10,10 +10,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "bpftool/tmp/bpftool-cfgcmd.txt.in"
   "libbpf/tmp/libbpf-cfgcmd.txt.in"
-  "/home/wyx/SoftwareEnginering_B/miner-detector/src/c/CMakeLists.txt"
-  "/home/wyx/SoftwareEnginering_B/miner-detector/tools/cmake/FindBpfObject.cmake"
+  "/home/wyx/miner-detector/src/c/CMakeLists.txt"
+  "/home/wyx/miner-detector/src/c/bpftools/CMakeLists.txt"
+  "/home/wyx/miner-detector/tools/cmake/FindBpfObject.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -47,19 +47,18 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "libbpf/tmp/libbpf-cfgcmd.txt"
-  "bpftool/tmp/bpftool-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "bpftools/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/libbpf.dir/DependInfo.cmake"
   "CMakeFiles/libbpf-build.dir/DependInfo.cmake"
-  "CMakeFiles/bpftool.dir/DependInfo.cmake"
-  "CMakeFiles/bpftool-build.dir/DependInfo.cmake"
   "CMakeFiles/bashreadline.dir/DependInfo.cmake"
   "CMakeFiles/bootstrap.dir/DependInfo.cmake"
   "CMakeFiles/fentry.dir/DependInfo.cmake"
   "CMakeFiles/hello.dir/DependInfo.cmake"
   "CMakeFiles/kprobe.dir/DependInfo.cmake"
+  "bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake"
   )

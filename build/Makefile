@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/SoftwareEnginering_B/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles /home/wyx/SoftwareEnginering_B/miner-detector/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles /home/wyx/miner-detector/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/SoftwareEnginering_B/miner-detector/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,32 +141,6 @@ libbpf-build: cmake_check_build_system
 libbpf-build/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf-build.dir/build.make CMakeFiles/libbpf-build.dir/build
 .PHONY : libbpf-build/fast
-
-#=============================================================================
-# Target rules for targets named bpftool
-
-# Build rule for target.
-bpftool: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftool
-.PHONY : bpftool
-
-# fast build rule for target.
-bpftool/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool.dir/build.make CMakeFiles/bpftool.dir/build
-.PHONY : bpftool/fast
-
-#=============================================================================
-# Target rules for targets named bpftool-build
-
-# Build rule for target.
-bpftool-build: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftool-build
-.PHONY : bpftool-build
-
-# fast build rule for target.
-bpftool-build/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bpftool-build.dir/build.make CMakeFiles/bpftool-build.dir/build
-.PHONY : bpftool-build/fast
 
 #=============================================================================
 # Target rules for targets named bashreadline
@@ -232,6 +206,19 @@ kprobe: cmake_check_build_system
 kprobe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/build
 .PHONY : kprobe/fast
+
+#=============================================================================
+# Target rules for targets named bpftool
+
+# Build rule for target.
+bpftool: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftool
+.PHONY : bpftool
+
+# fast build rule for target.
+bpftool/fast:
+	$(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/build
+.PHONY : bpftool/fast
 
 bashreadline.o: bashreadline.c.o
 .PHONY : bashreadline.o
@@ -361,12 +348,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... bpftool"
-	@echo "... bpftool-build"
 	@echo "... libbpf"
 	@echo "... libbpf-build"
 	@echo "... bashreadline"
 	@echo "... bootstrap"
+	@echo "... bpftool"
 	@echo "... fentry"
 	@echo "... hello"
 	@echo "... kprobe"

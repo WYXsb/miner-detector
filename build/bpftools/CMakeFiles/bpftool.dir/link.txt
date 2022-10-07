@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbpftool.a CMakeFiles/bpftool.dir/btf_helpers.c.o CMakeFiles/bpftool.dir/trace_helpers.c.o CMakeFiles/bpftool.dir/uprobe_helpers.c.o
+/usr/bin/ranlib libbpftool.a
