@@ -10,7 +10,7 @@
 unsigned long atolu(char *buf)
 {
     int buflen = strlen(buf);
-    int sum = 0;
+    unsigned long sum = 0;
     for (int i = 0; i < buflen; i++)
     {
         if (buf[i] < 58 && buf[i] > 47)
