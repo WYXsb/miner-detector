@@ -10,3 +10,9 @@ typedef struct cpuProcessTime
     unsigned long timesum;
     /* data */
 }CpuProcessTime;
+
+int GetCpuPartTimes(CpuTotalTime *cpuTotalTime, char *buf);
+int GetCpuTotalTime(CpuTotalTime *cpuTotalTime);
+int GetCpuProcessPartTime(CpuProcessTime *cpuProcessTime, char *buf);
+int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid);
+float GetProcessCpuUsage(int pid);

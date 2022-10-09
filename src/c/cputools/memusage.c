@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "memusage.h"
 
 #define MAX 1024
@@ -25,7 +26,7 @@ unsigned long atolu(char *buf)
                 sum = sum * 10 + buf[i] - 48;
             }
         }
-        else if (buf[i] == '\n' || buf[i] == '\0')
+        else
         {
             break;
         }
@@ -33,10 +34,24 @@ unsigned long atolu(char *buf)
     return sum;
 }
 
+int getNumPosition(char *buf)
+{
+    int numPosition;
+    int buflen = strlen(buf);
+    for (numPosition = 0; numPosition < buflen; numPosition++)
+    {
+        if (isdigit(buf[numPosition]))
+        {
+            return numPosition;
+        }
+    }
+}
+
 unsigned long GetMemTotal()
 {
     FILE *fp;
     char buf[MAX];
+    int numPosition = 0;
     if (!(fp = fopen("/proc/meminfo", "r")))
     {
         printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
@@ -47,7 +62,8 @@ unsigned long GetMemTotal()
         printf("Error in Function GetMemTotal: failed to read /proc/meminfo");
         exit(-1);
     }
-    return atolu(buf);
+    numPosition = getNumPosition(buf);
+    return atolu(buf + numPosition);
 }
 
 unsigned long GetProcessMemTotal(int pid)
@@ -55,6 +71,7 @@ unsigned long GetProcessMemTotal(int pid)
     FILE *fp;
     char path[PATH_SIZE];
     char buf[MAX];
+    int numPosition;
     unsigned long ProcessMemTotal = 0;
     sprintf(path, "/proc/%d/status", pid);
 
@@ -68,7 +85,9 @@ unsigned long GetProcessMemTotal(int pid)
     {
         if (!strncmp(buf, "VmRSS:", 6))
         {
-            ProcessMemTotal = atolu(buf);
+            numPosition = getNumPosition(buf);
+
+            ProcessMemTotal = atolu(buf + numPosition);
             break;
         }
     }
@@ -80,7 +99,7 @@ unsigned long GetProcessMemTotal(int pid)
     return ProcessMemTotal;
 }
 
-int GetProcessMemUsage(int pid)
+float GetProcessMemUsage(int pid)
 {
     unsigned long memTotal;
     unsigned long processMemTotal;
@@ -88,8 +107,9 @@ int GetProcessMemUsage(int pid)
     memTotal = GetMemTotal();
     processMemTotal = GetProcessMemTotal(pid);
     processMemUsage = (processMemTotal * 100.0) / memTotal;
+
     printf("pid: %d MemUsage:%f%%\n", pid, processMemUsage);
-    return 0;
+    return processMemUsage;
 }
 
 // int main(int argc, char **argv)

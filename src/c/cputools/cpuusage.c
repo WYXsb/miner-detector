@@ -3,6 +3,7 @@
 #include <string.h>
 #include "memusage.h"
 #include "cpuusage.h"
+#include <unistd.h>
 
 #define MAX 1024
 #define PATH_SIZE 128
@@ -73,6 +74,7 @@ int GetCpuProcessPartTime(CpuProcessTime *cpuProcessTime, char *buf)
             if(timecount >= 14 && timecount < 18)
             {
                 cpuProcessTime->times[timecount - 14] = atolu(timebuf);
+
             }
             else if(timecount == 18)
             {
@@ -106,26 +108,28 @@ int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
     for(int i = 0; i < 4; i++)
     {
         cpuProcessTime->timesum += cpuProcessTime->times[i];
-        //printf("%lu\n",cpuProcessTime->times[i]);
+        
     }
-    //printf("%lu\n",cpuProcessTime->timesum);
     return 0;
 }
 
-int main(int argc, char **argv)
+float GetProcessCpuUsage(int pid)
 {
-    int pid;
+    
+    int cpunum = sysconf(_SC_NPROCESSORS_CONF);
     CpuProcessTime cpuProcessTime1,cpuProcessTime2;
     CpuTotalTime cpuTotalTime1,cpuTotalTime2;
+    float cpuUsage = 0;
 
-    if (argc < 2)
-    {
-        printf("arguments too few!\n");
-        return -1;
-    }
 
-    pid = atoi(argv[1]);
-    GetCpuTotalTime(&cpuTotalTime);
-    GetCpuProcessTime(&cpuProcessTime, pid);
-    return 0;
+    GetCpuTotalTime(&cpuTotalTime1);
+    GetCpuProcessTime(&cpuProcessTime1, pid);
+    sleep(2);
+    GetCpuTotalTime(&cpuTotalTime2);
+    GetCpuProcessTime(&cpuProcessTime2, pid);
+
+
+    cpuUsage = (cpuProcessTime2.timesum - cpuProcessTime1.timesum) * 100.0 * cpunum /(cpuTotalTime2.timesum - cpuTotalTime1.timesum) ;
+    printf("pid: %d cpuUsage:%f%%\n",pid,cpuUsage);
+    return cpuUsage;
 }
