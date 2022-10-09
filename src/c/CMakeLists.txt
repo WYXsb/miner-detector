@@ -40,7 +40,10 @@ find_package(BpfObject REQUIRED)
 
 
 add_subdirectory(bpftools)
+add_subdirectory(cputools)
 include_directories(bpftools)
+include_directories(cputools)
+
 # Create an executable for each application
 file(GLOB apps *.bpf.c)
 foreach(app ${apps})
