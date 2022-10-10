@@ -220,6 +220,15 @@ bpftool_IS_TOP_LEVEL:STATIC=OFF
 bpftool_SOURCE_DIR:STATIC=/home/wyx/miner-detector/src/c/bpftools
 
 //Value Computed by CMake
+cputools_BINARY_DIR:STATIC=/home/wyx/miner-detector/build/cputools
+
+//Value Computed by CMake
+cputools_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+cputools_SOURCE_DIR:STATIC=/home/wyx/miner-detector/src/c/cputools
+
+//Value Computed by CMake
 miner_detector_BINARY_DIR:STATIC=/home/wyx/miner-detector/build
 
 //Value Computed by CMake
@@ -333,7 +342,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

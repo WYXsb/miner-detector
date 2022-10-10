@@ -220,6 +220,19 @@ bpftool/fast:
 	$(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/build
 .PHONY : bpftool/fast
 
+#=============================================================================
+# Target rules for targets named cputools
+
+# Build rule for target.
+cputools: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools
+.PHONY : cputools
+
+# fast build rule for target.
+cputools/fast:
+	$(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/build
+.PHONY : cputools/fast
+
 bashreadline.o: bashreadline.c.o
 .PHONY : bashreadline.o
 
@@ -353,6 +366,7 @@ help:
 	@echo "... bashreadline"
 	@echo "... bootstrap"
 	@echo "... bpftool"
+	@echo "... cputools"
 	@echo "... fentry"
 	@echo "... hello"
 	@echo "... kprobe"

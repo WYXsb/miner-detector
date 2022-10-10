@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/kprobe.dir/kprobe.c.o -o kprobe  bpftools/libbpftool.a libbpf/libbpf.a -lelf -lz 
+/usr/bin/cc CMakeFiles/kprobe.dir/kprobe.c.o -o kprobe  bpftools/libbpftool.a cputools/libcputools.a libbpf/libbpf.a -lelf -lz 

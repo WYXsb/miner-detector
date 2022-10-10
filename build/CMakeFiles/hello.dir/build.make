@@ -101,6 +101,7 @@ hello_EXTERNAL_OBJECTS =
 hello: CMakeFiles/hello.dir/hello.c.o
 hello: CMakeFiles/hello.dir/build.make
 hello: bpftools/libbpftool.a
+hello: cputools/libcputools.a
 hello: libbpf/libbpf.a
 hello: CMakeFiles/hello.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable hello"

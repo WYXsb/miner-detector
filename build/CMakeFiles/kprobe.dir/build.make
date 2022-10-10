@@ -101,6 +101,7 @@ kprobe_EXTERNAL_OBJECTS =
 kprobe: CMakeFiles/kprobe.dir/kprobe.c.o
 kprobe: CMakeFiles/kprobe.dir/build.make
 kprobe: bpftools/libbpftool.a
+kprobe: cputools/libcputools.a
 kprobe: libbpf/libbpf.a
 kprobe: CMakeFiles/kprobe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable kprobe"

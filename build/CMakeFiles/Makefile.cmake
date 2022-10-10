@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "libbpf/tmp/libbpf-cfgcmd.txt.in"
   "/home/wyx/miner-detector/src/c/CMakeLists.txt"
   "/home/wyx/miner-detector/src/c/bpftools/CMakeLists.txt"
+  "/home/wyx/miner-detector/src/c/cputools/CMakeLists.txt"
   "/home/wyx/miner-detector/tools/cmake/FindBpfObject.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -49,6 +50,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "libbpf/tmp/libbpf-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "bpftools/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "cputools/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -61,4 +63,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/hello.dir/DependInfo.cmake"
   "CMakeFiles/kprobe.dir/DependInfo.cmake"
   "bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake"
+  "cputools/CMakeFiles/cputools.dir/DependInfo.cmake"
   )

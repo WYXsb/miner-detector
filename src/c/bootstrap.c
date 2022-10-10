@@ -8,6 +8,8 @@
 #include <bpf/libbpf.h>
 #include "bootstrap.h"
 #include "bootstrap.skel.h"
+#include "cpuusage.h"
+#include "memusage.h"
 
 static struct env {
 	bool verbose;
@@ -79,20 +81,27 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
 	struct tm *tm;
 	char ts[32];
 	time_t t;
+	float cpuusage,memusage;
 
 	time(&t);
 	tm = localtime(&t);
 	strftime(ts, sizeof(ts), "%H:%M:%S", tm);
 
-	if (e->exit_event) {
-		printf("%-8s %-5s %-16s %-7d %-7d [%u]",
-		       ts, "EXIT", e->comm, e->pid, e->ppid, e->exit_code);
-		if (e->duration_ns)
-			printf(" (%llums)", e->duration_ns / 1000000);
-		printf("\n");
-	} else {
-		printf("%-8s %-5s %-16s %-7d %-7d %s\n",
-		       ts, "EXEC", e->comm, e->pid, e->ppid, e->filename);
+
+	if(strstr(e->comm,"kinsing") )
+	{
+		printf("%-8s %-5s %-16s %-7d \n",
+		    ts, "MINER", e->comm, e->pid);
+	}
+
+	cpuusage = GetProcessCpuUsage(e->pid);
+
+	memusage = GetProcessMemUsage(e->pid);
+
+	if(cpuusage > 0.95 &&  memusage < 0.2)
+	{
+		printf("%-8s %-5s %-16s %-7d %-7f %-7f\n",
+		    ts, "open", e->comm, e->pid, cpuusage,memusage);
 	}
 
 	return 0;

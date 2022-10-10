@@ -101,6 +101,7 @@ bootstrap_EXTERNAL_OBJECTS =
 bootstrap: CMakeFiles/bootstrap.dir/bootstrap.c.o
 bootstrap: CMakeFiles/bootstrap.dir/build.make
 bootstrap: bpftools/libbpftool.a
+bootstrap: cputools/libcputools.a
 bootstrap: libbpf/libbpf.a
 bootstrap: CMakeFiles/bootstrap.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bootstrap"

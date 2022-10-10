@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcputools.a CMakeFiles/cputools.dir/cpuusage.c.o CMakeFiles/cputools.dir/memusage.c.o
+/usr/bin/ranlib libcputools.a

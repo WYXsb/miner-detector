@@ -5,9 +5,17 @@
 #include "cpuusage.h"
 #include <unistd.h>
 
+
 #define MAX 1024
 #define PATH_SIZE 128
 #define NUMBER_SIZE 64
+
+static const int ERROR = -1;
+
+/**
+ * @function:
+ * 
+ * */
 
 int GetCpuPartTimes(CpuTotalTime *cpuTotalTime, char *buf)
 {
@@ -25,7 +33,7 @@ int GetCpuPartTimes(CpuTotalTime *cpuTotalTime, char *buf)
         else if (buf[i] == ' ')
         {
             timebuf[timebuflen] = 0;
-            cpuTotalTime->times[timescount++] = atolu(timebuf);
+            cpuTotalTime->times[timescount++] = (unsigned long)atoll(timebuf);
             timebuflen = 0;
             if (timescount == 9)
             {
@@ -35,20 +43,31 @@ int GetCpuPartTimes(CpuTotalTime *cpuTotalTime, char *buf)
     }
 }
 
+/**
+ * @function: 得到机器启动到现在cpu运行的总节拍数
+ * @return    函数执行正常与否，正常返回0，出现异常返回ERROR
+ * @param     CpuTotalTime *cpuTotalTime 存储cpu各个类型的节拍的结构体指针
+ * 
+ * */
 int GetCpuTotalTime(CpuTotalTime *cpuTotalTime)
 {
     FILE *fp;
     char buf[MAX];
+    /*打开/proc/stat*/
     if (!(fp = fopen("/proc/stat", "r")))
     {
         printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
-        exit(-1);
+        fclose(fp);
+        return(-1);
     }
+    /* 读取第一行内容，cpu */
     if (!fgets(buf, MAX, fp))
     {
         printf("Error in Function GetMemTotal: failed to read /proc/meminfo");
-        exit(-1);
+        fclose(fp);
+        return(-1);
     }
+    fclose(fp);
     GetCpuPartTimes(cpuTotalTime, buf);
     cpuTotalTime->timesum = 0;
     for (int i = 0; i < 9; i++)
@@ -58,7 +77,13 @@ int GetCpuTotalTime(CpuTotalTime *cpuTotalTime)
 
     return 0;
 }
-
+/**
+ * @function: 得到进程占用的cpu节拍数
+ * @return  : 函数执行正常与否，正常返回0，出现异常返回ERROR
+ * @param   CpuProcessTime *cpuProcessTime 存储进程占用的cpu节拍数
+ * @param   char * buf 存放进程占用cpu节拍数的字符数组
+ * 
+ **/
 int GetCpuProcessPartTime(CpuProcessTime *cpuProcessTime, char *buf)
 {
     char timebuf[NUMBER_SIZE];
@@ -73,7 +98,7 @@ int GetCpuProcessPartTime(CpuProcessTime *cpuProcessTime, char *buf)
             timecount++;
             if(timecount >= 14 && timecount < 18)
             {
-                cpuProcessTime->times[timecount - 14] = atolu(timebuf);
+                cpuProcessTime->times[timecount - 14] = (unsigned long)atoll(timebuf);
 
             }
             else if(timecount == 18)
@@ -85,6 +110,8 @@ int GetCpuProcessPartTime(CpuProcessTime *cpuProcessTime, char *buf)
     }
 }
 
+
+
 int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
 {
     FILE *fp;
@@ -95,14 +122,18 @@ int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
     if (!(fp = fopen(path, "r")))
     {
         printf("Error in Function GetCpuProcessTime: failed to open /proc/%d/stat", pid);
-        exit(-1);
+        fclose(fp);
+        return(-1);
     }
 
     if (!fgets(buf, MAX, fp))
     {
         printf("Error in Function GetCpuProcessTime: failed to read /proc/%d/stat", pid);
-        exit(-1);
+        fclose(fp);
+        return(-1);
     }
+    fclose(fp);
+
     GetCpuProcessPartTime(cpuProcessTime,buf);
     cpuProcessTime->timesum = 0;
     for(int i = 0; i < 4; i++)
@@ -113,6 +144,8 @@ int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
     return 0;
 }
 
+
+
 float GetProcessCpuUsage(int pid)
 {
     
@@ -122,14 +155,33 @@ float GetProcessCpuUsage(int pid)
     float cpuUsage = 0;
 
 
-    GetCpuTotalTime(&cpuTotalTime1);
-    GetCpuProcessTime(&cpuProcessTime1, pid);
-    sleep(2);
-    GetCpuTotalTime(&cpuTotalTime2);
-    GetCpuProcessTime(&cpuProcessTime2, pid);
+    if(GetCpuTotalTime(&cpuTotalTime1) == ERROR)
+    {
+        return ERROR;
+    }
+    
+    if(GetCpuProcessTime(&cpuProcessTime1, pid) == ERROR)
+    {
+        return ERROR;
+    }
+    
+    usleep(100000);
+    
+    if(GetCpuTotalTime(&cpuTotalTime2) == ERROR)
+    {
+        return ERROR;
+    }
+    if(GetCpuProcessTime(&cpuProcessTime2, pid) == ERROR)
+    {
+        return ERROR;
+    }
 
-
+    if(cpuTotalTime2.timesum - cpuTotalTime1.timesum == 0)
+    {
+        return 0;
+    }
     cpuUsage = (cpuProcessTime2.timesum - cpuProcessTime1.timesum) * 100.0 * cpunum /(cpuTotalTime2.timesum - cpuTotalTime1.timesum) ;
-    printf("pid: %d cpuUsage:%f%%\n",pid,cpuUsage);
+    //printf("%lu %lu ",cpuProcessTime2.timesum - cpuProcessTime1.timesum,cpuTotalTime2.timesum - cpuTotalTime1.timesum);
+    //printf("pid: %d cpuUsage:%f%%\n",pid,cpuUsage);
     return cpuUsage;
 }

@@ -54,5 +54,5 @@ foreach(app ${apps})
   add_dependencies(${app_stem}_skel libbpf-build)
 
   add_executable(${app_stem} ${app_stem}.c)
-  target_link_libraries(${app_stem} ${app_stem}_skel bpftool)
+  target_link_libraries(${app_stem} ${app_stem}_skel bpftool cputools)
 endforeach()

@@ -108,4 +108,6 @@ CMakeFiles/bootstrap.dir/bootstrap.c.o: \
  /home/wyx/miner-detector/build/bootstrap.skel.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /home/wyx/miner-detector/src/c/cputools/cpuusage.h \
+ /home/wyx/miner-detector/src/c/cputools/memusage.h
