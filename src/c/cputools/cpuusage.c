@@ -4,7 +4,7 @@
 #include "memusage.h"
 #include "cpuusage.h"
 #include <unistd.h>
-
+#include <ctype.h>
 
 #define MAX 1024
 #define PATH_SIZE 128
@@ -13,8 +13,10 @@
 static const int ERROR = -1;
 
 /**
- * @function:
- * 
+ * @function: 一个字符串分割成九个unsigned long类型的整数，由传入的字符串获得cpu在不同状态运行的节拍数
+ * @return  : 函数执行正常与否，正常返回0，出现异常返回ERROR
+ * @param   CpuTotalTime *cpuTotalTime 最终存储cpu不同状态运行节拍数的结构体指针
+ *          char *buf 存储cpu不同状态运行节拍数的字符数组
  * */
 
 int GetCpuPartTimes(CpuTotalTime *cpuTotalTime, char *buf)
@@ -26,21 +28,30 @@ int GetCpuPartTimes(CpuTotalTime *cpuTotalTime, char *buf)
     int timebuflen = 0;
     for (int i = 5; i < buflen; i++)
     {
-        if (buf[i] < 58 && buf[i] > 47 && timebuflen < 64)
+        /* 读取到字符是数字，就存入timebuf中 */
+        if (isdigit(buf[i]) && timebuflen < 64)
         {
             timebuf[timebuflen++] = buf[i];
         }
+        /* 读取到空格就将timebuf存的整数转化成unsigned long类型 */
         else if (buf[i] == ' ')
         {
             timebuf[timebuflen] = 0;
             cpuTotalTime->times[timescount++] = (unsigned long)atoll(timebuf);
             timebuflen = 0;
+            /* 转化个数为9则结束 */
             if (timescount == 9)
             {
                 break;
             }
         }
     }
+    if(timescount != 9)
+    {
+        printf("Error in Function GetCpuPartTimes: failed to get Cpu Time\n");
+        return ERROR;
+    }
+    return 0;
 }
 
 /**
@@ -110,7 +121,12 @@ int GetCpuProcessPartTime(CpuProcessTime *cpuProcessTime, char *buf)
     }
 }
 
-
+/**
+ * @function: 由传入的pid，得到进程cpu占用的各个节拍数
+ * @return  : 函数执行正常与否，正常返回0，出现异常返回ERROR
+ * @param   : int pid 进程号
+ *            CpuProcessTime *cpuProcessTime,存储进程占用cpu节拍数的结构体指针
+ * */
 
 int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
 {
@@ -123,19 +139,23 @@ int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
     {
         printf("Error in Function GetCpuProcessTime: failed to open /proc/%d/stat", pid);
         fclose(fp);
-        return(-1);
+        return(ERROR);
     }
 
+    
     if (!fgets(buf, MAX, fp))
     {
         printf("Error in Function GetCpuProcessTime: failed to read /proc/%d/stat", pid);
         fclose(fp);
-        return(-1);
+        return(ERROR);
     }
     fclose(fp);
 
+    /* 得到进程占用cpu不同状态的节拍数 */
     GetCpuProcessPartTime(cpuProcessTime,buf);
     cpuProcessTime->timesum = 0;
+
+    /* 计算得到进程占用cpu总节拍数 */
     for(int i = 0; i < 4; i++)
     {
         cpuProcessTime->timesum += cpuProcessTime->times[i];
@@ -144,44 +164,57 @@ int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
     return 0;
 }
 
-
-
+/**
+ * @function: 获得进程的cpu使用率
+ * @return  : 进程的cpu使用率
+ * @param   : int pid 进程号
+ * 
+ * */
 float GetProcessCpuUsage(int pid)
 {
     
-    int cpunum = sysconf(_SC_NPROCESSORS_CONF);
     CpuProcessTime cpuProcessTime1,cpuProcessTime2;
     CpuTotalTime cpuTotalTime1,cpuTotalTime2;
     float cpuUsage = 0;
 
+    /* 获得机器cpu个数*/
+    int cpunum = sysconf(_SC_NPROCESSORS_CONF);
 
+    /* 获得第一个时刻的cpu总节拍 */
     if(GetCpuTotalTime(&cpuTotalTime1) == ERROR)
     {
         return ERROR;
     }
-    
+
+    /* 获得第一个时刻进程占用cpu总节拍 */
     if(GetCpuProcessTime(&cpuProcessTime1, pid) == ERROR)
     {
         return ERROR;
     }
     
-    usleep(100000);
+    usleep(100);
     
+    /* 获得第二个时刻的cpu总节拍 */
     if(GetCpuTotalTime(&cpuTotalTime2) == ERROR)
     {
         return ERROR;
     }
+    /* 获得第二个时刻进程占用cpu总节拍 */
     if(GetCpuProcessTime(&cpuProcessTime2, pid) == ERROR)
     {
         return ERROR;
     }
 
+
+    /* 去除除0情况 */
     if(cpuTotalTime2.timesum - cpuTotalTime1.timesum == 0)
     {
         return 0;
     }
+    
+    /*获得第一时刻到第二时刻的cpu使用率*/
     cpuUsage = (cpuProcessTime2.timesum - cpuProcessTime1.timesum) * 100.0 * cpunum /(cpuTotalTime2.timesum - cpuTotalTime1.timesum) ;
-    //printf("%lu %lu ",cpuProcessTime2.timesum - cpuProcessTime1.timesum,cpuTotalTime2.timesum - cpuTotalTime1.timesum);
-    //printf("pid: %d cpuUsage:%f%%\n",pid,cpuUsage);
+
+
     return cpuUsage;
 }

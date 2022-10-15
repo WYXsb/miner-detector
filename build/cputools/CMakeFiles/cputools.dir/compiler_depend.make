@@ -67,7 +67,8 @@ cputools/CMakeFiles/cputools.dir/cpuusage.c.o: /home/wyx/miner-detector/src/c/cp
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/ctype.h
 
 cputools/CMakeFiles/cputools.dir/memusage.c.o: /home/wyx/miner-detector/src/c/cputools/memusage.c \
   /usr/include/stdc-predef.h \

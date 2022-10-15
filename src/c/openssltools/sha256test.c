@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <openssl/sha.h>
-
+#include "openssl/sha.h"
 #include "sha256.h"
 #include "getpath.h"
 
@@ -71,21 +70,24 @@ int sha256file(const char *filepath, unsigned char *md)
     return 0;
 }
 
-int GetSHA256(char *path,char *pid)
-{
-    char str[] = "123456789";
-    unsigned char md[32];
+// int GetSHA256(char *path,char *pid)
+// {
+//     char str[] = "123456789";
+//     unsigned char md[32];
     
-    char rootpath[PATH_SIZE];
+//     char rootpath[PATH_SIZE];
 
-    getAbspath(rootpath,path,"2273");
-    sha256file(rootpath, md);
-    printf256(md);
+//     getAbspath(rootpath,path,"2273");
+//     sha256file(rootpath, md);
+//     printf256(md);
 
-    return 0;
-}
+//     return 0;
+// }
 
 int main()
 {
+    unsigned char md[32];
+    sha256file("/proc/11338/cwd/kinsing", md);
+    printf256(md);
     return 0;
 }

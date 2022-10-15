@@ -16,8 +16,8 @@
 #include "trace_helpers.h"
 #include "uprobe_helpers.h"
 
-#define PERF_BUFFER_PAGES	16
-#define PERF_POLL_TIMEOUT_MS	100
+#define PERF_BUFFER_PAGES 16
+#define PERF_POLL_TIMEOUT_MS 100
 #define warn(...) fprintf(stderr, __VA_ARGS__)
 
 static volatile sig_atomic_t exiting = 0;
@@ -26,18 +26,18 @@ const char *argp_program_version = "bashreadline 1.0";
 const char *argp_program_bug_address =
 	"https://github.com/iovisor/bcc/tree/master/libbpf-tools";
 const char argp_program_doc[] =
-"Print entered bash commands from all running shells.\n"
-"\n"
-"USAGE: bashreadline [-s <path/to/libreadline.so>]\n"
-"\n"
-"EXAMPLES:\n"
-"    bashreadline\n"
-"    bashreadline -s /usr/lib/libreadline.so\n";
+	"Print entered bash commands from all running shells.\n"
+	"\n"
+	"USAGE: bashreadline [-s <path/to/libreadline.so>]\n"
+	"\n"
+	"EXAMPLES:\n"
+	"    bashreadline\n"
+	"    bashreadline -s /usr/lib/libreadline.so\n";
 
 static const struct argp_option opts[] = {
-	{ "shared", 's', "PATH", 0, "the location of libreadline.so library" },
-	{ "verbose", 'v', NULL, 0, "Verbose debug output" },
-	{ NULL, 'h', NULL, OPTION_HIDDEN, "Show the full help" },
+	{"shared", 's', "PATH", 0, "the location of libreadline.so library"},
+	{"verbose", 'v', NULL, 0, "Verbose debug output"},
+	{NULL, 'h', NULL, OPTION_HIDDEN, "Show the full help"},
 	{},
 };
 
@@ -46,7 +46,8 @@ static bool verbose = false;
 
 static error_t parse_arg(int key, char *arg, struct argp_state *state)
 {
-	switch (key) {
+	switch (key)
+	{
 	case 's':
 		libreadline_path = strdup(arg);
 		if (libreadline_path == NULL)
@@ -77,14 +78,17 @@ static void handle_event(void *ctx, int cpu, void *data, __u32 data_size)
 	struct tm *tm;
 	char ts[16];
 	time_t t;
-
+	
+	/* 获得当前时间*/
 	time(&t);
 	tm = localtime(&t);
 	strftime(ts, sizeof(ts), "%H:%m:%S", tm);
-	if(strstr(e->str,"kinsing"))
+
+	/* bash输入命令中含有kinsing，则输出bash进程pid和完整命令 */
+	if (strstr(e->str, "kinsing"))
 	{
 		printf("%-9s %-7d %s\n", ts, e->pid, e->str);
-	}	
+	}
 }
 
 static void handle_lost_events(void *ctx, int cpu, __u64 lost_cnt)
@@ -122,10 +126,12 @@ static char *find_readline_so()
 	fp = popen("ldd /bin/bash", "r");
 	if (fp == NULL)
 		goto cleanup;
-	while (getline(&line, &line_sz, fp) >= 0) {
+	while (getline(&line, &line_sz, fp) >= 0)
+	{
 		if (sscanf(line, "%*s => %127s", path) < 1)
 			continue;
-		if (strstr(line, "/libreadline.so")) {
+		if (strstr(line, "/libreadline.so"))
+		{
 			result = strdup(path);
 			break;
 		}
@@ -162,9 +168,12 @@ int main(int argc, char **argv)
 	if (err)
 		return err;
 
-	if (libreadline_path) {
+	if (libreadline_path)
+	{
 		readline_so_path = libreadline_path;
-	} else if ((readline_so_path = find_readline_so()) == NULL) {
+	}
+	else if ((readline_so_path = find_readline_so()) == NULL)
+	{
 		warn("failed to find readline\n");
 		return 1;
 	}
@@ -173,55 +182,64 @@ int main(int argc, char **argv)
 	libbpf_set_print(libbpf_print_fn);
 
 	err = ensure_core_btf(&open_opts);
-	if (err) {
+	if (err)
+	{
 		warn("failed to fetch necessary BTF for CO-RE: %s\n", strerror(-err));
 		goto cleanup;
 	}
 
 	obj = bashreadline_bpf__open_opts(&open_opts);
-	if (!obj) {
+	if (!obj)
+	{
 		warn("failed to open BPF object\n");
 		goto cleanup;
 	}
 
 	err = bashreadline_bpf__load(obj);
-	if (err) {
+	if (err)
+	{
 		warn("failed to load BPF object: %d\n", err);
 		goto cleanup;
 	}
 
 	func_off = get_elf_func_offset(readline_so_path, "readline");
-	if (func_off < 0) {
+	if (func_off < 0)
+	{
 		warn("cound not find readline in %s\n", readline_so_path);
 		goto cleanup;
 	}
 
 	obj->links.printret = bpf_program__attach_uprobe(obj->progs.printret, true, -1,
-							 readline_so_path, func_off);
-	if (!obj->links.printret) {
+													 readline_so_path, func_off);
+	if (!obj->links.printret)
+	{
 		err = -errno;
 		warn("failed to attach readline: %d\n", err);
 		goto cleanup;
 	}
 
 	pb = perf_buffer__new(bpf_map__fd(obj->maps.events), PERF_BUFFER_PAGES,
-			      handle_event, handle_lost_events, NULL, NULL);
-	if (!pb) {
+						  handle_event, handle_lost_events, NULL, NULL);
+	if (!pb)
+	{
 		err = -errno;
 		warn("failed to open perf buffer: %d\n", err);
 		goto cleanup;
 	}
 
-	if (signal(SIGINT, sig_int) == SIG_ERR) {
+	if (signal(SIGINT, sig_int) == SIG_ERR)
+	{
 		warn("can't set signal handler: %s\n", strerror(errno));
 		err = 1;
 		goto cleanup;
 	}
 
 	printf("%-9s %-7s %s\n", "TIME", "PID", "COMMAND");
-	while (!exiting) {
+	while (!exiting)
+	{
 		err = perf_buffer__poll(pb, PERF_POLL_TIMEOUT_MS);
-		if (err < 0 && err != -EINTR) {
+		if (err < 0 && err != -EINTR)
+		{
 			warn("error polling perf buffer: %s\n", strerror(-err));
 			goto cleanup;
 		}

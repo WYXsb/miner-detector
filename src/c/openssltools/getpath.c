@@ -59,15 +59,15 @@ int getAbspath(char *rootpath,char *path,char *pid)
 }
 
 
-// int main(int argc, char **argv)
-// {
-//     char path[PATH_SIZE] = "getpath.c";
-//     char rootpath[PATH_SIZE];
-//     if(argc < 2)
-//     {
-//         printf("Arguements too few!\n");
-//     }
-//     getAbspath(rootpath,path,argv[1]);
+int main(int argc, char **argv)
+{
+    char path[PATH_SIZE] = "getpath.c";
+    char rootpath[PATH_SIZE];
+    if(argc < 2)
+    {
+        printf("Arguements too few!\n");
+    }
+    getAbspath(rootpath,path,argv[1]);
 
-//     return 0;
-// }
+    return 0;
+}

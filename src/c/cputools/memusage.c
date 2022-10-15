@@ -10,41 +10,6 @@
 
 static const unsigned long ERROR = -1ul;
 
-/**
- * @function: 将传入的字符串十进制整数转化成unsigned long类型的整数
- * @return: 转化后的unsigned long类型整数
- * @param : char *buf 要转化的字符串
- * 
- **/
-unsigned long atolu(char *buf)
-{
-    int buflen = strlen(buf);
-    unsigned long sum = 0;
-    /*从左到右扫描字符数组*/
-    for (int i = 0; i < buflen; i++)
-    {
-        if (isdigit(buf[i]))
-        {
-            /* 检查最终返回的整数是否溢出*/
-            if (sum > 10 * sum)
-            {
-                printf("Error in Function atolu(): This number is over the range of unsigned long \n");
-                return(-1);
-            }
-            else
-            {
-                /*从左到右按十进制读入整数*/
-                sum = sum * 10 + buf[i] - 48;
-            }
-        }
-        else
-        {
-            /* 遇到第一个非数字字符就结束读入*/
-            break;
-        }
-    }
-    return sum;
-}
 
 /**
   * @function: 得到字符数组中第一次出现数字的数组下标
