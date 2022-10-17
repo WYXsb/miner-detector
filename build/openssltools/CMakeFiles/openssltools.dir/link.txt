@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -lssl -lcrypto -shared -Wl,-soname,libopenssltools.so -o libopenssltools.so CMakeFiles/openssltools.dir/sha256test.c.o 

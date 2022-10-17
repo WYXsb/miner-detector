@@ -4,8 +4,7 @@
 #include <sys/stat.h>
 #include <string.h>
 
-#define PATH_SIZE 64
-#define MAX_STRLEN 128
+#include "getpath.h"
 
 int isaDir(char *buff)
 {
@@ -19,6 +18,35 @@ int isaDir(char *buff)
     else{
         return 0;
     }
+}
+
+int getRootPath(char *rootpath,char *path,char *pid)
+{
+    char temp[MAX_STRLEN];
+    int pathlen = strlen(path);
+    if(pathlen == 0)
+    {
+        printf("Error in function getRootPath: path str is null \n");
+        return -1;
+    }
+
+    if(path[0] == '/')
+    {
+        sprintf(rootpath,"/proc/%s/root%s",pid,path);
+    }
+    else if (path[0] == '.' && path[1] == '/')
+    {
+        /* code */
+        for(int i = 0; i < pathlen; i++)
+        {
+            temp[i] = path[i+1];
+        }
+        sprintf(rootpath,"/proc/%s/cwd%s",pid,temp);
+    }
+    else{
+        sprintf(rootpath,"/proc/%s/cwd/%s",pid,path);
+    }
+    return 0;
 }
 
 int getAbspath(char *rootpath,char *path,char *pid)
@@ -59,15 +87,18 @@ int getAbspath(char *rootpath,char *path,char *pid)
 }
 
 
-int main(int argc, char **argv)
-{
-    char path[PATH_SIZE] = "getpath.c";
-    char rootpath[PATH_SIZE];
-    if(argc < 2)
-    {
-        printf("Arguements too few!\n");
-    }
-    getAbspath(rootpath,path,argv[1]);
-
-    return 0;
-}
+// int main(int argc, char **argv)
+// {
+//     char path[MAX_STRLEN] = "./getpath.c";
+//     char rootpath[MAX_STRLEN];
+//     FILE *fp;
+//     if(argc < 2)
+//     {
+//         printf("Arguements too few!\n");
+//     }
+//     //getAbspath(rootpath,path,argv[1]);
+//     getRootPath(rootpath,path,argv[1]);
+//     printf("%s\n",rootpath);
+//     fp = fopen(rootpath,"r");
+//     return 0;
+// }

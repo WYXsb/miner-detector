@@ -53,25 +53,25 @@ int c_db_select(MYSQL *mysql,char *sql)
     return 0;
 }
 
-int main()
-{
-    MYSQL mysql;
-    char buf[MAX] = "select ";
-    if (mysql_init(&mysql) == NULL)
-    {
-        printf("%s", mysql_error(&mysql));
-        return -1;
-    }
+// int main()
+// {
+//     MYSQL mysql;
+//     char buf[MAX] = "select ";
+//     if (mysql_init(&mysql) == NULL)
+//     {
+//         printf("%s", mysql_error(&mysql));
+//         return -1;
+//     }
 
-    if(!mysql_real_connect(&mysql,
-	C_DB_SERVER_IP, C_DB_USERNAME, 
-    C_DB_PASSWORD, C_DB_DEFAULT_DB, 
-    C_DB_SERVER_PORT,NULL, 0))
-    {
-        printf("mysql_real_connect : %s\n",mysql_error(&mysql));
-        return -2;
-    } 
-    printf("ok\n");
-    return 0;
+//     if(!mysql_real_connect(&mysql,
+// 	C_DB_SERVER_IP, C_DB_USERNAME, 
+//     C_DB_PASSWORD, C_DB_DEFAULT_DB, 
+//     C_DB_SERVER_PORT,NULL, 0))
+//     {
+//         printf("mysql_real_connect : %s\n",mysql_error(&mysql));
+//         return -2;
+//     } 
+//     printf("ok\n");
+//     return 0;
 
-}
+// }

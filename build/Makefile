@@ -233,6 +233,19 @@ cputools/fast:
 	$(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/build
 .PHONY : cputools/fast
 
+#=============================================================================
+# Target rules for targets named openssltools
+
+# Build rule for target.
+openssltools: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools
+.PHONY : openssltools
+
+# fast build rule for target.
+openssltools/fast:
+	$(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/build
+.PHONY : openssltools/fast
+
 bashreadline.o: bashreadline.c.o
 .PHONY : bashreadline.o
 
@@ -370,6 +383,7 @@ help:
 	@echo "... fentry"
 	@echo "... hello"
 	@echo "... kprobe"
+	@echo "... openssltools"
 	@echo "... bashreadline.o"
 	@echo "... bashreadline.i"
 	@echo "... bashreadline.s"

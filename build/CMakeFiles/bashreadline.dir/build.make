@@ -102,6 +102,9 @@ bashreadline: CMakeFiles/bashreadline.dir/bashreadline.c.o
 bashreadline: CMakeFiles/bashreadline.dir/build.make
 bashreadline: bpftools/libbpftool.a
 bashreadline: cputools/libcputools.a
+bashreadline: openssltools/libopenssltools.so
+bashreadline: /usr/lib/x86_64-linux-gnu/libssl.so
+bashreadline: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bashreadline: libbpf/libbpf.a
 bashreadline: CMakeFiles/bashreadline.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable bashreadline"

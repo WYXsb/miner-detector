@@ -129,4 +129,5 @@ CMakeFiles/bootstrap.dir/bootstrap.c.o: \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/wyx/miner-detector/src/c/cputools/cpuusage.h \
- /home/wyx/miner-detector/src/c/cputools/memusage.h
+ /home/wyx/miner-detector/src/c/cputools/memusage.h \
+ /home/wyx/miner-detector/src/c/openssltools/sha256.h

@@ -13,3 +13,6 @@
 /home/wyx/miner-detector/build/cputools/CMakeFiles/cputools.dir
 /home/wyx/miner-detector/build/cputools/CMakeFiles/edit_cache.dir
 /home/wyx/miner-detector/build/cputools/CMakeFiles/rebuild_cache.dir
+/home/wyx/miner-detector/build/openssltools/CMakeFiles/openssltools.dir
+/home/wyx/miner-detector/build/openssltools/CMakeFiles/edit_cache.dir
+/home/wyx/miner-detector/build/openssltools/CMakeFiles/rebuild_cache.dir

@@ -4,3 +4,5 @@
 int isaDir(char *buff);
 
 int getAbspath(char *rootpath,char *path,char *pid);
+
+int getRootPath(char *rootpath,char *path,char *pid);

@@ -35,14 +35,15 @@ set(BPFOBJECT_BPFTOOL_EXE ${CMAKE_CURRENT_SOURCE_DIR}/../../tools/bpftool)
 set(BPFOBJECT_VMLINUX_H ${CMAKE_CURRENT_SOURCE_DIR}/../../vmlinux/vmlinux.h)
 set(LIBBPF_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/libbpf)
 set(LIBBPF_LIBRARIES ${CMAKE_CURRENT_BINARY_DIR}/libbpf/libbpf.a)
+
 find_package(BpfObject REQUIRED)
-
-
 
 add_subdirectory(bpftools)
 add_subdirectory(cputools)
+add_subdirectory(openssltools)
 include_directories(bpftools)
 include_directories(cputools)
+include_directories(openssltools)
 
 # Create an executable for each application
 file(GLOB apps *.bpf.c)
@@ -54,5 +55,5 @@ foreach(app ${apps})
   add_dependencies(${app_stem}_skel libbpf-build)
 
   add_executable(${app_stem} ${app_stem}.c)
-  target_link_libraries(${app_stem} ${app_stem}_skel bpftool cputools)
+  target_link_libraries(${app_stem} ${app_stem}_skel bpftool cputools openssltools /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so)
 endforeach()

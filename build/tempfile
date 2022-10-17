@@ -1,0 +1,28 @@
+/usr/bin/cmake -S/home/wyx/miner-detector/src/c -B/home/wyx/miner-detector/build --check-build-system CMakeFiles/Makefile.cmake 0
+make -s -f CMakeFiles/Makefile2 bootstrap
+/usr/bin/cmake -S/home/wyx/miner-detector/src/c -B/home/wyx/miner-detector/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 19
+make -s -f CMakeFiles/Makefile2 CMakeFiles/bootstrap.dir/all
+make -s -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/depend
+cd /home/wyx/miner-detector/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c/openssltools /home/wyx/miner-detector/build /home/wyx/miner-detector/build/openssltools /home/wyx/miner-detector/build/openssltools/CMakeFiles/openssltools.dir/DependInfo.cmake --color=
+make -s -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=42,43 "Built target openssltools"
+make -s -f CMakeFiles/libbpf-build.dir/build.make CMakeFiles/libbpf-build.dir/depend
+cd /home/wyx/miner-detector/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/libbpf-build.dir/DependInfo.cmake --color=
+make -s -f CMakeFiles/libbpf-build.dir/build.make CMakeFiles/libbpf-build.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=36,37,38,39,40,41 "Built target libbpf-build"
+make -s -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/depend
+cd /home/wyx/miner-detector/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c/bpftools /home/wyx/miner-detector/build /home/wyx/miner-detector/build/bpftools /home/wyx/miner-detector/build/bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake --color=
+make -s -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=9,10,11,12 "Built target bpftool"
+make -s -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/depend
+cd /home/wyx/miner-detector/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c/cputools /home/wyx/miner-detector/build /home/wyx/miner-detector/build/cputools /home/wyx/miner-detector/build/cputools/CMakeFiles/cputools.dir/DependInfo.cmake --color=
+make -s -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=13,14,15 "Built target cputools"
+make -s -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/depend
+cd /home/wyx/miner-detector/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/bootstrap.dir/DependInfo.cmake --color=
+make -s -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/build
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=8 "Linking C executable bootstrap"
+/usr/bin/cmake -E cmake_link_script CMakeFiles/bootstrap.dir/link.txt --verbose=
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=5,6,7,8 "Built target bootstrap"
+/usr/bin/cmake -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0

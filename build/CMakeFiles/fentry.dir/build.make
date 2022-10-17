@@ -102,6 +102,9 @@ fentry: CMakeFiles/fentry.dir/fentry.c.o
 fentry: CMakeFiles/fentry.dir/build.make
 fentry: bpftools/libbpftool.a
 fentry: cputools/libcputools.a
+fentry: openssltools/libopenssltools.so
+fentry: /usr/lib/x86_64-linux-gnu/libssl.so
+fentry: /usr/lib/x86_64-linux-gnu/libcrypto.so
 fentry: libbpf/libbpf.a
 fentry: CMakeFiles/fentry.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable fentry"

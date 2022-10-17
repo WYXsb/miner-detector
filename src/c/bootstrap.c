@@ -11,9 +11,10 @@
 #include <bpf/libbpf.h>
 #include "bootstrap.h"
 #include "bootstrap.skel.h"
+
 #include "cpuusage.h"
 #include "memusage.h"
-
+#include "sha256.h"
 
 #define MAX_PROC_PIDNS 64
 
@@ -104,6 +105,34 @@ void read_pidns(void)
 	return ;
 }
 
+int getRootPath(char *rootpath,const char *path,int pid)
+{
+    char temp[MAX_FILENAME_LEN];
+    int pathlen = strlen(path);
+    if(pathlen == 0)
+    {
+        printf("Error in function getRootPath: path str is null \n");
+        return -1;
+    }
+
+    if(path[0] == '/')
+    {
+        sprintf(rootpath,"/proc/%d/root%s",pid,path);
+    }
+    else if (path[0] == '.' && path[1] == '/')
+    {
+        /* code */
+        for(int i = 0; i < pathlen; i++)
+        {
+            temp[i] = path[i+1];
+        }
+        sprintf(rootpath,"/proc/%d/cwd%s",pid,temp);
+    }
+    else{
+        sprintf(rootpath,"/proc/%d/cwd/%s",pid,path);
+    }
+    return 0;
+}
 
 static int handle_event(void *ctx, void *data, size_t data_sz)
 {
@@ -113,6 +142,7 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
 	time_t t;
 	float cpuusage, memusage;
 	char src[32];
+	char rootpath[256];
 
 	time(&t);
 	tm = localtime(&t);
@@ -127,8 +157,11 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
 
 	if (e->type == OPEN_TYPE)
 	{
+		getRootPath(rootpath,e->filename,(int)e->pid);
+		GetSHA256(rootpath,(int)e->pid);
 		printf("%-8s %-6s %-16s %-7d %s %lld \n",
-			   ts, "OPEN", e->comm, e->pid, e->filename,e->pid_ns);
+			   ts, "OPEN", e->comm, e->pid, rootpath,e->pid_ns);
+		
 	}
 	else if (e->type == CLOCK_TYPE)
 	{
