@@ -1,0 +1,3 @@
+Successfully started! Please run `sudo cat /sys/kernel/debug/tracing/trace_pipe` to see output of the BPF programs.
+Press Ctrl-C to stop.
+DOCKER_COMMAND 	CONTAINER ID   IMAGE     COMMAND     CREATED        STATUS    PORTS     NAMES         SIZE

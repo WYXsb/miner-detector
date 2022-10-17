@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
 # The main recursive "all" target.
 all: CMakeFiles/libbpf.dir/all
 all: CMakeFiles/bashreadline.dir/all
+all: CMakeFiles/docker_monitor.dir/all
 all: CMakeFiles/fentry.dir/all
 all: CMakeFiles/hello.dir/all
 all: CMakeFiles/kprobe.dir/all
@@ -84,6 +85,7 @@ preinstall: openssltools/preinstall
 clean: CMakeFiles/libbpf.dir/clean
 clean: CMakeFiles/libbpf-build.dir/clean
 clean: CMakeFiles/bashreadline.dir/clean
+clean: CMakeFiles/docker_monitor.dir/clean
 clean: CMakeFiles/fentry.dir/clean
 clean: CMakeFiles/hello.dir/clean
 clean: CMakeFiles/kprobe.dir/clean
@@ -145,7 +147,7 @@ openssltools/clean: openssltools/CMakeFiles/openssltools.dir/clean
 CMakeFiles/libbpf.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf.dir/build.make CMakeFiles/libbpf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf.dir/build.make CMakeFiles/libbpf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31 "Built target libbpf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=28,29,30,31,32,33,34,35 "Built target libbpf"
 .PHONY : CMakeFiles/libbpf.dir/all
 
 # Build rule for subdir invocation for target.
@@ -171,7 +173,7 @@ CMakeFiles/libbpf.dir/clean:
 CMakeFiles/libbpf-build.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf-build.dir/build.make CMakeFiles/libbpf-build.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libbpf-build.dir/build.make CMakeFiles/libbpf-build.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=32,33,34,35,36,37 "Built target libbpf-build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=36,37,38,39,40,41 "Built target libbpf-build"
 .PHONY : CMakeFiles/libbpf-build.dir/all
 
 # Build rule for subdir invocation for target.
@@ -220,6 +222,35 @@ CMakeFiles/bashreadline.dir/clean:
 .PHONY : CMakeFiles/bashreadline.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/docker_monitor.dir
+
+# All Build rule for target.
+CMakeFiles/docker_monitor.dir/all: CMakeFiles/libbpf-build.dir/all
+CMakeFiles/docker_monitor.dir/all: bpftools/CMakeFiles/bpftool.dir/all
+CMakeFiles/docker_monitor.dir/all: cputools/CMakeFiles/cputools.dir/all
+CMakeFiles/docker_monitor.dir/all: openssltools/CMakeFiles/openssltools.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docker_monitor.dir/build.make CMakeFiles/docker_monitor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docker_monitor.dir/build.make CMakeFiles/docker_monitor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=12,13,14,15 "Built target docker_monitor"
+.PHONY : CMakeFiles/docker_monitor.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/docker_monitor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 20
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/docker_monitor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
+.PHONY : CMakeFiles/docker_monitor.dir/rule
+
+# Convenience name for target.
+docker_monitor: CMakeFiles/docker_monitor.dir/rule
+.PHONY : docker_monitor
+
+# clean rule for target.
+CMakeFiles/docker_monitor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docker_monitor.dir/build.make CMakeFiles/docker_monitor.dir/clean
+.PHONY : CMakeFiles/docker_monitor.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/fentry.dir
 
 # All Build rule for target.
@@ -229,7 +260,7 @@ CMakeFiles/fentry.dir/all: cputools/CMakeFiles/cputools.dir/all
 CMakeFiles/fentry.dir/all: openssltools/CMakeFiles/openssltools.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fentry.dir/build.make CMakeFiles/fentry.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fentry.dir/build.make CMakeFiles/fentry.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=12,13,14,15 "Built target fentry"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=16,17,18,19 "Built target fentry"
 .PHONY : CMakeFiles/fentry.dir/all
 
 # Build rule for subdir invocation for target.
@@ -258,7 +289,7 @@ CMakeFiles/hello.dir/all: cputools/CMakeFiles/cputools.dir/all
 CMakeFiles/hello.dir/all: openssltools/CMakeFiles/openssltools.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=16,17,18,19 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=20,21,22,23 "Built target hello"
 .PHONY : CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
@@ -287,7 +318,7 @@ CMakeFiles/kprobe.dir/all: cputools/CMakeFiles/cputools.dir/all
 CMakeFiles/kprobe.dir/all: openssltools/CMakeFiles/openssltools.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=20,21,22,23 "Built target kprobe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=24,25,26,27 "Built target kprobe"
 .PHONY : CMakeFiles/kprobe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -316,7 +347,7 @@ CMakeFiles/minerdetect.dir/all: cputools/CMakeFiles/cputools.dir/all
 CMakeFiles/minerdetect.dir/all: openssltools/CMakeFiles/openssltools.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minerdetect.dir/build.make CMakeFiles/minerdetect.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minerdetect.dir/build.make CMakeFiles/minerdetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=38,39,40,41 "Built target minerdetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=42,43,44,45 "Built target minerdetect"
 .PHONY : CMakeFiles/minerdetect.dir/all
 
 # Build rule for subdir invocation for target.
@@ -394,7 +425,7 @@ cputools/CMakeFiles/cputools.dir/clean:
 openssltools/CMakeFiles/openssltools.dir/all:
 	$(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/depend
 	$(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=42,43,44 "Built target openssltools"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=46,47,48 "Built target openssltools"
 .PHONY : openssltools/CMakeFiles/openssltools.dir/all
 
 # Build rule for subdir invocation for target.

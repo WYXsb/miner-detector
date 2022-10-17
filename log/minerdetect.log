@@ -1,0 +1,40 @@
+
+
+fn-[read_pidns] buf : pid:[4026531836]  result: 16 
+fn-[read_pidns] host_pidns: 4026531836 
+ 
+TIME     EVENT  COMM             PID     CPUUSAGE    MEMUSAGE    HOSTIP           PID_NS    
+22:12:18 CONN   kinsing          18586                           185.154.53.140   4026532309
+22:12:18 OPEN   kinsing          18586                                            4026532309 
+22:12:20 CONN   kinsing          18586                           185.154.53.140   4026532309
+22:12:41 CONN   kinsing          18586                           185.154.53.140   4026532309
+22:12:48 CONN   kinsing          18586                           185.154.53.140   4026532309
+22:13:01 CONN   kinsing          18586                           185.154.53.140   4026532309
+22:13:18 CONN   kinsing          18586                           185.154.53.140   4026532309
+22:13:18 CONN   kinsing          18586                           185.154.53.140   4026532309
+22:14:23 CONN   kdevtmpfsi       18886                           185.156.179.225  4026532309
+22:14:32 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:33 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:33 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:35 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:35 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:35 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:35 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:35 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:35 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:37 CLOCK  kdevtmpfsi       18886   800.000000%  59.802814%
+22:14:37 CLOCK  kdevtmpfsi       18886   266.666656%  59.802814%
+22:14:37 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:38 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:38 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:39 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:39 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:39 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:40 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:40 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:41 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:41 CLOCK  kdevtmpfsi       18886   800.000000%  59.802814%
+22:14:41 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:41 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:42 CLOCK  kdevtmpfsi       18886   400.000000%  59.802814%
+22:14:42 CLOCK  kdevtmpfsi       18886   600.000000%  59.802814%

@@ -1,0 +1,3574 @@
+tracepoint:syscalls:sys_enter_accept
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_accept4
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_access
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_acct
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_add_key
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_adjtimex
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_alarm
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_arch_prctl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_bind
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_bpf
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_brk
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_capget
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_capset
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_chdir
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_chmod
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_chown
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_chroot
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_clock_adjtime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_clock_getres
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_clock_gettime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_clock_nanosleep
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_clock_settime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_clone
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_clone3
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_close
+{
+	if(@states[pid]==205)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==198)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==191)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==184)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==178)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==171)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==159)
+	{
+		time("%H:%M:%S  ");printf("detect this is docker images!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==152)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==146)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==139)
+	{
+		time("%H:%M:%S  ");printf("detected this is docker ps(it alse detects docker images!)!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==127)
+	{
+		@states[pid]=128;
+	}
+	else if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==122)
+	{
+		time("%H:%M:%S  ");printf("detect this is docker run ubuntu!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==113)
+	{
+		@states[pid]=114;
+	}
+	else if(@states[pid]==104)
+	{
+		@states[pid]=105;
+	}
+	else if(@states[pid]==95)
+	{
+		@states[pid]=96;
+	}
+	else if(@states[pid]==86)
+	{
+		@states[pid]=87;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=78;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==69)
+	{
+		time("%H:%M:%S  ");printf("detect this is docker save ubuntu!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==63)
+	{
+		@states[pid]=64;
+	}
+	else if(@states[pid]==57)
+	{
+		@states[pid]=58;
+	}
+	else if(@states[pid]==52)
+	{
+		@states[pid]=53;
+	}
+	else if(@states[pid]==46)
+	{
+		@states[pid]=47;
+	}
+	else if(@states[pid]==41)
+	{
+		@states[pid]=42;
+	}
+	else if(@states[pid]==35)
+	{
+		@states[pid]=36;
+	}
+	else if(@states[pid]==29)
+	{
+		@states[pid]=30;
+	}
+	else if(@states[pid]==23)
+	{
+		@states[pid]=24;
+	}
+	else if(@states[pid]==17)
+	{
+		@states[pid]=18;
+	}
+	else if(@states[pid]==14)
+	{
+		time("%H:%M:%S  ");printf("detect this is docker rmi -f centos!\n");
+		@states[pid]=0;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=2;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_close_range
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_connect
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_copy_file_range
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_creat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_delete_module
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_dup
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_dup2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_dup3
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_epoll_create
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_epoll_create1
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_epoll_ctl
+{
+	if(@states[pid]==201)
+	{
+		@states[pid]=202;
+	}
+	else if(@states[pid]==200)
+	{
+		@states[pid]=201;
+	}
+	else if(@states[pid]==194)
+	{
+		@states[pid]=195;
+	}
+	else if(@states[pid]==193)
+	{
+		@states[pid]=194;
+	}
+	else if(@states[pid]==187)
+	{
+		@states[pid]=188;
+	}
+	else if(@states[pid]==186)
+	{
+		@states[pid]=187;
+	}
+	else if(@states[pid]==180)
+	{
+		@states[pid]=181;
+	}
+	else if(@states[pid]==174)
+	{
+		@states[pid]=175;
+	}
+	else if(@states[pid]==173)
+	{
+		@states[pid]=174;
+	}
+	else if(@states[pid]==167)
+	{
+		@states[pid]=168;
+	}
+	else if(@states[pid]==166)
+	{
+		@states[pid]=167;
+	}
+	else if(@states[pid]==163)
+	{
+		@states[pid]=180;
+	}
+	else if(@states[pid]==155)
+	{
+		@states[pid]=156;
+	}
+	else if(@states[pid]==154)
+	{
+		@states[pid]=155;
+	}
+	else if(@states[pid]==148)
+	{
+		@states[pid]=149;
+	}
+	else if(@states[pid]==142)
+	{
+		@states[pid]=143;
+	}
+	else if(@states[pid]==141)
+	{
+		@states[pid]=142;
+	}
+	else if(@states[pid]==135)
+	{
+		@states[pid]=136;
+	}
+	else if(@states[pid]==134)
+	{
+		@states[pid]=135;
+	}
+	else if(@states[pid]==131)
+	{
+		@states[pid]=148;
+	}
+	else if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=124;
+	}
+	else if(@states[pid]==121)
+	{
+		@states[pid]=122;
+	}
+	else if(@states[pid]==115)
+	{
+		@states[pid]=116;
+	}
+	else if(@states[pid]==112)
+	{
+		@states[pid]=113;
+	}
+	else if(@states[pid]==106)
+	{
+		@states[pid]=107;
+	}
+	else if(@states[pid]==103)
+	{
+		@states[pid]=104;
+	}
+	else if(@states[pid]==97)
+	{
+		@states[pid]=98;
+	}
+	else if(@states[pid]==94)
+	{
+		@states[pid]=95;
+	}
+	else if(@states[pid]==88)
+	{
+		@states[pid]=89;
+	}
+	else if(@states[pid]==85)
+	{
+		@states[pid]=86;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=124;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==66)
+	{
+		@states[pid]=66;
+	}
+	else if(@states[pid]==60)
+	{
+		@states[pid]=60;
+	}
+	else if(@states[pid]==54)
+	{
+		@states[pid]=54;
+	}
+	else if(@states[pid]==49)
+	{
+		@states[pid]=49;
+	}
+	else if(@states[pid]==43)
+	{
+		@states[pid]=43;
+	}
+	else if(@states[pid]==38)
+	{
+		@states[pid]=38;
+	}
+	else if(@states[pid]==32)
+	{
+		@states[pid]=32;
+	}
+	else if(@states[pid]==26)
+	{
+		@states[pid]=26;
+	}
+	else if(@states[pid]==20)
+	{
+		@states[pid]=20;
+	}
+	else if(@states[pid]==14)
+	{
+		@states[pid]=14;
+	}
+	else if(@states[pid]==9)
+	{
+		@states[pid]=9;
+	}
+	else if(@states[pid]==5)
+	{
+		@states[pid]=5;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=80;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=3;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_epoll_pwait
+{
+	if(@states[pid]==164)
+	{
+		@states[pid]=164;
+	}
+	else if(@states[pid]==161)
+	{
+		@states[pid]=161;
+	}
+	else if(@states[pid]==132)
+	{
+		@states[pid]=132;
+	}
+	else if(@states[pid]==130)
+	{
+		@states[pid]=161;
+	}
+	else if(@states[pid]==129)
+	{
+		@states[pid]=129;
+	}
+	else if(@states[pid]==128)
+	{
+		@states[pid]=129;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_epoll_pwait2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_epoll_wait
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_eventfd
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_eventfd2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_execve
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_execveat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_exit
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_exit_group
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_faccessat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_faccessat2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fadvise64
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fallocate
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fanotify_init
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fanotify_mark
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fchdir
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fchmod
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fchmodat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fchown
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fchownat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fcntl
+{
+	if(@states[pid]==117)
+	{
+		@states[pid]=118;
+	}
+	else if(@states[pid]==116)
+	{
+		@states[pid]=117;
+	}
+	else if(@states[pid]==108)
+	{
+		@states[pid]=109;
+	}
+	else if(@states[pid]==107)
+	{
+		@states[pid]=108;
+	}
+	else if(@states[pid]==99)
+	{
+		@states[pid]=100;
+	}
+	else if(@states[pid]==98)
+	{
+		@states[pid]=99;
+	}
+	else if(@states[pid]==90)
+	{
+		@states[pid]=91;
+	}
+	else if(@states[pid]==89)
+	{
+		@states[pid]=90;
+	}
+	else if(@states[pid]==81)
+	{
+		@states[pid]=82;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=81;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_fdatasync
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fgetxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_finit_module
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_flistxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_flock
+{
+	if(@states[pid]==125)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=77;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=4;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=4;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_fork
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fremovexattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fsconfig
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fsetxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fsmount
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fsopen
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fspick
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fstatfs
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_fsync
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ftruncate
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_futex
+{
+	if(@states[pid]==164)
+	{
+		@states[pid]=165;
+	}
+	else if(@states[pid]==161)
+	{
+		@states[pid]=162;
+	}
+	else if(@states[pid]==132)
+	{
+		@states[pid]=133;
+	}
+	else if(@states[pid]==130)
+	{
+		@states[pid]=162;
+	}
+	else if(@states[pid]==129)
+	{
+		@states[pid]=130;
+	}
+	else if(@states[pid]==128)
+	{
+		@states[pid]=130;
+	}
+	else if(@states[pid]==78)
+	{
+		time("%H:%M:%S  ");printf("detect this is docker pull centos!\n");
+		@states[pid]=0;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_futimesat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_get_mempolicy
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_get_robust_list
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getcpu
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getcwd
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getdents
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getdents64
+{
+	if(@states[pid]==124)
+	{
+		@states[pid]=5;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=5;
+	}
+	else if(@states[pid]==14)
+	{
+		@states[pid]=14;
+	}
+	else if(@states[pid]==10)
+	{
+		@states[pid]=11;
+	}
+	else if(@states[pid]==9)
+	{
+		@states[pid]=10;
+	}
+	else if(@states[pid]==5)
+	{
+		@states[pid]=5;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=5;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=5;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_getegid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_geteuid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getgid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getgroups
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getitimer
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getpeername
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getpgid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getpgrp
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getpid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getppid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getpriority
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getrandom
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getresgid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getresuid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getrlimit
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getrusage
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getsid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getsockname
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getsockopt
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_gettid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_gettimeofday
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getuid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_getxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_init_module
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_inotify_add_watch
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_inotify_init
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_inotify_init1
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_inotify_rm_watch
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_cancel
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_destroy
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_getevents
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_pgetevents
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_setup
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_submit
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_uring_enter
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_uring_register
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_io_uring_setup
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ioctl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ioperm
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_iopl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ioprio_get
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ioprio_set
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_kcmp
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_kexec_file_load
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_kexec_load
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_keyctl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_kill
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_landlock_add_rule
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_landlock_create_ruleset
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_landlock_restrict_self
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_lchown
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_lgetxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_link
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_linkat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_listen
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_listxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_llistxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_lremovexattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_lseek
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_lsetxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_madvise
+{
+	if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=75;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=2;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_mbind
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_membarrier
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_memfd_create
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_memfd_secret
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_migrate_pages
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mincore
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mkdir
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mkdirat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mknod
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mknodat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mlock
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mlock2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mlockall
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mmap
+{
+	if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=74;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=2;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_modify_ldt
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mount
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mount_setattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_move_mount
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_move_pages
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mprotect
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mq_getsetattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mq_notify
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mq_open
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mq_timedreceive
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mq_timedsend
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mq_unlink
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_mremap
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_msgctl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_msgget
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_msgrcv
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_msgsnd
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_msync
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_munlock
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_munlockall
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_munmap
+{
+	if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=76;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=2;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_name_to_handle_at
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_nanosleep
+{
+	if(@states[pid]==0)
+	{
+		@states[pid]=0;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_newfstat
+{
+	if(@states[pid]==202)
+	{
+		@states[pid]=203;
+	}
+	else if(@states[pid]==195)
+	{
+		@states[pid]=196;
+	}
+	else if(@states[pid]==188)
+	{
+		@states[pid]=189;
+	}
+	else if(@states[pid]==181)
+	{
+		@states[pid]=182;
+	}
+	else if(@states[pid]==175)
+	{
+		@states[pid]=176;
+	}
+	else if(@states[pid]==168)
+	{
+		@states[pid]=169;
+	}
+	else if(@states[pid]==156)
+	{
+		@states[pid]=157;
+	}
+	else if(@states[pid]==149)
+	{
+		@states[pid]=150;
+	}
+	else if(@states[pid]==143)
+	{
+		@states[pid]=144;
+	}
+	else if(@states[pid]==136)
+	{
+		@states[pid]=137;
+	}
+	else if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==118)
+	{
+		@states[pid]=119;
+	}
+	else if(@states[pid]==109)
+	{
+		@states[pid]=110;
+	}
+	else if(@states[pid]==100)
+	{
+		@states[pid]=101;
+	}
+	else if(@states[pid]==91)
+	{
+		@states[pid]=92;
+	}
+	else if(@states[pid]==82)
+	{
+		@states[pid]=83;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=125;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=71;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=73;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=71;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=2;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_newfstatat
+{
+	if(@states[pid]==12)
+	{
+		@states[pid]=13;
+	}
+	else if(@states[pid]==7)
+	{
+		@states[pid]=8;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_newlstat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_newstat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_newuname
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_open
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_open_by_handle_at
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_open_tree
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_openat
+{
+	if(@states[pid]==165)
+	{
+		@states[pid]=173;
+	}
+	else if(@states[pid]==164)
+	{
+		@states[pid]=166;
+	}
+	else if(@states[pid]==162)
+	{
+		@states[pid]=186;
+	}
+	else if(@states[pid]==161)
+	{
+		@states[pid]=193;
+	}
+	else if(@states[pid]==153)
+	{
+		@states[pid]=154;
+	}
+	else if(@states[pid]==133)
+	{
+		@states[pid]=141;
+	}
+	else if(@states[pid]==132)
+	{
+		@states[pid]=134;
+	}
+	else if(@states[pid]==130)
+	{
+		@states[pid]=163;
+	}
+	else if(@states[pid]==129)
+	{
+		@states[pid]=200;
+	}
+	else if(@states[pid]==128)
+	{
+		@states[pid]=131;
+	}
+	else if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==114)
+	{
+		@states[pid]=115;
+	}
+	else if(@states[pid]==105)
+	{
+		@states[pid]=106;
+	}
+	else if(@states[pid]==96)
+	{
+		@states[pid]=97;
+	}
+	else if(@states[pid]==87)
+	{
+		@states[pid]=88;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==65)
+	{
+		@states[pid]=66;
+	}
+	else if(@states[pid]==59)
+	{
+		@states[pid]=60;
+	}
+	else if(@states[pid]==53)
+	{
+		@states[pid]=54;
+	}
+	else if(@states[pid]==48)
+	{
+		@states[pid]=49;
+	}
+	else if(@states[pid]==42)
+	{
+		@states[pid]=43;
+	}
+	else if(@states[pid]==37)
+	{
+		@states[pid]=38;
+	}
+	else if(@states[pid]==31)
+	{
+		@states[pid]=32;
+	}
+	else if(@states[pid]==25)
+	{
+		@states[pid]=26;
+	}
+	else if(@states[pid]==19)
+	{
+		@states[pid]=20;
+	}
+	else if(@states[pid]==13)
+	{
+		@states[pid]=14;
+	}
+	else if(@states[pid]==8)
+	{
+		@states[pid]=9;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==0)
+	{
+		@states[pid]=1;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_openat2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pause
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_perf_event_open
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_personality
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pidfd_getfd
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pidfd_open
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pidfd_send_signal
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pipe
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pipe2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pivot_root
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pkey_alloc
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pkey_free
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pkey_mprotect
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_poll
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ppoll
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_prctl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pread64
+{
+	if(@states[pid]==125)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==78)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==77)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==76)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==75)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==74)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==73)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==72)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==71)
+	{
+		@states[pid]=72;
+	}
+	else if(@states[pid]==4)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==2)
+	{
+		@states[pid]=2;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=2;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_preadv
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_preadv2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_prlimit64
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_process_madvise
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_process_mrelease
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_process_vm_readv
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_process_vm_writev
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pselect6
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ptrace
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pwrite64
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pwritev
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_pwritev2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_quotactl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_quotactl_fd
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_read
+{
+	if(@states[pid]==204)
+	{
+		@states[pid]=205;
+	}
+	else if(@states[pid]==203)
+	{
+		@states[pid]=204;
+	}
+	else if(@states[pid]==197)
+	{
+		@states[pid]=198;
+	}
+	else if(@states[pid]==196)
+	{
+		@states[pid]=197;
+	}
+	else if(@states[pid]==190)
+	{
+		@states[pid]=191;
+	}
+	else if(@states[pid]==189)
+	{
+		@states[pid]=190;
+	}
+	else if(@states[pid]==183)
+	{
+		@states[pid]=184;
+	}
+	else if(@states[pid]==182)
+	{
+		@states[pid]=183;
+	}
+	else if(@states[pid]==177)
+	{
+		@states[pid]=178;
+	}
+	else if(@states[pid]==176)
+	{
+		@states[pid]=177;
+	}
+	else if(@states[pid]==170)
+	{
+		@states[pid]=171;
+	}
+	else if(@states[pid]==169)
+	{
+		@states[pid]=170;
+	}
+	else if(@states[pid]==161)
+	{
+		@states[pid]=164;
+	}
+	else if(@states[pid]==158)
+	{
+		@states[pid]=159;
+	}
+	else if(@states[pid]==157)
+	{
+		@states[pid]=158;
+	}
+	else if(@states[pid]==151)
+	{
+		@states[pid]=152;
+	}
+	else if(@states[pid]==150)
+	{
+		@states[pid]=151;
+	}
+	else if(@states[pid]==145)
+	{
+		@states[pid]=146;
+	}
+	else if(@states[pid]==144)
+	{
+		@states[pid]=145;
+	}
+	else if(@states[pid]==138)
+	{
+		@states[pid]=139;
+	}
+	else if(@states[pid]==137)
+	{
+		@states[pid]=138;
+	}
+	else if(@states[pid]==130)
+	{
+		@states[pid]=164;
+	}
+	else if(@states[pid]==129)
+	{
+		@states[pid]=132;
+	}
+	else if(@states[pid]==128)
+	{
+		@states[pid]=132;
+	}
+	else if(@states[pid]==126)
+	{
+		@states[pid]=127;
+	}
+	else if(@states[pid]==125)
+	{
+		@states[pid]=126;
+	}
+	else if(@states[pid]==124)
+	{
+		@states[pid]=6;
+	}
+	else if(@states[pid]==120)
+	{
+		@states[pid]=121;
+	}
+	else if(@states[pid]==119)
+	{
+		@states[pid]=120;
+	}
+	else if(@states[pid]==111)
+	{
+		@states[pid]=112;
+	}
+	else if(@states[pid]==110)
+	{
+		@states[pid]=111;
+	}
+	else if(@states[pid]==102)
+	{
+		@states[pid]=103;
+	}
+	else if(@states[pid]==101)
+	{
+		@states[pid]=102;
+	}
+	else if(@states[pid]==93)
+	{
+		@states[pid]=94;
+	}
+	else if(@states[pid]==92)
+	{
+		@states[pid]=93;
+	}
+	else if(@states[pid]==84)
+	{
+		@states[pid]=85;
+	}
+	else if(@states[pid]==83)
+	{
+		@states[pid]=84;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=6;
+	}
+	else if(@states[pid]==68)
+	{
+		@states[pid]=69;
+	}
+	else if(@states[pid]==66)
+	{
+		@states[pid]=67;
+	}
+	else if(@states[pid]==62)
+	{
+		@states[pid]=63;
+	}
+	else if(@states[pid]==60)
+	{
+		@states[pid]=61;
+	}
+	else if(@states[pid]==56)
+	{
+		@states[pid]=57;
+	}
+	else if(@states[pid]==54)
+	{
+		@states[pid]=55;
+	}
+	else if(@states[pid]==51)
+	{
+		@states[pid]=52;
+	}
+	else if(@states[pid]==49)
+	{
+		@states[pid]=50;
+	}
+	else if(@states[pid]==45)
+	{
+		@states[pid]=46;
+	}
+	else if(@states[pid]==43)
+	{
+		@states[pid]=44;
+	}
+	else if(@states[pid]==40)
+	{
+		@states[pid]=41;
+	}
+	else if(@states[pid]==38)
+	{
+		@states[pid]=39;
+	}
+	else if(@states[pid]==34)
+	{
+		@states[pid]=35;
+	}
+	else if(@states[pid]==32)
+	{
+		@states[pid]=33;
+	}
+	else if(@states[pid]==28)
+	{
+		@states[pid]=29;
+	}
+	else if(@states[pid]==26)
+	{
+		@states[pid]=27;
+	}
+	else if(@states[pid]==22)
+	{
+		@states[pid]=23;
+	}
+	else if(@states[pid]==20)
+	{
+		@states[pid]=21;
+	}
+	else if(@states[pid]==16)
+	{
+		@states[pid]=17;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=6;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=6;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_readahead
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_readlink
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_readlinkat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_readv
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_reboot
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_recvfrom
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_recvmmsg
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_recvmsg
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_remap_file_pages
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_removexattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rename
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_renameat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_renameat2
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_request_key
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_restart_syscall
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rmdir
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rseq
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_sigaction
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_sigpending
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_sigprocmask
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_sigqueueinfo
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_sigreturn
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_sigsuspend
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_sigtimedwait
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_rt_tgsigqueueinfo
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_get_priority_max
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_get_priority_min
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_getaffinity
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_getattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_getparam
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_getscheduler
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_rr_get_interval
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_setaffinity
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_setattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_setparam
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_setscheduler
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sched_yield
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_seccomp
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_select
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_semctl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_semget
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_semop
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_semtimedop
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sendfile64
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sendmmsg
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sendmsg
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sendto
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_set_mempolicy
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_set_robust_list
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_set_tid_address
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setdomainname
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setfsgid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setfsuid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setgid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setgroups
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sethostname
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setitimer
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setns
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setpgid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setpriority
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setregid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setresgid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setresuid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setreuid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setrlimit
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setsid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setsockopt
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_settimeofday
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setuid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_setxattr
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_shmat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_shmctl
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_shmdt
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_shmget
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_shutdown
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sigaltstack
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_signalfd
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_signalfd4
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_socket
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_socketpair
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_splice
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_statfs
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_statx
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_swapoff
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_swapon
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_symlink
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_symlinkat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sync
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sync_file_range
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_syncfs
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sysfs
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_sysinfo
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_syslog
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_tee
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_tgkill
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_time
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timer_create
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timer_delete
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timer_getoverrun
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timer_gettime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timer_settime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timerfd_create
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timerfd_gettime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_timerfd_settime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_times
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_tkill
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_truncate
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_umask
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_umount
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_unlink
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_unlinkat
+{
+	if(@states[pid]==124)
+	{
+		@states[pid]=7;
+	}
+	else if(@states[pid]==80)
+	{
+		@states[pid]=7;
+	}
+	else if(@states[pid]==11)
+	{
+		@states[pid]=12;
+	}
+	else if(@states[pid]==5)
+	{
+		@states[pid]=7;
+	}
+	else if(@states[pid]==3)
+	{
+		@states[pid]=7;
+	}
+	else if(@states[pid]==1)
+	{
+		@states[pid]=7;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_unshare
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_userfaultfd
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_ustat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_utime
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_utimensat
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_utimes
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_vfork
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_vhangup
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_vmsplice
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_wait4
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_waitid
+{
+	@states[pid]=0;
+}
+
+tracepoint:syscalls:sys_enter_write
+{
+	if(@states[pid]==67)
+	{
+		@states[pid]=68;
+	}
+	else if(@states[pid]==64)
+	{
+		@states[pid]=65;
+	}
+	else if(@states[pid]==61)
+	{
+		@states[pid]=62;
+	}
+	else if(@states[pid]==58)
+	{
+		@states[pid]=59;
+	}
+	else if(@states[pid]==55)
+	{
+		@states[pid]=56;
+	}
+	else if(@states[pid]==53)
+	{
+		@states[pid]=53;
+	}
+	else if(@states[pid]==50)
+	{
+		@states[pid]=51;
+	}
+	else if(@states[pid]==47)
+	{
+		@states[pid]=48;
+	}
+	else if(@states[pid]==44)
+	{
+		@states[pid]=45;
+	}
+	else if(@states[pid]==42)
+	{
+		@states[pid]=42;
+	}
+	else if(@states[pid]==39)
+	{
+		@states[pid]=40;
+	}
+	else if(@states[pid]==36)
+	{
+		@states[pid]=37;
+	}
+	else if(@states[pid]==33)
+	{
+		@states[pid]=34;
+	}
+	else if(@states[pid]==30)
+	{
+		@states[pid]=31;
+	}
+	else if(@states[pid]==27)
+	{
+		@states[pid]=28;
+	}
+	else if(@states[pid]==24)
+	{
+		@states[pid]=25;
+	}
+	else if(@states[pid]==21)
+	{
+		@states[pid]=22;
+	}
+	else if(@states[pid]==18)
+	{
+		@states[pid]=19;
+	}
+	else if(@states[pid]==6)
+	{
+		@states[pid]=16;
+	}
+	else
+	{
+		@states[pid]=0;
+	}
+}
+
+tracepoint:syscalls:sys_enter_writev
+{
+	@states[pid]=0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

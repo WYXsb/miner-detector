@@ -6,6 +6,8 @@ dc08062c24afe2d308d9f475a82fb388 bashreadline.bpf.o
 0467c95245b6d6218f51996815f1e8d4 bashreadline.skel.h
 dfe610bf200334ec98d221411ad5eaf0 bootstrap.bpf.o
 fb07487b580e84357ab2b976aa7b4c41 bootstrap.skel.h
+1e4da292f1402dfe6f61982fab572709 docker_monitor.bpf.o
+4fc8b0b48be633648075bcdb463fa49c docker_monitor.skel.h
 26ef84c4e6b17ca442ae11b254cd8f61 fentry.bpf.o
 92a937a0de8c36ca7ba674dc9e77d255 fentry.skel.h
 5c5b335fd2482244da7e8ee779a178e8 hello.bpf.o

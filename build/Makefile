@@ -156,6 +156,19 @@ bashreadline/fast:
 .PHONY : bashreadline/fast
 
 #=============================================================================
+# Target rules for targets named docker_monitor
+
+# Build rule for target.
+docker_monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docker_monitor
+.PHONY : docker_monitor
+
+# fast build rule for target.
+docker_monitor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docker_monitor.dir/build.make CMakeFiles/docker_monitor.dir/build
+.PHONY : docker_monitor/fast
+
+#=============================================================================
 # Target rules for targets named fentry
 
 # Build rule for target.
@@ -270,6 +283,30 @@ bashreadline.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashreadline.dir/build.make CMakeFiles/bashreadline.dir/bashreadline.c.s
 .PHONY : bashreadline.c.s
 
+docker_monitor.o: docker_monitor.c.o
+.PHONY : docker_monitor.o
+
+# target to build an object file
+docker_monitor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docker_monitor.dir/build.make CMakeFiles/docker_monitor.dir/docker_monitor.c.o
+.PHONY : docker_monitor.c.o
+
+docker_monitor.i: docker_monitor.c.i
+.PHONY : docker_monitor.i
+
+# target to preprocess a source file
+docker_monitor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docker_monitor.dir/build.make CMakeFiles/docker_monitor.dir/docker_monitor.c.i
+.PHONY : docker_monitor.c.i
+
+docker_monitor.s: docker_monitor.c.s
+.PHONY : docker_monitor.s
+
+# target to generate assembly for a file
+docker_monitor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/docker_monitor.dir/build.make CMakeFiles/docker_monitor.dir/docker_monitor.c.s
+.PHONY : docker_monitor.c.s
+
 fentry.o: fentry.c.o
 .PHONY : fentry.o
 
@@ -379,6 +416,7 @@ help:
 	@echo "... bashreadline"
 	@echo "... bpftool"
 	@echo "... cputools"
+	@echo "... docker_monitor"
 	@echo "... fentry"
 	@echo "... hello"
 	@echo "... kprobe"
@@ -387,6 +425,9 @@ help:
 	@echo "... bashreadline.o"
 	@echo "... bashreadline.i"
 	@echo "... bashreadline.s"
+	@echo "... docker_monitor.o"
+	@echo "... docker_monitor.i"
+	@echo "... docker_monitor.s"
 	@echo "... fentry.o"
 	@echo "... fentry.i"
 	@echo "... fentry.s"

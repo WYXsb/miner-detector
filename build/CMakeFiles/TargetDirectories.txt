@@ -1,6 +1,7 @@
 /home/wyx/miner-detector/build/CMakeFiles/libbpf.dir
 /home/wyx/miner-detector/build/CMakeFiles/libbpf-build.dir
 /home/wyx/miner-detector/build/CMakeFiles/bashreadline.dir
+/home/wyx/miner-detector/build/CMakeFiles/docker_monitor.dir
 /home/wyx/miner-detector/build/CMakeFiles/fentry.dir
 /home/wyx/miner-detector/build/CMakeFiles/hello.dir
 /home/wyx/miner-detector/build/CMakeFiles/kprobe.dir

@@ -60,6 +60,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/libbpf.dir/DependInfo.cmake"
   "CMakeFiles/libbpf-build.dir/DependInfo.cmake"
   "CMakeFiles/bashreadline.dir/DependInfo.cmake"
+  "CMakeFiles/docker_monitor.dir/DependInfo.cmake"
   "CMakeFiles/fentry.dir/DependInfo.cmake"
   "CMakeFiles/hello.dir/DependInfo.cmake"
   "CMakeFiles/kprobe.dir/DependInfo.cmake"
