@@ -9,8 +9,8 @@
 #include <unistd.h>
 #include <sys/resource.h>
 #include <bpf/libbpf.h>
-#include "bootstrap.h"
-#include "bootstrap.skel.h"
+#include "minerdetect.h"
+#include "minerdetect.skel.h"
 
 #include "cpuusage.h"
 #include "memusage.h"
@@ -26,15 +26,15 @@ static struct env
 
 unsigned long host_pidns;
 
-const char *argp_program_version = "bootstrap 0.0";
+const char *argp_program_version = "minerdetect 0.0";
 const char *argp_program_bug_address = "<bpf@vger.kernel.org>";
 const char argp_program_doc[] =
-	"BPF bootstrap demo application.\n"
+	"BPF minerdetect demo application.\n"
 	"\n"
 	"It traces process start and exits and shows associated \n"
 	"information (filename, process duration, PID and PPID, etc).\n"
 	"\n"
-	"USAGE: ./bootstrap [-d <min-duration-ms>] [-v]\n";
+	"USAGE: ./minerdetect [-d <min-duration-ms>] [-v]\n";
 
 static const struct argp_option opts[] = {
 	{"verbose", 'v', NULL, 0, "Verbose debug output"},
@@ -231,7 +231,7 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
 int main(int argc, char **argv)
 {
 	struct ring_buffer *rb = NULL;
-	struct bootstrap_bpf *skel;
+	struct minerdetect_bpf *skel;
 	int err;
 
 	/* Parse command line arguments */
@@ -250,7 +250,7 @@ int main(int argc, char **argv)
 	read_pidns();
 
 	/* Load and verify BPF application */
-	skel = bootstrap_bpf__open();
+	skel = minerdetect_bpf__open();
 	if (!skel)
 	{
 		fprintf(stderr, "Failed to open and load BPF skeleton\n");
@@ -259,7 +259,7 @@ int main(int argc, char **argv)
 	skel->rodata->host_pidns = host_pidns;
 
 	/* Load & verify BPF programs */
-	err = bootstrap_bpf__load(skel);
+	err = minerdetect_bpf__load(skel);
 	if (err)
 	{
 		fprintf(stderr, "Failed to load and verify BPF skeleton\n");
@@ -267,7 +267,7 @@ int main(int argc, char **argv)
 	}
 
 	/* Attach tracepoints */
-	err = bootstrap_bpf__attach(skel);
+	err = minerdetect_bpf__attach(skel);
 	if (err)
 	{
 		fprintf(stderr, "Failed to attach BPF skeleton\n");
@@ -305,7 +305,7 @@ int main(int argc, char **argv)
 cleanup:
 	/* Clean up */
 	ring_buffer__free(rb);
-	bootstrap_bpf__destroy(skel);
+	minerdetect_bpf__destroy(skel);
 
 	return err < 0 ? -err : 0;
 }

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/minerdetect.dir/minerdetect.c.o -o minerdetect  -Wl,-rpath,/home/wyx/miner-detector/build/openssltools bpftools/libbpftool.a cputools/libcputools.a openssltools/libopenssltools.so /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so libbpf/libbpf.a -lelf -lz 

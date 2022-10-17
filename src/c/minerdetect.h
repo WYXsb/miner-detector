@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: (LGPL-2.1 OR BSD-2-Clause) */
 /* Copyright (c) 2020 Facebook */
-#ifndef __BOOTSTRAP_H
-#define __BOOTSTRAP_H
+#ifndef __MINERDETECT_H
+#define __MINERDETECT_H
 
 
 #define SHA256_LEN 32
@@ -35,4 +35,4 @@ struct event {
 	__u32 af;
 };
 
-#endif /* __BOOTSTRAP_H */
+#endif /* __minerdetect_H */

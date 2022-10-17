@@ -4,7 +4,7 @@
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_core_read.h>
-#include "bootstrap.h"
+#include "minerdetect.h"
 
 char LICENSE[] SEC("license") = "Dual BSD/GPL";
 
@@ -113,7 +113,7 @@ int trace_exit_open(struct trace_event_raw_sys_exit* ctx)
 
 	tid = (u32)id;
 	bpf_get_current_comm(comm, sizeof(comm));
-	if(!__commcmp(comm,"bootstrap"))
+	if(!__commcmp(comm,"minerdetect"))
 		return 0;
 	
 	/* reserve sample from BPF ringbuf */
@@ -182,7 +182,7 @@ int tracepoint__syscalls__sys_enter_clock_gettime(struct trace_event_raw_sys_exi
 	} 
 
 	bpf_get_current_comm(comm, sizeof(comm));
-	if(!__commcmp(comm,"bootstrap"))
+	if(!__commcmp(comm,"minerdetect"))
 		return 0;
 	
 	/* reserve sample from BPF ringbuf */

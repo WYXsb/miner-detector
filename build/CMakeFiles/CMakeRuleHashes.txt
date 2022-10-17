@@ -19,3 +19,5 @@ dc59fbb33ca5747bc28b59d617a44d5b libbpf/src/libbpf-stamp/libbpf-configure
 a6995a29e016e5f4eb90f5637102edad libbpf/src/libbpf-stamp/libbpf-mkdir
 e4eb144f6aad4bc9f12ecb08f92671d5 libbpf/src/libbpf-stamp/libbpf-patch
 04db3b037ab9480ecd38381909f0edbb libbpf/src/libbpf-stamp/libbpf-update
+222076be0734af67a45fc749e17d8892 minerdetect.bpf.o
+228cb8989f0a3c9f87e642e52a99914b minerdetect.skel.h

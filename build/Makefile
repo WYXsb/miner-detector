@@ -156,19 +156,6 @@ bashreadline/fast:
 .PHONY : bashreadline/fast
 
 #=============================================================================
-# Target rules for targets named bootstrap
-
-# Build rule for target.
-bootstrap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bootstrap
-.PHONY : bootstrap
-
-# fast build rule for target.
-bootstrap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/build
-.PHONY : bootstrap/fast
-
-#=============================================================================
 # Target rules for targets named fentry
 
 # Build rule for target.
@@ -206,6 +193,19 @@ kprobe: cmake_check_build_system
 kprobe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/build
 .PHONY : kprobe/fast
+
+#=============================================================================
+# Target rules for targets named minerdetect
+
+# Build rule for target.
+minerdetect: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minerdetect
+.PHONY : minerdetect
+
+# fast build rule for target.
+minerdetect/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minerdetect.dir/build.make CMakeFiles/minerdetect.dir/build
+.PHONY : minerdetect/fast
 
 #=============================================================================
 # Target rules for targets named bpftool
@@ -269,30 +269,6 @@ bashreadline.s: bashreadline.c.s
 bashreadline.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashreadline.dir/build.make CMakeFiles/bashreadline.dir/bashreadline.c.s
 .PHONY : bashreadline.c.s
-
-bootstrap.o: bootstrap.c.o
-.PHONY : bootstrap.o
-
-# target to build an object file
-bootstrap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/bootstrap.c.o
-.PHONY : bootstrap.c.o
-
-bootstrap.i: bootstrap.c.i
-.PHONY : bootstrap.i
-
-# target to preprocess a source file
-bootstrap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/bootstrap.c.i
-.PHONY : bootstrap.c.i
-
-bootstrap.s: bootstrap.c.s
-.PHONY : bootstrap.s
-
-# target to generate assembly for a file
-bootstrap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootstrap.dir/build.make CMakeFiles/bootstrap.dir/bootstrap.c.s
-.PHONY : bootstrap.c.s
 
 fentry.o: fentry.c.o
 .PHONY : fentry.o
@@ -366,6 +342,30 @@ kprobe.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kprobe.dir/build.make CMakeFiles/kprobe.dir/kprobe.c.s
 .PHONY : kprobe.c.s
 
+minerdetect.o: minerdetect.c.o
+.PHONY : minerdetect.o
+
+# target to build an object file
+minerdetect.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minerdetect.dir/build.make CMakeFiles/minerdetect.dir/minerdetect.c.o
+.PHONY : minerdetect.c.o
+
+minerdetect.i: minerdetect.c.i
+.PHONY : minerdetect.i
+
+# target to preprocess a source file
+minerdetect.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minerdetect.dir/build.make CMakeFiles/minerdetect.dir/minerdetect.c.i
+.PHONY : minerdetect.c.i
+
+minerdetect.s: minerdetect.c.s
+.PHONY : minerdetect.s
+
+# target to generate assembly for a file
+minerdetect.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minerdetect.dir/build.make CMakeFiles/minerdetect.dir/minerdetect.c.s
+.PHONY : minerdetect.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -377,19 +377,16 @@ help:
 	@echo "... libbpf"
 	@echo "... libbpf-build"
 	@echo "... bashreadline"
-	@echo "... bootstrap"
 	@echo "... bpftool"
 	@echo "... cputools"
 	@echo "... fentry"
 	@echo "... hello"
 	@echo "... kprobe"
+	@echo "... minerdetect"
 	@echo "... openssltools"
 	@echo "... bashreadline.o"
 	@echo "... bashreadline.i"
 	@echo "... bashreadline.s"
-	@echo "... bootstrap.o"
-	@echo "... bootstrap.i"
-	@echo "... bootstrap.s"
 	@echo "... fentry.o"
 	@echo "... fentry.i"
 	@echo "... fentry.s"
@@ -399,6 +396,9 @@ help:
 	@echo "... kprobe.o"
 	@echo "... kprobe.i"
 	@echo "... kprobe.s"
+	@echo "... minerdetect.o"
+	@echo "... minerdetect.i"
+	@echo "... minerdetect.s"
 .PHONY : help
 
 

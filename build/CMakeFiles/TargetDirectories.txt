@@ -1,10 +1,10 @@
 /home/wyx/miner-detector/build/CMakeFiles/libbpf.dir
 /home/wyx/miner-detector/build/CMakeFiles/libbpf-build.dir
 /home/wyx/miner-detector/build/CMakeFiles/bashreadline.dir
-/home/wyx/miner-detector/build/CMakeFiles/bootstrap.dir
 /home/wyx/miner-detector/build/CMakeFiles/fentry.dir
 /home/wyx/miner-detector/build/CMakeFiles/hello.dir
 /home/wyx/miner-detector/build/CMakeFiles/kprobe.dir
+/home/wyx/miner-detector/build/CMakeFiles/minerdetect.dir
 /home/wyx/miner-detector/build/CMakeFiles/edit_cache.dir
 /home/wyx/miner-detector/build/CMakeFiles/rebuild_cache.dir
 /home/wyx/miner-detector/build/bpftools/CMakeFiles/bpftool.dir
