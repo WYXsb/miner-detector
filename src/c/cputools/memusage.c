@@ -44,8 +44,7 @@ unsigned long GetMemTotal()
     /* 打开/proc/meminfo */
     if (!(fp = fopen("/proc/meminfo", "r")))
     {
-        printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
-        fclose(fp);
+        //printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
         return(ERROR);
     }
     /* 读出/proc/meminfo的第一行内容*/
@@ -80,8 +79,7 @@ unsigned long GetProcessMemTotal(int pid)
     /* 打开/proc/<pid>/status */
     if (!(fp = fopen(path, "r")))
     {
-        printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
-        fclose(fp);
+        //printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
         return(ERROR);
     }
     /* 从/proc/<pid>/status中寻找 VmRSS: 行*/
@@ -100,7 +98,7 @@ unsigned long GetProcessMemTotal(int pid)
     /* 没有读到进程实际占用内存，发生错误，返回-1 */
     if (ProcessMemTotal == 0)
     {
-        printf("Error in Function GetMemTotal: The content read from  /proc/%d/status error\n", pid);
+        //printf("Error in Function GetMemTotal: The content read from  /proc/%d/status error\n", pid);
         return(ERROR);
     }
     return ProcessMemTotal;

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/openssltools.dir/getpath.c.o"
+  "CMakeFiles/openssltools.dir/getpath.c.o.d"
   "CMakeFiles/openssltools.dir/sha256test.c.o"
   "CMakeFiles/openssltools.dir/sha256test.c.o.d"
   "libopenssltools.pdb"

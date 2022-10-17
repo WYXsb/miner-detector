@@ -130,6 +130,30 @@ openssltools/fast:
 	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/build
 .PHONY : openssltools/fast
 
+getpath.o: getpath.c.o
+.PHONY : getpath.o
+
+# target to build an object file
+getpath.c.o:
+	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.o
+.PHONY : getpath.c.o
+
+getpath.i: getpath.c.i
+.PHONY : getpath.i
+
+# target to preprocess a source file
+getpath.c.i:
+	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.i
+.PHONY : getpath.c.i
+
+getpath.s: getpath.c.s
+.PHONY : getpath.s
+
+# target to generate assembly for a file
+getpath.c.s:
+	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.s
+.PHONY : getpath.c.s
+
 sha256test.o: sha256test.c.o
 .PHONY : sha256test.o
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... openssltools"
+	@echo "... getpath.o"
+	@echo "... getpath.i"
+	@echo "... getpath.s"
 	@echo "... sha256test.o"
 	@echo "... sha256test.i"
 	@echo "... sha256test.s"

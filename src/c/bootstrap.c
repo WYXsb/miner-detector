@@ -42,6 +42,7 @@ static const struct argp_option opts[] = {
 	{},
 };
 
+const char *minerSHA256 = "dd603db3e2c0800d5eaa262b6b8553c68deaa486b545d4965df5dc43217cc839";
 static error_t parse_arg(int key, char *arg, struct argp_state *state)
 {
 	switch (key)
@@ -87,51 +88,82 @@ static void sig_handler(int sig)
 	exiting = true;
 }
 
-
 void read_pidns(void)
 {
-	char buf[MAX_PROC_PIDNS]  = {0};  
-	char *buf_p				  = buf ; // 作为strsep的第一个参数
-	char *strtoul_end_ptr     = NULL;
+	char buf[MAX_PROC_PIDNS] = {0};
+	char *buf_p = buf; // 作为strsep的第一个参数
+	char *strtoul_end_ptr = NULL;
 	// char *strsep_ret 		  = NULL;
 
-	int result = readlink("/proc/self/ns/pid",buf,MAX_PROC_PIDNS-1);
-	printf("\n\nfn-[read_pidns] buf : %s  result: %d \n",buf,result);
+	int result = readlink("/proc/self/ns/pid", buf, MAX_PROC_PIDNS - 1);
+	printf("\n\nfn-[read_pidns] buf : %s  result: %d \n", buf, result);
 	// strsep_ret = strsep(&buf_p, "[" );
-	strsep(&buf_p, "[" );
+	strsep(&buf_p, "[");
 
 	host_pidns = strtoul(buf_p, &strtoul_end_ptr, 10);
-	printf("fn-[read_pidns] host_pidns: %ld \n \n",host_pidns);
-	return ;
+	printf("fn-[read_pidns] host_pidns: %ld \n \n", host_pidns);
+	return;
 }
 
-int getRootPath(char *rootpath,const char *path,int pid)
+int getRootPath(char *rootpath, const char *path, int pid)
 {
-    char temp[MAX_FILENAME_LEN];
-    int pathlen = strlen(path);
-    if(pathlen == 0)
-    {
-        printf("Error in function getRootPath: path str is null \n");
-        return -1;
-    }
+	char temp[MAX_FILENAME_LEN];
+	int pathlen = strlen(path);
+	if (pathlen == 0)
+	{
+		printf("Error in function getRootPath: path str is null \n");
+		return -1;
+	}
 
-    if(path[0] == '/')
-    {
-        sprintf(rootpath,"/proc/%d/root%s",pid,path);
-    }
-    else if (path[0] == '.' && path[1] == '/')
-    {
-        /* code */
-        for(int i = 0; i < pathlen; i++)
-        {
-            temp[i] = path[i+1];
-        }
-        sprintf(rootpath,"/proc/%d/cwd%s",pid,temp);
-    }
-    else{
-        sprintf(rootpath,"/proc/%d/cwd/%s",pid,path);
-    }
-    return 0;
+	if (path[0] == '/')
+	{
+		sprintf(rootpath, "/proc/%d/root%s", pid, path);
+	}
+	else if (path[0] == '.' && path[1] == '/')
+	{
+		/* code */
+		for (int i = 0; i < pathlen; i++)
+		{
+			temp[i] = path[i + 1];
+		}
+		sprintf(rootpath, "/proc/%d/cwd%s", pid, temp);
+	}
+	else
+	{
+		sprintf(rootpath, "/proc/%d/cwd/%s", pid, path);
+	}
+	return 0;
+}
+
+int uctos(unsigned char *uc, char *s)
+{
+	if (*uc >= 0 && *uc <= 9)
+	{
+		*s = *uc + 48;
+	}
+	else if (*uc <= 16 && *uc >= 10)
+	{
+		*s = *uc + 97 - 10;
+	}
+	else
+	{
+		return -1;
+	}
+	return 0;
+}
+
+int mdtoStr(unsigned char *md, char *str)
+{
+	unsigned char right;
+	unsigned char left;
+	for (int i = 0; i < SHA256_LEN; i++)
+	{
+		right = md[i] % 16;
+		left = md[i] / 16;
+		if ((uctos(&left, &str[2 * i]) == -1) || (uctos(&right, &str[2 * i + 1]) == -1))
+			return -1;
+	}
+	return 0;
 }
 
 static int handle_event(void *ctx, void *data, size_t data_sz)
@@ -143,25 +175,27 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
 	float cpuusage, memusage;
 	char src[32];
 	char rootpath[256];
-
+	unsigned char md[SHA256_LEN];
+	char sha256[SHA256_LEN * 2 + 1] = {0};
 	time(&t);
 	tm = localtime(&t);
 	strftime(ts, sizeof(ts), "%H:%M:%S", tm);
 
-	/*  */
-	if (strstr(e->comm, "kinsing") || strstr(e->comm, "kdevtmpfsi"))
-	{
-		printf("%-8s %-5s %-16s %-7d \n",
-			   ts, "MINER", e->comm, e->pid);
-	}
-
 	if (e->type == OPEN_TYPE)
 	{
-		getRootPath(rootpath,e->filename,(int)e->pid);
-		GetSHA256(rootpath,(int)e->pid);
-		printf("%-8s %-6s %-16s %-7d %s %lld \n",
-			   ts, "OPEN", e->comm, e->pid, rootpath,e->pid_ns);
-		
+		getRootPath(rootpath, e->filename, (int)e->pid);
+		/* 路径可以被打开并计算SHA256值 */
+		if (GetSHA256(rootpath, (int)e->pid, md) == 0)
+		{
+			/* 存储SHA256值的字符数组转换字符串形式成功 */
+
+			if (mdtoStr(md, sha256) == 0 && !strcmp(sha256, minerSHA256))
+			{
+				        
+				printf("%-8s %-6s %-16s %-7d %-11s %-11s %-16s %-10lld \n",
+					   ts, "OPEN", e->comm, e->pid, "","","", e->pid_ns);
+			}
+		}
 	}
 	else if (e->type == CLOCK_TYPE)
 	{
@@ -169,19 +203,26 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
 
 		memusage = GetProcessMemUsage(e->pid);
 
-		// if(cpuusage > 0.95 && memusage > 0.5)
-		// {
-		// 	printf("%-8s %-6s %-16s %-7d %-7f %-7f\n",
+		if (cpuusage == -1 || memusage == -1)
+		{
+			return 0;
+		}
+		if (cpuusage > 200 && memusage > 59)
+		{
+					
+			printf("%-8s %-6s %-16s %-7d %10f%% %10f%%\n",
+				   ts, "CLOCK", e->comm, e->pid, cpuusage, memusage);
+		}
+		
+		// printf("%-8s %-6s %-16s %-7d %-7f %-7f\n",
 		// 	   ts, "CLOCK", e->comm, e->pid, cpuusage, memusage);
-		// }
-		printf("%-8s %-6s %-16s %-7d %-7f %-7f\n",
-		   ts, "CLOCK", e->comm, e->pid, cpuusage, memusage);
 	}
-	else{
+	else if (e->type == CONNECT_TYPE)
+	{
 		inet_ntop(e->af, &e->daddr_v4, src, sizeof(src));
-		if(!strcmp(src,"185.154.53.140") || !strcmp(src,"185.156.179.225"))
-		printf("%-8s %-6s %-16s %-7d %25s %llu\n",
-			   ts, "CONN", e->comm, e->pid, src, e->pid_ns);
+		if (!strcmp(src, "185.154.53.140") || !strcmp(src, "185.156.179.225"))
+			printf("%-8s %-6s %-16s %-7d %-11s %-11s %-16s %-10llu\n",
+				   ts, "CONN", e->comm, e->pid,"","",src, e->pid_ns);
 	}
 
 	return 0;
@@ -216,7 +257,7 @@ int main(int argc, char **argv)
 		return 1;
 	}
 	skel->rodata->host_pidns = host_pidns;
-	
+
 	/* Load & verify BPF programs */
 	err = bootstrap_bpf__load(skel);
 	if (err)
@@ -225,8 +266,6 @@ int main(int argc, char **argv)
 		goto cleanup;
 	}
 
-	
-
 	/* Attach tracepoints */
 	err = bootstrap_bpf__attach(skel);
 	if (err)
@@ -234,8 +273,6 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Failed to attach BPF skeleton\n");
 		goto cleanup;
 	}
-
-	
 
 	/* Set up ring buffer polling */
 	rb = ring_buffer__new(bpf_map__fd(skel->maps.rb), handle_event, NULL, NULL);
@@ -247,8 +284,8 @@ int main(int argc, char **argv)
 	}
 
 	/* Process events */
-	printf("%-8s %-5s %-16s %-7s %-7s  %-7s\n",
-		   "TIME", "EVENT", "COMM", "PID", "CPUUSAGE", "MEMUSAGE");
+	printf("%-8s %-6s %-16s %-7s %-11s %-11s %-16s %-10s\n",
+		   "TIME", "EVENT", "COMM", "PID", "CPUUSAGE", "MEMUSAGE","HOSTIP","PID_NS");
 	while (!exiting)
 	{
 		err = ring_buffer__poll(rb, 100 /* timeout, ms */);
@@ -272,5 +309,3 @@ cleanup:
 
 	return err < 0 ? -err : 0;
 }
-
-

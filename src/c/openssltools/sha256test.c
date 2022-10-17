@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <openssl/sha.h>
+#include <ctype.h>
 #include "sha256.h"
-
+#include "getpath.h"
 
 
 int sha256str(const char *readstr, unsigned char *md)
@@ -38,7 +39,7 @@ int sha256file(const char *filepath, unsigned char *md)
     /* 打开预加密文件 */
     fp = fopen(filepath, "rb");
     if (fp == NULL) {
-        printf("Can't open %s\n", filepath);
+        //printf("Can't open %s\n", filepath);
         return -1;
     }
     /* 初始化指针 */
@@ -68,13 +69,17 @@ int sha256file(const char *filepath, unsigned char *md)
     return 0;
 }
 
-int GetSHA256(char *path,int pid)
+int GetSHA256(char *path,int pid,unsigned char *md)
 {
-    unsigned char md[32];
     
     //getAbspath(rootpath,path,"2273");
-    sha256file(path, md);
-    printf256(md);
+    if(!isaDir(path))
+    {
+        if(sha256file(path, md) == -1)
+        {
+            return -1;
+        }
+    }
 
     return 0;
 }

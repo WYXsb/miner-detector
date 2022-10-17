@@ -34,5 +34,8 @@ openssltools/CMakeFiles/openssltools.dir/sha256test.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/wyx/miner-detector/src/c/openssltools/sha256.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/ctype.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /home/wyx/miner-detector/src/c/openssltools/sha256.h \
+ /home/wyx/miner-detector/src/c/openssltools/getpath.h

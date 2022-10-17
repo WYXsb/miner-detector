@@ -48,7 +48,7 @@ int GetCpuPartTimes(CpuTotalTime *cpuTotalTime, char *buf)
     }
     if(timescount != 9)
     {
-        printf("Error in Function GetCpuPartTimes: failed to get Cpu Time\n");
+        //printf("Error in Function GetCpuPartTimes: failed to get Cpu Time\n");
         return ERROR;
     }
     return 0;
@@ -67,14 +67,13 @@ int GetCpuTotalTime(CpuTotalTime *cpuTotalTime)
     /*打开/proc/stat*/
     if (!(fp = fopen("/proc/stat", "r")))
     {
-        printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
-        fclose(fp);
+        //printf("Error in Function GetMemTotal: failed to open /proc/meminfo");
         return(-1);
     }
     /* 读取第一行内容，cpu */
     if (!fgets(buf, MAX, fp))
     {
-        printf("Error in Function GetMemTotal: failed to read /proc/meminfo");
+        //printf("Error in Function GetMemTotal: failed to read /proc/meminfo");
         fclose(fp);
         return(-1);
     }
@@ -137,8 +136,8 @@ int GetCpuProcessTime(CpuProcessTime *cpuProcessTime, int pid)
 
     if (!(fp = fopen(path, "r")))
     {
-        printf("Error in Function GetCpuProcessTime: failed to open /proc/%d/stat", pid);
-        fclose(fp);
+        //printf("Error in Function GetCpuProcessTime: failed to open /proc/%d/stat", pid);
+        
         return(ERROR);
     }
 

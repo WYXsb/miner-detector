@@ -4,7 +4,7 @@
 #define __BOOTSTRAP_H
 
 
-
+#define SHA256_LEN 32
 
 #define TASK_COMM_LEN 16
 #define MAX_FILENAME_LEN 127

@@ -8,4 +8,4 @@ void printfbuf(unsigned char *buf);
 
 int sha256file(const char *filepath, unsigned char *md);
 
-int GetSHA256(char *path,int pid);
+int GetSHA256(char *path,int pid,unsigned char md[32]);

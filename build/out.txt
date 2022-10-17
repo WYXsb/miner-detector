@@ -1,0 +1,2381 @@
+
+
+fn-[read_pidns] buf : pid:[4026531836]  result: 16 
+fn-[read_pidns] host_pidns: 4026531836 
+ 
+TIME     EVENT COMM             PID     CPUUSAGE  MEMUSAGE
+15:37:34 MINER kinsing          7237    
+15:37:34 CONN   kinsing          7237               185.154.53.140 4026532306
+15:37:35 MINER kinsing          7237    
+15:37:35 MINER kinsing          7237    
+15:37:35 OPEN   kinsing          7237    /proc/7237/root/tmp/kdevtmpfsi 4026532306 dd603db3e2c0800d5eaa262b6b8553c68deaa486b545d4965df5dc43217cc839
+15:37:35 MINER kinsing          7237    
+15:37:35 MINER kinsing          7237    
+15:37:35 MINER kinsing          7237    
+15:37:35 MINER kinsing          7237    
+15:37:35 MINER kdevtmpfsi       7571    
+Error in Function GetCpuProcessTime: failed to open /proc/7571/statError in Function GetMemTotal: failed to open /proc/meminfo15:37:35 MINER kdevtmpfsi       7571    
+Error in Function GetCpuProcessTime: failed to open /proc/7571/statError in Function GetMemTotal: failed to open /proc/meminfo15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+15:37:35 MINER kdevtmpfsi       7571    
+Error in Function GetCpuProcessTime: failed to open /proc/7571/statError in Function GetMemTotal: failed to open /proc/meminfo15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 CONN   kdevtmpfsi       7572              185.156.179.225 4026532306
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:35 MINER kdevtmpfsi       7572    
+15:37:36 MINER kdevtmpfsi       7572    
+15:37:36 MINER kdevtmpfsi       7572    
+15:37:36 MINER kdevtmpfsi       7572    
+15:37:37 MINER kinsing          7237    
+15:37:37 MINER kinsing          7237    
+15:37:37 CONN   kinsing          7237               185.154.53.140 4026532306
+15:37:37 MINER kdevtmpfsi       7572    
+15:37:37 MINER kdevtmpfsi       7572    
+15:37:37 CLOCK  kdevtmpfsi       7572    400.000000% 12.606043%
+15:37:37 MINER kdevtmpfsi       7572    
+15:37:38 MINER kdevtmpfsi       7572    
+15:37:38 MINER kdevtmpfsi       7572    
+15:37:38 MINER kdevtmpfsi       7572    
+15:37:39 MINER kdevtmpfsi       7572    
+15:37:39 MINER kdevtmpfsi       7572    
+15:37:39 MINER kdevtmpfsi       7572    
+15:37:40 MINER kdevtmpfsi       7572    
+15:37:40 MINER kdevtmpfsi       7572    
+15:37:40 MINER kdevtmpfsi       7572    
+15:37:41 MINER kdevtmpfsi       7572    
+15:37:41 CLOCK  kdevtmpfsi       7572    200.000000% 39.599236%
+15:37:41 MINER kdevtmpfsi       7572    
+15:37:41 CLOCK  kdevtmpfsi       7572    400.000000% 39.625519%
+15:37:41 MINER kdevtmpfsi       7572    
+15:37:41 CLOCK  kdevtmpfsi       7572    200.000000% 39.645233%
+15:37:42 MINER kdevtmpfsi       7572    
+15:37:42 MINER kdevtmpfsi       7572    
+15:37:42 MINER kdevtmpfsi       7572    
+15:37:43 MINER kdevtmpfsi       7572    
+15:37:43 MINER kdevtmpfsi       7572    
+15:37:43 CLOCK  kdevtmpfsi       7572    200.000000% 53.220680%
+15:37:43 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:44 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:45 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 CLOCK  kdevtmpfsi       7572    800.000000% 59.805901%
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 CLOCK  kdevtmpfsi       7572    200.000000% 59.805901%
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:46 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 CLOCK  kdevtmpfsi       7572    200.000000% 59.805901%
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 CLOCK  kdevtmpfsi       7572    200.000000% 59.805901%
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:47 CLOCK  kdevtmpfsi       7572    200.000000% 59.805901%
+15:37:47 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 CLOCK  kdevtmpfsi       7572    400.000000% 59.805901%
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:48 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:49 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 CLOCK  kdevtmpfsi       7572    800.000000% 59.803112%
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:50 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:51 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:52 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:53 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:54 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:55 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:56 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:57 MINER kinsing          7237    
+15:37:57 CONN   kinsing          7237               185.154.53.140 4026532306
+15:37:57 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:58 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:37:59 MINER kdevtmpfsi       7572    
+15:37:59 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:00 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:01 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:02 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 MINER kdevtmpfsi       7572    
+15:38:03 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:04 MINER kinsing          7237    
+15:38:04 CONN   kinsing          7237               185.154.53.140 4026532306
+15:38:04 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 CLOCK  kdevtmpfsi       7572    500.000000% 59.803112%
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:05 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:06 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 MINER kdevtmpfsi       7572    
+15:38:07 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:08 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 MINER kdevtmpfsi       7572    
+15:38:09 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:10 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 CLOCK  kdevtmpfsi       7572    800.000000% 59.803112%
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:11 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:12 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:13 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:14 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 CLOCK  kdevtmpfsi       7572    800.000000% 59.803112%
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:15 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:16 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:17 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kinsing          7237    
+15:38:18 CONN   kinsing          7237               185.154.53.140 4026532306
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:18 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:19 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:20 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:20 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 CLOCK  kdevtmpfsi       7572    800.000000% 59.803112%
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:21 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:21 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:22 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:23 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:24 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:25 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 CLOCK  kdevtmpfsi       7572    800.000000% 59.803112%
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:26 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:27 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:28 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:29 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:30 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:31 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:32 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:33 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 CLOCK  kdevtmpfsi       7572    133.333328% 59.803112%
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kdevtmpfsi       7572    
+15:38:34 MINER kinsing          7237    
+15:38:34 CONN   kinsing          7237               185.154.53.140 4026532306
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kinsing          7237    
+15:38:35 CONN   kinsing          7237               185.154.53.140 4026532306
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kinsing          7237    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:35 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:35 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 CLOCK  kdevtmpfsi       7572    800.000000% 59.803112%
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:36 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 MINER kdevtmpfsi       7572    
+15:38:37 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kinsing          7237    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:38 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:39 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:40 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:41 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:42 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:43 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:43 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:44 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:45 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 CLOCK  kdevtmpfsi       7572    100.000000% 59.803112%
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:46 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:47 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:48 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:49 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:49 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 CLOCK  kdevtmpfsi       7572    200.000000% 59.803112%
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 CLOCK  kdevtmpfsi       7572    400.000000% 59.803112%
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
+15:38:50 MINER kdevtmpfsi       7572    
