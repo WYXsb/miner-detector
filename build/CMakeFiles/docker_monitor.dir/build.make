@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/sp0002/workspace-wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
+CMAKE_BINARY_DIR = /home/sp0002/workspace-wyx/miner-detector/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/docker_monitor.dir/depend.make
@@ -70,26 +70,26 @@ include CMakeFiles/docker_monitor.dir/progress.make
 include CMakeFiles/docker_monitor.dir/flags.make
 
 docker_monitor.skel.h: docker_monitor.bpf.o
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: docker_monitor"
-	bash -c "/home/wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/miner-detector/build/docker_monitor.bpf.o > /home/wyx/miner-detector/build/docker_monitor.skel.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: docker_monitor"
+	bash -c "/home/sp0002/workspace-wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/sp0002/workspace-wyx/miner-detector/build/docker_monitor.bpf.o > /home/sp0002/workspace-wyx/miner-detector/build/docker_monitor.skel.h"
 
-docker_monitor.bpf.o: /home/wyx/miner-detector/src/c/docker_monitor.bpf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: docker_monitor"
-	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/miner-detector/src/c/../../vmlinux -isystem /home/wyx/miner-detector/build/libbpf -c /home/wyx/miner-detector/src/c/docker_monitor.bpf.c -o /home/wyx/miner-detector/build/docker_monitor.bpf.o
+docker_monitor.bpf.o: /home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.bpf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: docker_monitor"
+	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/sp0002/workspace-wyx/miner-detector/src/c/../../vmlinux -isystem /home/sp0002/workspace-wyx/miner-detector/build/libbpf -c /home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.bpf.c -o /home/sp0002/workspace-wyx/miner-detector/build/docker_monitor.bpf.o
 
 CMakeFiles/docker_monitor.dir/docker_monitor.c.o: CMakeFiles/docker_monitor.dir/flags.make
-CMakeFiles/docker_monitor.dir/docker_monitor.c.o: /home/wyx/miner-detector/src/c/docker_monitor.c
+CMakeFiles/docker_monitor.dir/docker_monitor.c.o: /home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.c
 CMakeFiles/docker_monitor.dir/docker_monitor.c.o: CMakeFiles/docker_monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/docker_monitor.dir/docker_monitor.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/docker_monitor.dir/docker_monitor.c.o -MF CMakeFiles/docker_monitor.dir/docker_monitor.c.o.d -o CMakeFiles/docker_monitor.dir/docker_monitor.c.o -c /home/wyx/miner-detector/src/c/docker_monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/docker_monitor.dir/docker_monitor.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/docker_monitor.dir/docker_monitor.c.o -MF CMakeFiles/docker_monitor.dir/docker_monitor.c.o.d -o CMakeFiles/docker_monitor.dir/docker_monitor.c.o -c /home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.c
 
 CMakeFiles/docker_monitor.dir/docker_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/docker_monitor.dir/docker_monitor.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/docker_monitor.c > CMakeFiles/docker_monitor.dir/docker_monitor.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.c > CMakeFiles/docker_monitor.dir/docker_monitor.c.i
 
 CMakeFiles/docker_monitor.dir/docker_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/docker_monitor.dir/docker_monitor.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/docker_monitor.c -o CMakeFiles/docker_monitor.dir/docker_monitor.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.c -o CMakeFiles/docker_monitor.dir/docker_monitor.c.s
 
 # Object files for target docker_monitor
 docker_monitor_OBJECTS = \
@@ -107,7 +107,7 @@ docker_monitor: /usr/lib/x86_64-linux-gnu/libssl.so
 docker_monitor: /usr/lib/x86_64-linux-gnu/libcrypto.so
 docker_monitor: libbpf/libbpf.a
 docker_monitor: CMakeFiles/docker_monitor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable docker_monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable docker_monitor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/docker_monitor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -120,6 +120,6 @@ CMakeFiles/docker_monitor.dir/clean:
 
 CMakeFiles/docker_monitor.dir/depend: docker_monitor.bpf.o
 CMakeFiles/docker_monitor.dir/depend: docker_monitor.skel.h
-	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/docker_monitor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sp0002/workspace-wyx/miner-detector/src/c /home/sp0002/workspace-wyx/miner-detector/src/c /home/sp0002/workspace-wyx/miner-detector/build /home/sp0002/workspace-wyx/miner-detector/build /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles/docker_monitor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/docker_monitor.dir/depend
 

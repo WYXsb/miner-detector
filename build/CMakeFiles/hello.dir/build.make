@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/sp0002/workspace-wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
+CMAKE_BINARY_DIR = /home/sp0002/workspace-wyx/miner-detector/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello.dir/depend.make
@@ -70,26 +70,26 @@ include CMakeFiles/hello.dir/progress.make
 include CMakeFiles/hello.dir/flags.make
 
 hello.skel.h: hello.bpf.o
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: hello"
-	bash -c "/home/wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/wyx/miner-detector/build/hello.bpf.o > /home/wyx/miner-detector/build/hello.skel.h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[skel]  Building BPF skeleton: hello"
+	bash -c "/home/sp0002/workspace-wyx/miner-detector/src/c/../../tools/bpftool gen skeleton /home/sp0002/workspace-wyx/miner-detector/build/hello.bpf.o > /home/sp0002/workspace-wyx/miner-detector/build/hello.skel.h"
 
-hello.bpf.o: /home/wyx/miner-detector/src/c/hello.bpf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: hello"
-	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/wyx/miner-detector/src/c/../../vmlinux -isystem /home/wyx/miner-detector/build/libbpf -c /home/wyx/miner-detector/src/c/hello.bpf.c -o /home/wyx/miner-detector/build/hello.bpf.o
+hello.bpf.o: /home/sp0002/workspace-wyx/miner-detector/src/c/hello.bpf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[clang] Building BPF object: hello"
+	/usr/bin/clang -g -O2 -target bpf -D__TARGET_ARCH_x86 "-idirafter /usr/lib/llvm-14/lib/clang/14.0.0/include -idirafter /usr/local/include -idirafter /usr/include/x86_64-linux-gnu -idirafter /usr/include" -I/home/sp0002/workspace-wyx/miner-detector/src/c/../../vmlinux -isystem /home/sp0002/workspace-wyx/miner-detector/build/libbpf -c /home/sp0002/workspace-wyx/miner-detector/src/c/hello.bpf.c -o /home/sp0002/workspace-wyx/miner-detector/build/hello.bpf.o
 
 CMakeFiles/hello.dir/hello.c.o: CMakeFiles/hello.dir/flags.make
-CMakeFiles/hello.dir/hello.c.o: /home/wyx/miner-detector/src/c/hello.c
+CMakeFiles/hello.dir/hello.c.o: /home/sp0002/workspace-wyx/miner-detector/src/c/hello.c
 CMakeFiles/hello.dir/hello.c.o: CMakeFiles/hello.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/hello.dir/hello.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/hello.dir/hello.c.o -MF CMakeFiles/hello.dir/hello.c.o.d -o CMakeFiles/hello.dir/hello.c.o -c /home/wyx/miner-detector/src/c/hello.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/hello.dir/hello.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/hello.dir/hello.c.o -MF CMakeFiles/hello.dir/hello.c.o.d -o CMakeFiles/hello.dir/hello.c.o -c /home/sp0002/workspace-wyx/miner-detector/src/c/hello.c
 
 CMakeFiles/hello.dir/hello.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/hello.dir/hello.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/hello.c > CMakeFiles/hello.dir/hello.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sp0002/workspace-wyx/miner-detector/src/c/hello.c > CMakeFiles/hello.dir/hello.c.i
 
 CMakeFiles/hello.dir/hello.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/hello.dir/hello.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/hello.c -o CMakeFiles/hello.dir/hello.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sp0002/workspace-wyx/miner-detector/src/c/hello.c -o CMakeFiles/hello.dir/hello.c.s
 
 # Object files for target hello
 hello_OBJECTS = \
@@ -107,7 +107,7 @@ hello: /usr/lib/x86_64-linux-gnu/libssl.so
 hello: /usr/lib/x86_64-linux-gnu/libcrypto.so
 hello: libbpf/libbpf.a
 hello: CMakeFiles/hello.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable hello"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -120,6 +120,6 @@ CMakeFiles/hello.dir/clean:
 
 CMakeFiles/hello.dir/depend: hello.bpf.o
 CMakeFiles/hello.dir/depend: hello.skel.h
-	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c /home/wyx/miner-detector/build /home/wyx/miner-detector/build /home/wyx/miner-detector/build/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sp0002/workspace-wyx/miner-detector/src/c /home/sp0002/workspace-wyx/miner-detector/src/c /home/sp0002/workspace-wyx/miner-detector/build /home/sp0002/workspace-wyx/miner-detector/build /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles/hello.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hello.dir/depend
 

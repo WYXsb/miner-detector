@@ -1,4 +1,4 @@
-# Install script for directory: /home/wyx/miner-detector/src/c
+# Install script for directory: /home/sp0002/workspace-wyx/miner-detector/src/c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,17 +44,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/wyx/miner-detector/build/bpftools/cmake_install.cmake")
+  include("/home/sp0002/workspace-wyx/miner-detector/build/bpftools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/wyx/miner-detector/build/cputools/cmake_install.cmake")
+  include("/home/sp0002/workspace-wyx/miner-detector/build/cputools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/wyx/miner-detector/build/openssltools/cmake_install.cmake")
+  include("/home/sp0002/workspace-wyx/miner-detector/build/openssltools/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -65,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wyx/miner-detector/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sp0002/workspace-wyx/miner-detector/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

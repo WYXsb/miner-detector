@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/wyx/miner-detector/src/c/bpftools/../../../build/libbpf
+C_INCLUDES = -I/home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf
 
 C_FLAGS = 
 

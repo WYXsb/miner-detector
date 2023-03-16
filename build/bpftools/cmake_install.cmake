@@ -1,4 +1,4 @@
-# Install script for directory: /home/wyx/miner-detector/src/c/bpftools
+# Install script for directory: /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

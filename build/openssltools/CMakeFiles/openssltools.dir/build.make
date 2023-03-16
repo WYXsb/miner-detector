@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/sp0002/workspace-wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
+CMAKE_BINARY_DIR = /home/sp0002/workspace-wyx/miner-detector/build
 
 # Include any dependencies generated for this target.
 include openssltools/CMakeFiles/openssltools.dir/depend.make
@@ -70,32 +70,32 @@ include openssltools/CMakeFiles/openssltools.dir/progress.make
 include openssltools/CMakeFiles/openssltools.dir/flags.make
 
 openssltools/CMakeFiles/openssltools.dir/sha256test.c.o: openssltools/CMakeFiles/openssltools.dir/flags.make
-openssltools/CMakeFiles/openssltools.dir/sha256test.c.o: /home/wyx/miner-detector/src/c/openssltools/sha256test.c
+openssltools/CMakeFiles/openssltools.dir/sha256test.c.o: /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/sha256test.c
 openssltools/CMakeFiles/openssltools.dir/sha256test.c.o: openssltools/CMakeFiles/openssltools.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object openssltools/CMakeFiles/openssltools.dir/sha256test.c.o"
-	cd /home/wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT openssltools/CMakeFiles/openssltools.dir/sha256test.c.o -MF CMakeFiles/openssltools.dir/sha256test.c.o.d -o CMakeFiles/openssltools.dir/sha256test.c.o -c /home/wyx/miner-detector/src/c/openssltools/sha256test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object openssltools/CMakeFiles/openssltools.dir/sha256test.c.o"
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT openssltools/CMakeFiles/openssltools.dir/sha256test.c.o -MF CMakeFiles/openssltools.dir/sha256test.c.o.d -o CMakeFiles/openssltools.dir/sha256test.c.o -c /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/sha256test.c
 
 openssltools/CMakeFiles/openssltools.dir/sha256test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/openssltools.dir/sha256test.c.i"
-	cd /home/wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/openssltools/sha256test.c > CMakeFiles/openssltools.dir/sha256test.c.i
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/sha256test.c > CMakeFiles/openssltools.dir/sha256test.c.i
 
 openssltools/CMakeFiles/openssltools.dir/sha256test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/openssltools.dir/sha256test.c.s"
-	cd /home/wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/openssltools/sha256test.c -o CMakeFiles/openssltools.dir/sha256test.c.s
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/sha256test.c -o CMakeFiles/openssltools.dir/sha256test.c.s
 
 openssltools/CMakeFiles/openssltools.dir/getpath.c.o: openssltools/CMakeFiles/openssltools.dir/flags.make
-openssltools/CMakeFiles/openssltools.dir/getpath.c.o: /home/wyx/miner-detector/src/c/openssltools/getpath.c
+openssltools/CMakeFiles/openssltools.dir/getpath.c.o: /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/getpath.c
 openssltools/CMakeFiles/openssltools.dir/getpath.c.o: openssltools/CMakeFiles/openssltools.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object openssltools/CMakeFiles/openssltools.dir/getpath.c.o"
-	cd /home/wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT openssltools/CMakeFiles/openssltools.dir/getpath.c.o -MF CMakeFiles/openssltools.dir/getpath.c.o.d -o CMakeFiles/openssltools.dir/getpath.c.o -c /home/wyx/miner-detector/src/c/openssltools/getpath.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object openssltools/CMakeFiles/openssltools.dir/getpath.c.o"
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT openssltools/CMakeFiles/openssltools.dir/getpath.c.o -MF CMakeFiles/openssltools.dir/getpath.c.o.d -o CMakeFiles/openssltools.dir/getpath.c.o -c /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/getpath.c
 
 openssltools/CMakeFiles/openssltools.dir/getpath.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/openssltools.dir/getpath.c.i"
-	cd /home/wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/miner-detector/src/c/openssltools/getpath.c > CMakeFiles/openssltools.dir/getpath.c.i
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/getpath.c > CMakeFiles/openssltools.dir/getpath.c.i
 
 openssltools/CMakeFiles/openssltools.dir/getpath.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/openssltools.dir/getpath.c.s"
-	cd /home/wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/miner-detector/src/c/openssltools/getpath.c -o CMakeFiles/openssltools.dir/getpath.c.s
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/getpath.c -o CMakeFiles/openssltools.dir/getpath.c.s
 
 # Object files for target openssltools
 openssltools_OBJECTS = \
@@ -109,18 +109,18 @@ openssltools/libopenssltools.so: openssltools/CMakeFiles/openssltools.dir/sha256
 openssltools/libopenssltools.so: openssltools/CMakeFiles/openssltools.dir/getpath.c.o
 openssltools/libopenssltools.so: openssltools/CMakeFiles/openssltools.dir/build.make
 openssltools/libopenssltools.so: openssltools/CMakeFiles/openssltools.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libopenssltools.so"
-	cd /home/wyx/miner-detector/build/openssltools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openssltools.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libopenssltools.so"
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openssltools.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openssltools/CMakeFiles/openssltools.dir/build: openssltools/libopenssltools.so
 .PHONY : openssltools/CMakeFiles/openssltools.dir/build
 
 openssltools/CMakeFiles/openssltools.dir/clean:
-	cd /home/wyx/miner-detector/build/openssltools && $(CMAKE_COMMAND) -P CMakeFiles/openssltools.dir/cmake_clean.cmake
+	cd /home/sp0002/workspace-wyx/miner-detector/build/openssltools && $(CMAKE_COMMAND) -P CMakeFiles/openssltools.dir/cmake_clean.cmake
 .PHONY : openssltools/CMakeFiles/openssltools.dir/clean
 
 openssltools/CMakeFiles/openssltools.dir/depend:
-	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/miner-detector/src/c /home/wyx/miner-detector/src/c/openssltools /home/wyx/miner-detector/build /home/wyx/miner-detector/build/openssltools /home/wyx/miner-detector/build/openssltools/CMakeFiles/openssltools.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sp0002/workspace-wyx/miner-detector/src/c /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools /home/sp0002/workspace-wyx/miner-detector/build /home/sp0002/workspace-wyx/miner-detector/build/openssltools /home/sp0002/workspace-wyx/miner-detector/build/openssltools/CMakeFiles/openssltools.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openssltools/CMakeFiles/openssltools.dir/depend
 

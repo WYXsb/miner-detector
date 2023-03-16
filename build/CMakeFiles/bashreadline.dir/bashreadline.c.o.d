@@ -1,6 +1,6 @@
 CMakeFiles/bashreadline.dir/bashreadline.c.o: \
- /home/wyx/miner-detector/src/c/bashreadline.c /usr/include/stdc-predef.h \
- /usr/include/argp.h /usr/include/stdio.h \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/bashreadline.c \
+ /usr/include/stdc-predef.h /usr/include/argp.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -82,7 +82,7 @@ CMakeFiles/bashreadline.dir/bashreadline.c.o: \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
@@ -103,17 +103,17 @@ CMakeFiles/bashreadline.dir/bashreadline.c.o: \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h /usr/include/linux/bpf_common.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf_common.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_common.h \
  /usr/include/string.h /usr/include/strings.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf_version.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
- /home/wyx/miner-detector/build/libbpf/bpf/bpf.h \
- /home/wyx/miner-detector/src/c/bashreadline.h \
- /home/wyx/miner-detector/build/bashreadline.skel.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_version.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/bpf.h \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/bashreadline.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/bashreadline.skel.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/wyx/miner-detector/src/c/bpftools/btf_helpers.h \
- /home/wyx/miner-detector/src/c/bpftools/trace_helpers.h \
- /home/wyx/miner-detector/src/c/bpftools/uprobe_helpers.h \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.h \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.h \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.h \
  /usr/include/gelf.h /usr/include/libelf.h /usr/include/elf.h

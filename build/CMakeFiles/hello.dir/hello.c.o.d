@@ -1,6 +1,6 @@
-CMakeFiles/bootstrap.dir/bootstrap.c.o: \
- /home/wyx/miner-detector/src/c/bootstrap.c /usr/include/stdc-predef.h \
- /usr/include/argp.h /usr/include/stdio.h \
+CMakeFiles/hello.dir/hello.c.o: \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/hello.c \
+ /usr/include/stdc-predef.h /usr/include/argp.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -77,57 +77,35 @@ CMakeFiles/bootstrap.dir/bootstrap.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/arpa/inet.h \
- /usr/include/netinet/in.h \
+ /usr/include/x86_64-linux-gnu/sys/resource.h \
+ /usr/include/x86_64-linux-gnu/bits/resource.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h /usr/include/linux/bpf.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
  /usr/include/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/x86_64-linux-gnu/sys/resource.h \
- /usr/include/x86_64-linux-gnu/bits/resource.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /usr/include/linux/bpf.h /usr/include/linux/types.h \
- /usr/include/x86_64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/linux/bpf_common.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf_common.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf_version.h \
- /home/wyx/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
- /home/wyx/miner-detector/src/c/bootstrap.h \
- /home/wyx/miner-detector/build/bootstrap.skel.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/asm-generic/posix_types.h /usr/include/linux/bpf_common.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_common.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_version.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/hello.h \
+ /home/sp0002/workspace-wyx/miner-detector/build/hello.skel.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/wyx/miner-detector/src/c/cputools/cpuusage.h \
- /home/wyx/miner-detector/src/c/cputools/memusage.h \
- /home/wyx/miner-detector/src/c/openssltools/sha256.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h

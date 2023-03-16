@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/wyx/miner-detector/src/c/docker_monitor.c" "CMakeFiles/docker_monitor.dir/docker_monitor.c.o" "gcc" "CMakeFiles/docker_monitor.dir/docker_monitor.c.o.d"
+  "/home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.c" "CMakeFiles/docker_monitor.dir/docker_monitor.c.o" "gcc" "CMakeFiles/docker_monitor.dir/docker_monitor.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/wyx/miner-detector/build/bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake"
-  "/home/wyx/miner-detector/build/cputools/CMakeFiles/cputools.dir/DependInfo.cmake"
-  "/home/wyx/miner-detector/build/openssltools/CMakeFiles/openssltools.dir/DependInfo.cmake"
+  "/home/sp0002/workspace-wyx/miner-detector/build/bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake"
+  "/home/sp0002/workspace-wyx/miner-detector/build/cputools/CMakeFiles/cputools.dir/DependInfo.cmake"
+  "/home/sp0002/workspace-wyx/miner-detector/build/openssltools/CMakeFiles/openssltools.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

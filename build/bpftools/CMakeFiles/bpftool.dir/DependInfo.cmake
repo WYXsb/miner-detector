@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/wyx/miner-detector/src/c/bpftools/btf_helpers.c" "bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o" "gcc" "bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o.d"
-  "/home/wyx/miner-detector/src/c/bpftools/trace_helpers.c" "bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o" "gcc" "bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o.d"
-  "/home/wyx/miner-detector/src/c/bpftools/uprobe_helpers.c" "bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o" "gcc" "bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o.d"
+  "/home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.c" "bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o" "gcc" "bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o.d"
+  "/home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.c" "bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o" "gcc" "bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o.d"
+  "/home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.c" "bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o" "gcc" "bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o.d"
   )
 
 # Targets to which this target links.

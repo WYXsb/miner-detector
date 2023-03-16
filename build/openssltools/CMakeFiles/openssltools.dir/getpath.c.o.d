@@ -1,5 +1,5 @@
 openssltools/CMakeFiles/openssltools.dir/getpath.c.o: \
- /home/wyx/miner-detector/src/c/openssltools/getpath.c \
+ /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/getpath.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -60,4 +60,4 @@ openssltools/CMakeFiles/openssltools.dir/getpath.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/wyx/miner-detector/src/c/openssltools/getpath.h
+ /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/getpath.h

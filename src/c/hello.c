@@ -100,7 +100,7 @@ static int handle_event(void *ctx, void *data, size_t data_sz)
 
 int main(int argc, char **argv)
 {
-	struct ring_buffer *rb = NULL;
+
 	struct hello_bpf *skel;
 	int err;
 
@@ -125,7 +125,7 @@ int main(int argc, char **argv)
 	}
 
 	/* Parameterize BPF code with minimum duration parameter */
-	skel->rodata->min_duration_ns = env.min_duration_ms * 1000000ULL;
+
 
 	/* Load & verify BPF programs */
 	err = hello_bpf__load(skel);
@@ -140,7 +140,7 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Failed to attach BPF skeleton\n");
 		goto cleanup;
 	}
-
+	#if 0
 	/* Set up ring buffer polling */
 	rb = ring_buffer__new(bpf_map__fd(skel->maps.rb), handle_event, NULL, NULL);
 	if (!rb) {
@@ -148,12 +148,13 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Failed to create ring buffer\n");
 		goto cleanup;
 	}
-
+	#endif
+	
 	/* Process events */
-	printf("%-8s %-5s %-16s %-7s %-7s %s\n",
-	       "TIME", "EVENT", "COMM", "PID", "PPID", "FILENAME/EXIT CODE");
+	//printf("%-8s %-5s %-16s %-7s %-7s %s\n",
+	//       "TIME", "EVENT", "COMM", "PID", "PPID", "FILENAME/EXIT CODE");
 	while (!exiting) {
-		err = ring_buffer__poll(rb, 100 /* timeout, ms */);
+		//err = ring_buffer__poll(rb, 100 /* timeout, ms */);
 		/* Ctrl-C will cause -EINTR */
 		if (err == -EINTR) {
 			err = 0;
@@ -167,7 +168,7 @@ int main(int argc, char **argv)
 
 cleanup:
 	/* Clean up */
-	ring_buffer__free(rb);
+	//ring_buffer__free(rb);
 	hello_bpf__destroy(skel);
 
 	return err < 0 ? -err : 0;

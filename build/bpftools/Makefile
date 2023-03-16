@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wyx/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/sp0002/workspace-wyx/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wyx/miner-detector/build
+CMAKE_BINARY_DIR = /home/sp0002/workspace-wyx/miner-detector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles /home/wyx/miner-detector/build/bpftools//CMakeFiles/progress.marks
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/miner-detector/build/CMakeFiles 0
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles /home/sp0002/workspace-wyx/miner-detector/build/bpftools//CMakeFiles/progress.marks
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/clean
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/preinstall
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/preinstall
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 bpftools/CMakeFiles/bpftool.dir/rule:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/CMakeFiles/bpftool.dir/rule
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpftools/CMakeFiles/bpftool.dir/rule
 .PHONY : bpftools/CMakeFiles/bpftool.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ bpftool: bpftools/CMakeFiles/bpftool.dir/rule
 
 # fast build rule for target.
 bpftool/fast:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/build
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/build
 .PHONY : bpftool/fast
 
 btf_helpers.o: btf_helpers.c.o
@@ -135,7 +135,7 @@ btf_helpers.o: btf_helpers.c.o
 
 # target to build an object file
 btf_helpers.c.o:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o
 .PHONY : btf_helpers.c.o
 
 btf_helpers.i: btf_helpers.c.i
@@ -143,7 +143,7 @@ btf_helpers.i: btf_helpers.c.i
 
 # target to preprocess a source file
 btf_helpers.c.i:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.i
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.i
 .PHONY : btf_helpers.c.i
 
 btf_helpers.s: btf_helpers.c.s
@@ -151,7 +151,7 @@ btf_helpers.s: btf_helpers.c.s
 
 # target to generate assembly for a file
 btf_helpers.c.s:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.s
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.s
 .PHONY : btf_helpers.c.s
 
 trace_helpers.o: trace_helpers.c.o
@@ -159,7 +159,7 @@ trace_helpers.o: trace_helpers.c.o
 
 # target to build an object file
 trace_helpers.c.o:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o
 .PHONY : trace_helpers.c.o
 
 trace_helpers.i: trace_helpers.c.i
@@ -167,7 +167,7 @@ trace_helpers.i: trace_helpers.c.i
 
 # target to preprocess a source file
 trace_helpers.c.i:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.i
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.i
 .PHONY : trace_helpers.c.i
 
 trace_helpers.s: trace_helpers.c.s
@@ -175,7 +175,7 @@ trace_helpers.s: trace_helpers.c.s
 
 # target to generate assembly for a file
 trace_helpers.c.s:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.s
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.s
 .PHONY : trace_helpers.c.s
 
 uprobe_helpers.o: uprobe_helpers.c.o
@@ -183,7 +183,7 @@ uprobe_helpers.o: uprobe_helpers.c.o
 
 # target to build an object file
 uprobe_helpers.c.o:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o
 .PHONY : uprobe_helpers.c.o
 
 uprobe_helpers.i: uprobe_helpers.c.i
@@ -191,7 +191,7 @@ uprobe_helpers.i: uprobe_helpers.c.i
 
 # target to preprocess a source file
 uprobe_helpers.c.i:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.i
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.i
 .PHONY : uprobe_helpers.c.i
 
 uprobe_helpers.s: uprobe_helpers.c.s
@@ -199,7 +199,7 @@ uprobe_helpers.s: uprobe_helpers.c.s
 
 # target to generate assembly for a file
 uprobe_helpers.c.s:
-	cd /home/wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.s
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f bpftools/CMakeFiles/bpftool.dir/build.make bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.s
 .PHONY : uprobe_helpers.c.s
 
 # Help Target
@@ -231,6 +231,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

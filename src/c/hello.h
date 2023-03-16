@@ -15,5 +15,10 @@ struct event {
 	char filename[MAX_FILENAME_LEN];
 	bool exit_event;
 };
+typedef struct args_t {
+	const char *fname;
+	void * userstr;
+	size_t len;
+}Args_t;
 
 #endif /* __BOOTSTRAP_H */
