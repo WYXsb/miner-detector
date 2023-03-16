@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sp0002/workspace-wyx/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/workspace/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sp0002/workspace-wyx/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/workspace/miner-detector/build
 
 # Include any dependencies generated for this target.
 include bpftools/CMakeFiles/bpftool.dir/depend.make
@@ -70,46 +70,46 @@ include bpftools/CMakeFiles/bpftool.dir/progress.make
 include bpftools/CMakeFiles/bpftool.dir/flags.make
 
 bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o: bpftools/CMakeFiles/bpftool.dir/flags.make
-bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o: /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.c
+bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o: /home/wyx/workspace/miner-detector/src/c/bpftools/btf_helpers.c
 bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o: bpftools/CMakeFiles/bpftool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o -MF CMakeFiles/bpftool.dir/btf_helpers.c.o.d -o CMakeFiles/bpftool.dir/btf_helpers.c.o -c /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/workspace/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o"
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o -MF CMakeFiles/bpftool.dir/btf_helpers.c.o.d -o CMakeFiles/bpftool.dir/btf_helpers.c.o -c /home/wyx/workspace/miner-detector/src/c/bpftools/btf_helpers.c
 
 bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bpftool.dir/btf_helpers.c.i"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.c > CMakeFiles/bpftool.dir/btf_helpers.c.i
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/workspace/miner-detector/src/c/bpftools/btf_helpers.c > CMakeFiles/bpftool.dir/btf_helpers.c.i
 
 bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bpftool.dir/btf_helpers.c.s"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.c -o CMakeFiles/bpftool.dir/btf_helpers.c.s
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/workspace/miner-detector/src/c/bpftools/btf_helpers.c -o CMakeFiles/bpftool.dir/btf_helpers.c.s
 
 bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: bpftools/CMakeFiles/bpftool.dir/flags.make
-bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.c
+bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: /home/wyx/workspace/miner-detector/src/c/bpftools/trace_helpers.c
 bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: bpftools/CMakeFiles/bpftool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o -MF CMakeFiles/bpftool.dir/trace_helpers.c.o.d -o CMakeFiles/bpftool.dir/trace_helpers.c.o -c /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/workspace/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o"
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o -MF CMakeFiles/bpftool.dir/trace_helpers.c.o.d -o CMakeFiles/bpftool.dir/trace_helpers.c.o -c /home/wyx/workspace/miner-detector/src/c/bpftools/trace_helpers.c
 
 bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bpftool.dir/trace_helpers.c.i"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.c > CMakeFiles/bpftool.dir/trace_helpers.c.i
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/workspace/miner-detector/src/c/bpftools/trace_helpers.c > CMakeFiles/bpftool.dir/trace_helpers.c.i
 
 bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bpftool.dir/trace_helpers.c.s"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.c -o CMakeFiles/bpftool.dir/trace_helpers.c.s
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/workspace/miner-detector/src/c/bpftools/trace_helpers.c -o CMakeFiles/bpftool.dir/trace_helpers.c.s
 
 bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o: bpftools/CMakeFiles/bpftool.dir/flags.make
-bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o: /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.c
+bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o: /home/wyx/workspace/miner-detector/src/c/bpftools/uprobe_helpers.c
 bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o: bpftools/CMakeFiles/bpftool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o -MF CMakeFiles/bpftool.dir/uprobe_helpers.c.o.d -o CMakeFiles/bpftool.dir/uprobe_helpers.c.o -c /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wyx/workspace/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o"
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o -MF CMakeFiles/bpftool.dir/uprobe_helpers.c.o.d -o CMakeFiles/bpftool.dir/uprobe_helpers.c.o -c /home/wyx/workspace/miner-detector/src/c/bpftools/uprobe_helpers.c
 
 bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bpftool.dir/uprobe_helpers.c.i"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.c > CMakeFiles/bpftool.dir/uprobe_helpers.c.i
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wyx/workspace/miner-detector/src/c/bpftools/uprobe_helpers.c > CMakeFiles/bpftool.dir/uprobe_helpers.c.i
 
 bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bpftool.dir/uprobe_helpers.c.s"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.c -o CMakeFiles/bpftool.dir/uprobe_helpers.c.s
+	cd /home/wyx/workspace/miner-detector/build/bpftools && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wyx/workspace/miner-detector/src/c/bpftools/uprobe_helpers.c -o CMakeFiles/bpftool.dir/uprobe_helpers.c.s
 
 # Object files for target bpftool
 bpftool_OBJECTS = \
@@ -125,19 +125,19 @@ bpftools/libbpftool.a: bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o
 bpftools/libbpftool.a: bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o
 bpftools/libbpftool.a: bpftools/CMakeFiles/bpftool.dir/build.make
 bpftools/libbpftool.a: bpftools/CMakeFiles/bpftool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libbpftool.a"
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && $(CMAKE_COMMAND) -P CMakeFiles/bpftool.dir/cmake_clean_target.cmake
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bpftool.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wyx/workspace/miner-detector/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libbpftool.a"
+	cd /home/wyx/workspace/miner-detector/build/bpftools && $(CMAKE_COMMAND) -P CMakeFiles/bpftool.dir/cmake_clean_target.cmake
+	cd /home/wyx/workspace/miner-detector/build/bpftools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bpftool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 bpftools/CMakeFiles/bpftool.dir/build: bpftools/libbpftool.a
 .PHONY : bpftools/CMakeFiles/bpftool.dir/build
 
 bpftools/CMakeFiles/bpftool.dir/clean:
-	cd /home/sp0002/workspace-wyx/miner-detector/build/bpftools && $(CMAKE_COMMAND) -P CMakeFiles/bpftool.dir/cmake_clean.cmake
+	cd /home/wyx/workspace/miner-detector/build/bpftools && $(CMAKE_COMMAND) -P CMakeFiles/bpftool.dir/cmake_clean.cmake
 .PHONY : bpftools/CMakeFiles/bpftool.dir/clean
 
 bpftools/CMakeFiles/bpftool.dir/depend:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sp0002/workspace-wyx/miner-detector/src/c /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools /home/sp0002/workspace-wyx/miner-detector/build /home/sp0002/workspace-wyx/miner-detector/build/bpftools /home/sp0002/workspace-wyx/miner-detector/build/bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wyx/workspace/miner-detector/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wyx/workspace/miner-detector/src/c /home/wyx/workspace/miner-detector/src/c/bpftools /home/wyx/workspace/miner-detector/build /home/wyx/workspace/miner-detector/build/bpftools /home/wyx/workspace/miner-detector/build/bpftools/CMakeFiles/bpftool.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bpftools/CMakeFiles/bpftool.dir/depend
 

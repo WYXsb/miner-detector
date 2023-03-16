@@ -1,5 +1,5 @@
 CMakeFiles/minerdetect.dir/minerdetect.c.o: \
- /home/sp0002/workspace-wyx/miner-detector/src/c/minerdetect.c \
+ /home/wyx/workspace/miner-detector/src/c/minerdetect.c \
  /usr/include/stdc-predef.h /usr/include/argp.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -112,7 +112,7 @@ CMakeFiles/minerdetect.dir/minerdetect.c.o: \
  /usr/include/x86_64-linux-gnu/sys/resource.h \
  /usr/include/x86_64-linux-gnu/bits/resource.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -120,14 +120,14 @@ CMakeFiles/minerdetect.dir/minerdetect.c.o: \
  /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  /usr/include/linux/bpf_common.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_common.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_version.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/minerdetect.h \
- /home/sp0002/workspace-wyx/miner-detector/build/minerdetect.skel.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf_common.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf_version.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
+ /home/wyx/workspace/miner-detector/src/c/minerdetect.h \
+ /home/wyx/workspace/miner-detector/build/minerdetect.skel.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/cputools/cpuusage.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/cputools/memusage.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/sha256.h
+ /home/wyx/workspace/miner-detector/src/c/cputools/cpuusage.h \
+ /home/wyx/workspace/miner-detector/src/c/cputools/memusage.h \
+ /home/wyx/workspace/miner-detector/src/c/openssltools/sha256.h

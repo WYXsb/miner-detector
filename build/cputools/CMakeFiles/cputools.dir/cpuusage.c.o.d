@@ -1,5 +1,5 @@
 cputools/CMakeFiles/cputools.dir/cpuusage.c.o: \
- /home/sp0002/workspace-wyx/miner-detector/src/c/cputools/cpuusage.c \
+ /home/wyx/workspace/miner-detector/src/c/cputools/cpuusage.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -51,8 +51,8 @@ cputools/CMakeFiles/cputools.dir/cpuusage.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/cputools/memusage.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/cputools/cpuusage.h \
+ /home/wyx/workspace/miner-detector/src/c/cputools/memusage.h \
+ /home/wyx/workspace/miner-detector/src/c/cputools/cpuusage.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \

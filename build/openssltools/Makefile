@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sp0002/workspace-wyx/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/workspace/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sp0002/workspace-wyx/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/workspace/miner-detector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles /home/sp0002/workspace-wyx/miner-detector/build/openssltools//CMakeFiles/progress.marks
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles 0
+	cd /home/wyx/workspace/miner-detector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/workspace/miner-detector/build/CMakeFiles /home/wyx/workspace/miner-detector/build/openssltools//CMakeFiles/progress.marks
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/workspace/miner-detector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/clean
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/preinstall
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/preinstall
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wyx/workspace/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openssltools/CMakeFiles/openssltools.dir/rule:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/CMakeFiles/openssltools.dir/rule
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openssltools/CMakeFiles/openssltools.dir/rule
 .PHONY : openssltools/CMakeFiles/openssltools.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ openssltools: openssltools/CMakeFiles/openssltools.dir/rule
 
 # fast build rule for target.
 openssltools/fast:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/build
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/build
 .PHONY : openssltools/fast
 
 getpath.o: getpath.c.o
@@ -135,7 +135,7 @@ getpath.o: getpath.c.o
 
 # target to build an object file
 getpath.c.o:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.o
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.o
 .PHONY : getpath.c.o
 
 getpath.i: getpath.c.i
@@ -143,7 +143,7 @@ getpath.i: getpath.c.i
 
 # target to preprocess a source file
 getpath.c.i:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.i
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.i
 .PHONY : getpath.c.i
 
 getpath.s: getpath.c.s
@@ -151,7 +151,7 @@ getpath.s: getpath.c.s
 
 # target to generate assembly for a file
 getpath.c.s:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.s
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/getpath.c.s
 .PHONY : getpath.c.s
 
 sha256test.o: sha256test.c.o
@@ -159,7 +159,7 @@ sha256test.o: sha256test.c.o
 
 # target to build an object file
 sha256test.c.o:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/sha256test.c.o
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/sha256test.c.o
 .PHONY : sha256test.c.o
 
 sha256test.i: sha256test.c.i
@@ -167,7 +167,7 @@ sha256test.i: sha256test.c.i
 
 # target to preprocess a source file
 sha256test.c.i:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/sha256test.c.i
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/sha256test.c.i
 .PHONY : sha256test.c.i
 
 sha256test.s: sha256test.c.s
@@ -175,7 +175,7 @@ sha256test.s: sha256test.c.s
 
 # target to generate assembly for a file
 sha256test.c.s:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/sha256test.c.s
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f openssltools/CMakeFiles/openssltools.dir/build.make openssltools/CMakeFiles/openssltools.dir/sha256test.c.s
 .PHONY : sha256test.c.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wyx/workspace/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

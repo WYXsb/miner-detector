@@ -1,5 +1,5 @@
 bpftools/CMakeFiles/bpftool.dir/uprobe_helpers.c.o: \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.c \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/uprobe_helpers.c \
  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

@@ -1,5 +1,5 @@
 bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o: \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.c \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/btf_helpers.c \
  /usr/include/stdc-predef.h /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -70,10 +70,10 @@ bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/trace_helpers.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/btf_helpers.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/btf_helpers.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -86,6 +86,6 @@ bpftools/CMakeFiles/bpftool.dir/btf_helpers.c.o: \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h /usr/include/linux/bpf_common.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_common.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_version.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_legacy.h
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_common.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_version.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_legacy.h

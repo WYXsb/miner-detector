@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sp0002/workspace-wyx/miner-detector/src/c/cputools/cpuusage.c" "cputools/CMakeFiles/cputools.dir/cpuusage.c.o" "gcc" "cputools/CMakeFiles/cputools.dir/cpuusage.c.o.d"
-  "/home/sp0002/workspace-wyx/miner-detector/src/c/cputools/memusage.c" "cputools/CMakeFiles/cputools.dir/memusage.c.o" "gcc" "cputools/CMakeFiles/cputools.dir/memusage.c.o.d"
+  "/home/wyx/workspace/miner-detector/src/c/cputools/cpuusage.c" "cputools/CMakeFiles/cputools.dir/cpuusage.c.o" "gcc" "cputools/CMakeFiles/cputools.dir/cpuusage.c.o.d"
+  "/home/wyx/workspace/miner-detector/src/c/cputools/memusage.c" "cputools/CMakeFiles/cputools.dir/memusage.c.o" "gcc" "cputools/CMakeFiles/cputools.dir/memusage.c.o.d"
   )
 
 # Targets to which this target links.

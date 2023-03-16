@@ -28,7 +28,7 @@ struct {
 } rb SEC(".maps");
 
 
-const volatile int target_file_len = 16;
+const volatile int target_file_len = 11;
 /*
  * 比较传入的两个命令是否相同
  * 相同返回 0，不同返回1
@@ -60,16 +60,17 @@ int trace_open_enter(struct trace_event_raw_sys_enter* ctx)
 	int ret;
 	pid = bpf_get_current_pid_tgid() >> 32;
 	char comm[TASK_COMM_LEN];
-	char filename[TASK_COMM_LEN];
+	char filename[16] ={0}; 
     bpf_get_current_comm(&comm, TASK_COMM_LEN);
         
+	//filename = (const char *)ctx->args[1];
 	
-	bpf_probe_read_user(&filename,target_file_len,(char *)ctx->args[1]);
-	if(__commcmp("testwyx",comm))
+	bpf_probe_read_user(filename,target_file_len,(char *)ctx->args[1]);
+	if(__commcmp("test",comm))
 	{
 		return 0;
 	}
-	bpf_printk(" pid:%d open %s ",pid,filename);
+	bpf_printk(" pid:%d open %s %s",pid,filename,(char *)ctx->args[1]);
 	if(__commcmp("/etc/passwd",filename))
 		return 0;
 	unsigned int zero = 0;
@@ -102,8 +103,10 @@ int handle_read_enter(struct trace_event_raw_sys_enter *ctx)
 	pid = bpf_get_current_pid_tgid() >> 32;
 	char comm[TASK_COMM_LEN];
 	bpf_get_current_comm(&comm, TASK_COMM_LEN);
-	
+
     unsigned int *pfd = (unsigned int *) bpf_map_lookup_elem(&fd_map, &pid_tgid);
+	if(!__commcmp(comm,"test"))
+		bpf_printk(" read_enter pid:%d comm:%s pfd:%d ",pid,comm,pfd);
     if (pfd == 0) return 0;
 
     unsigned int map_fd = *pfd;
@@ -115,7 +118,7 @@ int handle_read_enter(struct trace_event_raw_sys_enter *ctx)
     Args_t data = {0};
     data.userstr = (void *)buff_addr;
     data.len = size;
-	bpf_printk(" read_enter %d %s %x ",pid,comm,data.userstr);
+	bpf_printk(" read_enter %d %s %s ",pid,comm,data.userstr);
 
     bpf_map_update_elem(&open_map, &pid, &data, BPF_ANY);
 	//bpf_printk(" readok %d ",fd);

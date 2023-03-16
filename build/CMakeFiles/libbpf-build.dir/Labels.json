@@ -2,28 +2,28 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles/libbpf-build"
+			"file" : "/home/wyx/workspace/miner-detector/build/CMakeFiles/libbpf-build"
 		},
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles/libbpf-build.rule"
+			"file" : "/home/wyx/workspace/miner-detector/build/CMakeFiles/libbpf-build.rule"
 		},
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build.rule"
+			"file" : "/home/wyx/workspace/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-build.rule"
 		},
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure.rule"
+			"file" : "/home/wyx/workspace/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-configure.rule"
 		},
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch.rule"
+			"file" : "/home/wyx/workspace/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-patch.rule"
 		},
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update.rule"
+			"file" : "/home/wyx/workspace/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-update.rule"
 		},
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download.rule"
+			"file" : "/home/wyx/workspace/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-download.rule"
 		},
 		{
-			"file" : "/home/sp0002/workspace-wyx/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir.rule"
+			"file" : "/home/wyx/workspace/miner-detector/build/libbpf/src/libbpf-stamp/libbpf-mkdir.rule"
 		}
 	],
 	"target" : 
