@@ -1,5 +1,5 @@
 cputools/CMakeFiles/cputools.dir/memusage.c.o: \
- /home/sp0002/workspace-wyx/miner-detector/src/c/cputools/memusage.c \
+ /home/wyx/workspace/miner-detector/src/c/cputools/memusage.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -51,4 +51,4 @@ cputools/CMakeFiles/cputools.dir/memusage.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/ctype.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/cputools/memusage.h
+ /home/wyx/workspace/miner-detector/src/c/cputools/memusage.h

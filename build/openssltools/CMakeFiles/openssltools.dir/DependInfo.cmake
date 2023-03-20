@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/getpath.c" "openssltools/CMakeFiles/openssltools.dir/getpath.c.o" "gcc" "openssltools/CMakeFiles/openssltools.dir/getpath.c.o.d"
-  "/home/sp0002/workspace-wyx/miner-detector/src/c/openssltools/sha256test.c" "openssltools/CMakeFiles/openssltools.dir/sha256test.c.o" "gcc" "openssltools/CMakeFiles/openssltools.dir/sha256test.c.o.d"
+  "/home/wyx/workspace/miner-detector/src/c/openssltools/getpath.c" "openssltools/CMakeFiles/openssltools.dir/getpath.c.o" "gcc" "openssltools/CMakeFiles/openssltools.dir/getpath.c.o.d"
+  "/home/wyx/workspace/miner-detector/src/c/openssltools/sha256test.c" "openssltools/CMakeFiles/openssltools.dir/sha256test.c.o" "gcc" "openssltools/CMakeFiles/openssltools.dir/sha256test.c.o.d"
   )
 
 # Targets to which this target links.

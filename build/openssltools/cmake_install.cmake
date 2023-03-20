@@ -1,4 +1,4 @@
-# Install script for directory: /home/sp0002/workspace-wyx/miner-detector/src/c/openssltools
+# Install script for directory: /home/wyx/workspace/miner-detector/src/c/openssltools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

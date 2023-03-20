@@ -1,5 +1,5 @@
 CMakeFiles/docker_monitor.dir/docker_monitor.c.o: \
- /home/sp0002/workspace-wyx/miner-detector/src/c/docker_monitor.c \
+ /home/wyx/workspace/miner-detector/src/c/docker_monitor.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -57,7 +57,7 @@ CMakeFiles/docker_monitor.dir/docker_monitor.c.o: \
  /usr/include/x86_64-linux-gnu/sys/resource.h \
  /usr/include/x86_64-linux-gnu/bits/resource.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -71,13 +71,13 @@ CMakeFiles/docker_monitor.dir/docker_monitor.c.o: \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h /usr/include/linux/bpf_common.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_common.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf_common.h \
  /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_version.h \
- /home/sp0002/workspace-wyx/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf_version.h \
+ /home/wyx/workspace/miner-detector/build/libbpf/bpf/libbpf_legacy.h \
  /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -112,4 +112,4 @@ CMakeFiles/docker_monitor.dir/docker_monitor.c.o: \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /home/sp0002/workspace-wyx/miner-detector/build/docker_monitor.skel.h
+ /home/wyx/workspace/miner-detector/build/docker_monitor.skel.h

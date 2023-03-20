@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sp0002/workspace-wyx/miner-detector/src/c
+CMAKE_SOURCE_DIR = /home/wyx/workspace/miner-detector/src/c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sp0002/workspace-wyx/miner-detector/build
+CMAKE_BINARY_DIR = /home/wyx/workspace/miner-detector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles /home/sp0002/workspace-wyx/miner-detector/build/cputools//CMakeFiles/progress.marks
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sp0002/workspace-wyx/miner-detector/build/CMakeFiles 0
+	cd /home/wyx/workspace/miner-detector/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/workspace/miner-detector/build/CMakeFiles /home/wyx/workspace/miner-detector/build/cputools//CMakeFiles/progress.marks
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wyx/workspace/miner-detector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/clean
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/preinstall
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/preinstall
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wyx/workspace/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cputools/CMakeFiles/cputools.dir/rule:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/CMakeFiles/cputools.dir/rule
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cputools/CMakeFiles/cputools.dir/rule
 .PHONY : cputools/CMakeFiles/cputools.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ cputools: cputools/CMakeFiles/cputools.dir/rule
 
 # fast build rule for target.
 cputools/fast:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/build
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/build
 .PHONY : cputools/fast
 
 cpuusage.o: cpuusage.c.o
@@ -135,7 +135,7 @@ cpuusage.o: cpuusage.c.o
 
 # target to build an object file
 cpuusage.c.o:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/cpuusage.c.o
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/cpuusage.c.o
 .PHONY : cpuusage.c.o
 
 cpuusage.i: cpuusage.c.i
@@ -143,7 +143,7 @@ cpuusage.i: cpuusage.c.i
 
 # target to preprocess a source file
 cpuusage.c.i:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/cpuusage.c.i
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/cpuusage.c.i
 .PHONY : cpuusage.c.i
 
 cpuusage.s: cpuusage.c.s
@@ -151,7 +151,7 @@ cpuusage.s: cpuusage.c.s
 
 # target to generate assembly for a file
 cpuusage.c.s:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/cpuusage.c.s
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/cpuusage.c.s
 .PHONY : cpuusage.c.s
 
 memusage.o: memusage.c.o
@@ -159,7 +159,7 @@ memusage.o: memusage.c.o
 
 # target to build an object file
 memusage.c.o:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/memusage.c.o
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/memusage.c.o
 .PHONY : memusage.c.o
 
 memusage.i: memusage.c.i
@@ -167,7 +167,7 @@ memusage.i: memusage.c.i
 
 # target to preprocess a source file
 memusage.c.i:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/memusage.c.i
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/memusage.c.i
 .PHONY : memusage.c.i
 
 memusage.s: memusage.c.s
@@ -175,7 +175,7 @@ memusage.s: memusage.c.s
 
 # target to generate assembly for a file
 memusage.c.s:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/memusage.c.s
+	cd /home/wyx/workspace/miner-detector/build && $(MAKE) $(MAKESILENT) -f cputools/CMakeFiles/cputools.dir/build.make cputools/CMakeFiles/cputools.dir/memusage.c.s
 .PHONY : memusage.c.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sp0002/workspace-wyx/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wyx/workspace/miner-detector/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

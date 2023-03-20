@@ -1,5 +1,5 @@
 bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.c \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/trace_helpers.c \
  /usr/include/stdc-predef.h /usr/include/ctype.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -76,7 +76,7 @@ bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/bpf.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/bpf.h \
  /usr/include/linux/bpf.h /usr/include/linux/types.h \
  /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
@@ -90,12 +90,12 @@ bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_common.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_version.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_legacy.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/btf.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_common.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_version.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf_legacy.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/btf.h \
  /usr/include/linux/btf.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/../../../build/libbpf/bpf/libbpf.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -105,6 +105,6 @@ bpftools/CMakeFiles/bpftool.dir/trace_helpers.c.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/trace_helpers.h \
- /home/sp0002/workspace-wyx/miner-detector/src/c/bpftools/uprobe_helpers.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/trace_helpers.h \
+ /home/wyx/workspace/miner-detector/src/c/bpftools/uprobe_helpers.h \
  /usr/include/gelf.h /usr/include/libelf.h /usr/include/elf.h
