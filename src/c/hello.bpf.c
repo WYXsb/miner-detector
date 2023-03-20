@@ -28,7 +28,9 @@ struct {
 } rb SEC(".maps");
 
 
-const volatile int target_file_len = 16;
+const volatile int target_file_len = 0;
+const volatile char target_file[TASK_COMM_LEN] = {0};
+const volatile char new_buff_addr[TASK_COMM_LEN] = {0};
 /*
  * 比较传入的两个命令是否相同
  * 相同返回 0，不同返回1
@@ -52,6 +54,7 @@ int __commcmp(char *comm1,char *comm2)
 	}
 	return 1;
 }
+
 SEC("tracepoint/syscalls/sys_enter_openat")
 int trace_open_enter(struct trace_event_raw_sys_enter* ctx)
 {
@@ -59,24 +62,29 @@ int trace_open_enter(struct trace_event_raw_sys_enter* ctx)
 	pid_t pid;
 	int ret;
 	pid = bpf_get_current_pid_tgid() >> 32;
-	char comm[TASK_COMM_LEN];
-	char filename[TASK_COMM_LEN];
+	char comm[TASK_COMM_LEN] = {0};
+	char filename[TASK_COMM_LEN] ={0};
     bpf_get_current_comm(&comm, TASK_COMM_LEN);
         
 	
 	bpf_probe_read_user(&filename,target_file_len,(char *)ctx->args[1]);
+	
 	if(__commcmp("testwyx",comm))
 	{
 		return 0;
 	}
+	
 	bpf_printk(" pid:%d open %s ",pid,filename);
-	if(__commcmp("/etc/passwd",filename))
+	if(target_file_len > TASK_COMM_LEN)
+		return 0;
+	if(__commcmp((char *)target_file,filename))
 		return 0;
 	unsigned int zero = 0;
 	bpf_map_update_elem(&fd_map, &pid, &zero, BPF_ANY);
 end:
 	return 0;
 }
+
 SEC("tracepoint/syscalls/sys_exit_openat")
 int trace_open_exit(struct trace_event_raw_sys_exit* ctx)
 {
@@ -100,7 +108,7 @@ int handle_read_enter(struct trace_event_raw_sys_enter *ctx)
     size_t pid_tgid = bpf_get_current_pid_tgid();
 	pid_t pid;
 	pid = bpf_get_current_pid_tgid() >> 32;
-	char comm[TASK_COMM_LEN];
+	char comm[TASK_COMM_LEN] = {0};
 	bpf_get_current_comm(&comm, TASK_COMM_LEN);
 	
     unsigned int *pfd = (unsigned int *) bpf_map_lookup_elem(&fd_map, &pid_tgid);
@@ -142,9 +150,10 @@ int handle_read_exit(struct trace_event_raw_sys_exit *ctx)
 	if(ret < 0)
 		return 0;
     //long unsigned int new_buff_addr = buff_addr + read_size - MAX_PAYLOAD_LEN;
-	const char new_buff_addr[] = "helloworld\n";
-
-	bpf_probe_write_user(payload->userstr, new_buff_addr,11); 
+	
+	if(target_file_len < 0)
+		return 0;
+	bpf_probe_write_user(payload->userstr, new_buff_addr,target_file_len); 
 	bpf_printk(" read_exit %d %s %x ",pid,comm,payload->userstr);
     bpf_map_delete_elem(&fd_map, &pid);
     bpf_map_delete_elem(&open_map, &pid);

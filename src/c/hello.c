@@ -14,6 +14,7 @@ static struct env {
 	long min_duration_ms;
 } env;
 
+
 const char *argp_program_version = "hello 0.0";
 const char *argp_program_bug_address = "<bpf@vger.kernel.org>";
 const char argp_program_doc[] =
@@ -126,7 +127,9 @@ int main(int argc, char **argv)
 
 	/* Parameterize BPF code with minimum duration parameter */
 
-
+	skel->rodata->target_file_len = 15;
+	memcpy(skel->rodata->target_file,"/etc/passwd",11);
+	memcpy(skel->rodata->new_buff_addr,"helloworld1111\n",15);
 	/* Load & verify BPF programs */
 	err = hello_bpf__load(skel);
 	if (err) {
