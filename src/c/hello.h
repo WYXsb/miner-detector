@@ -4,7 +4,7 @@
 #define __HELLO_H
 
 #define TASK_COMM_LEN 16
-#define MAX_FILENAME_LEN 127
+#define MAX_FILENAME_LEN 32
 
 struct event {
 	int pid;

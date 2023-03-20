@@ -3,6 +3,8 @@
 #include <argp.h>
 #include <signal.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <sys/resource.h>
 #include <bpf/libbpf.h>
@@ -74,41 +76,23 @@ static void sig_handler(int sig)
 	exiting = true;
 }
 
-static int handle_event(void *ctx, void *data, size_t data_sz)
-{
-	const struct event *e = data;
-	struct tm *tm;
-	char ts[32];
-	time_t t;
-
-	time(&t);
-	tm = localtime(&t);
-	strftime(ts, sizeof(ts), "%H:%M:%S", tm);
-
-	if (e->exit_event) {
-		printf("%-8s %-5s %-16s %-7d %-7d [%u]",
-		       ts, "EXIT", e->comm, e->pid, e->ppid, e->exit_code);
-		if (e->duration_ns)
-			printf(" (%llums)", e->duration_ns / 1000000);
-		printf("\n");
-	} else {
-		printf("%-8s %-5s %-16s %-7d %-7d %s\n",
-		       ts, "EXEC", e->comm, e->pid, e->ppid, e->filename);
-	}
-
-	return 0;
-}
 
 int main(int argc, char **argv)
 {
+	
 
 	struct hello_bpf *skel;
 	int err;
-
-	/* Parse command line arguments */
-	err = argp_parse(&argp, argc, argv, 0, NULL, NULL);
-	if (err)
+	if(argc < 3)
+	{
+		printf("param less than 2\n");
+		printf("usage: sudo ./hello [target_file_path] [target_comm]\n");
+		err = 1;
 		return err;
+	}
+	const char *target_file = argv[1];
+	const char *target_comm = argv[2];
+	
 
 	libbpf_set_strict_mode(LIBBPF_STRICT_ALL);
 	/* Set up libbpf errors and debug info callback */
@@ -125,11 +109,20 @@ int main(int argc, char **argv)
 		return 1;
 	}
 
-	/* Parameterize BPF code with minimum duration parameter */
-
-	skel->rodata->target_file_len = 15;
-	memcpy(skel->rodata->target_file,"/etc/passwd",11);
-	memcpy(skel->rodata->new_buff_addr,"helloworld1111\n",15);
+	/* Parameterize BPF code with target_file_len,new_buff_addr,target_comm */
+	if(strlen(target_file) > MAX_FILENAME_LEN || strlen(target_comm) > 16)
+	{
+		printf("The length of target_file  > 16 or target_comm > 16\n");
+		err = 2;
+		goto cleanup;
+	}
+	printf("%s %s\n",target_comm,target_file);
+	skel->rodata->target_file_len = strlen(argv[1]);
+	skel->rodata->target_string_len = 15;
+	memcpy(skel->rodata->target_file,target_file,strlen(target_file));
+	memcpy(skel->rodata->new_buff_addr,"helloworldbye\n",15);
+	memcpy(skel->rodata->target_comm,target_comm,strlen(target_comm));
+	
 	/* Load & verify BPF programs */
 	err = hello_bpf__load(skel);
 	if (err) {
@@ -143,15 +136,6 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Failed to attach BPF skeleton\n");
 		goto cleanup;
 	}
-	#if 0
-	/* Set up ring buffer polling */
-	rb = ring_buffer__new(bpf_map__fd(skel->maps.rb), handle_event, NULL, NULL);
-	if (!rb) {
-		err = -1;
-		fprintf(stderr, "Failed to create ring buffer\n");
-		goto cleanup;
-	}
-	#endif
 	
 	/* Process events */
 	//printf("%-8s %-5s %-16s %-7s %-7s %s\n",

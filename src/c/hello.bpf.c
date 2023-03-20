@@ -29,31 +29,10 @@ struct {
 
 
 const volatile int target_file_len = 0;
-const volatile char target_file[TASK_COMM_LEN] = {0};
+const volatile int target_string_len = 0;
+const volatile char target_file[MAX_FILENAME_LEN] = {0};
 const volatile char new_buff_addr[TASK_COMM_LEN] = {0};
-/*
- * 比较传入的两个命令是否相同
- * 相同返回 0，不同返回1
- */
-static __always_inline
-int __commcmp(char *comm1,char *comm2)
-{
-	for(int i = 0 ;i < TASK_COMM_LEN; i++)
-	{
-		if(comm1[i] == comm2[i])
-		{
-			if(comm1[i] == 0 )
-			{
-				return 0;
-			}
-		}
-		else 
-		{
-			return 1;
-		}
-	}
-	return 1;
-}
+const volatile char target_comm[TASK_COMM_LEN] = {0};
 
 SEC("tracepoint/syscalls/sys_enter_openat")
 int trace_open_enter(struct trace_event_raw_sys_enter* ctx)
@@ -63,23 +42,46 @@ int trace_open_enter(struct trace_event_raw_sys_enter* ctx)
 	int ret;
 	pid = bpf_get_current_pid_tgid() >> 32;
 	char comm[TASK_COMM_LEN] = {0};
-	char filename[TASK_COMM_LEN] ={0};
+	char filename[MAX_FILENAME_LEN] ={0};
     bpf_get_current_comm(&comm, TASK_COMM_LEN);
         
 	//filename = (const char *)ctx->args[1];
 	
-	bpf_probe_read_user(&filename,target_file_len,(char *)ctx->args[1]);
+	bpf_probe_read_user(&filename,MAX_FILENAME_LEN,(char *)ctx->args[1]);
 	
-	if(__commcmp("testwyx",comm))
+	for(int i = 0 ;i < TASK_COMM_LEN; i++)
 	{
+		if(comm[i] == target_comm[i])
+		{
+			if(comm[i] == 0)
+			{
+				break;
+			}
+		}
+		else 
+		{
+			return 0;
+		}
+	}
+	//bpf_printk(" pid:%d open %s targetcomm:%s// comm:%s//",pid,filename,target_comm,comm);
+	if(target_file_len > MAX_FILENAME_LEN)
 		return 0;
+	for(int i = 0 ; i < MAX_FILENAME_LEN; i++)
+	{
+		if(filename[i] == target_file[i])
+		{
+			if(filename[i] == 0)
+			{
+				break;
+			}
+			//bpf_printk("same:%d",filename[i]);
+		}else {
+			//bpf_printk("end :%d",i);
+			return 0;
+		}
 	}
 	
-	bpf_printk(" pid:%d open %s ",pid,filename);
-	if(target_file_len > TASK_COMM_LEN)
-		return 0;
-	if(__commcmp((char *)target_file,filename))
-		return 0;
+	//bpf_printk(" pid:%d open %s ",pid,filename);
 	unsigned int zero = 0;
 	bpf_map_update_elem(&fd_map, &pid, &zero, BPF_ANY);
 end:
@@ -113,8 +115,6 @@ int handle_read_enter(struct trace_event_raw_sys_enter *ctx)
 	bpf_get_current_comm(&comm, TASK_COMM_LEN);
 
     unsigned int *pfd = (unsigned int *) bpf_map_lookup_elem(&fd_map, &pid_tgid);
-	if(!__commcmp(comm,"test"))
-		bpf_printk(" read_enter pid:%d comm:%s pfd:%d ",pid,comm,pfd);
     if (pfd == 0) return 0;
 
     unsigned int map_fd = *pfd;
@@ -156,7 +156,7 @@ int handle_read_exit(struct trace_event_raw_sys_exit *ctx)
 	
 	if(target_file_len < 0)
 		return 0;
-	bpf_probe_write_user(payload->userstr, new_buff_addr,target_file_len); 
+	bpf_probe_write_user(payload->userstr, new_buff_addr,target_string_len); 
 	bpf_printk(" read_exit %d %s %x ",pid,comm,payload->userstr);
     bpf_map_delete_elem(&fd_map, &pid);
     bpf_map_delete_elem(&open_map, &pid);
