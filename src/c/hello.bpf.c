@@ -63,7 +63,7 @@ int trace_open_enter(struct trace_event_raw_sys_enter* ctx)
 			return 0;
 		}
 	}
-	//bpf_printk(" pid:%d open %s targetcomm:%s// comm:%s//",pid,filename,target_comm,comm);
+	bpf_printk(" pid:%d open %s targetcomm:%s// comm:%s//",pid,filename,target_comm,comm);
 	if(target_file_len > MAX_FILENAME_LEN)
 		return 0;
 	for(int i = 0 ; i < MAX_FILENAME_LEN; i++)
@@ -129,7 +129,7 @@ int handle_read_enter(struct trace_event_raw_sys_enter *ctx)
 	bpf_printk(" read_enter %d %s %s ",pid,comm,data.userstr);
 
     bpf_map_update_elem(&open_map, &pid, &data, BPF_ANY);
-	//bpf_printk(" readok %d ",fd);
+	bpf_printk(" readok %d ",fd);
     return 0;
 }
 SEC("tracepoint/syscalls/sys_exit_read")

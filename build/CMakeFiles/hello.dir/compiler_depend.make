@@ -82,30 +82,37 @@ CMakeFiles/hello.dir/hello.c.o: /home/wyx/workspace/miner-detector/src/c/hello.c
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/sys/resource.h \
-  /usr/include/x86_64-linux-gnu/bits/resource.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
-  libbpf/bpf/libbpf.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/sys/resource.h \
+  /usr/include/x86_64-linux-gnu/bits/resource.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
+  libbpf/bpf/libbpf.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
   /usr/include/linux/bpf.h \
   /usr/include/linux/types.h \
   /usr/include/x86_64-linux-gnu/asm/types.h \
@@ -120,22 +127,13 @@ CMakeFiles/hello.dir/hello.c.o: /home/wyx/workspace/miner-detector/src/c/hello.c
   /usr/include/asm-generic/posix_types.h \
   /usr/include/linux/bpf_common.h \
   libbpf/bpf/libbpf_common.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   libbpf/bpf/libbpf_version.h \
   libbpf/bpf/libbpf_legacy.h \
   /home/wyx/workspace/miner-detector/src/c/hello.h \
-  hello.skel.h \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  hello.skel.h
 
 
-/usr/include/alloca.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+/home/wyx/workspace/miner-detector/src/c/hello.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -249,9 +247,9 @@ libbpf/bpf/libbpf_version.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
@@ -289,6 +287,12 @@ libbpf/bpf/libbpf_version.h:
 
 /usr/include/asm-generic/bitsperlong.h:
 
+libbpf/bpf/libbpf_legacy.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
 /usr/include/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
@@ -296,8 +300,6 @@ libbpf/bpf/libbpf_version.h:
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/home/wyx/workspace/miner-detector/src/c/hello.h:
 
 /usr/include/getopt.h:
 
@@ -327,11 +329,21 @@ libbpf/bpf/libbpf_version.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/x86_64-linux-gnu/sys/resource.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/x86_64-linux-gnu/sys/resource.h:
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h:
 
@@ -355,11 +367,13 @@ libbpf/bpf/libbpf.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
 /usr/include/linux/bpf.h:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
+
+hello.skel.h:
+
+libbpf/bpf/libbpf_common.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
@@ -378,17 +392,3 @@ libbpf/bpf/libbpf.h:
 /usr/include/asm-generic/types.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-libbpf/bpf/libbpf_legacy.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-libbpf/bpf/libbpf_common.h:
-
-hello.skel.h:
-
-/usr/include/stdlib.h:
